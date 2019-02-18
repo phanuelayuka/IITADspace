@@ -706,7 +706,7 @@
                     </div>
                     <div class="col-xs-4 col-sm-4">
                         <div>
-                            <p class="orange">IITA OPEN ACCESS</p> 
+                            <p class="iita_theme_color">IITA OPEN ACCESS</p> 
                         </div>
                         <div>
                             Making data findable, accessible, interoperable and reusable
