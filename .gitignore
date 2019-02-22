@@ -24,4 +24,5 @@ dspace/modules/solr/target/
 dspace/modules/additions/target/
 web/
 solr/
+.idea/
 

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="jspui:war">
-    <output-path>$PROJECT_DIR$/dspace/modules/jspui/target</output-path>
-    <root id="archive" name="jspui-6.3.war">
-      <element id="artifact" artifact-name="jspui:war exploded" />
-    </root>
-  </artifact>
-</component>
