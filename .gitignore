@@ -22,4 +22,6 @@ dspace/modules/swordv2/target/
 dspace/modules/api/target/
 dspace/modules/solr/target/
 dspace/modules/additions/target/
+web/
+solr/
 
