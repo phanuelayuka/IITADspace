@@ -60,20 +60,29 @@
   }
 }
 
+body {
+    font-size: 13px;
+}
+
+a:hover {
+    color: #ff5600;
+}
+
 .iita_theme_color {
-	color: #ff884e;
+	color: #ff5600;
 }
 
 .iita_theme_bg_color{
-	background-color: #ff884e !important;
+	background-color: #ff5600 !important;
 }
+
+header .navbar-brand {
+    padding: 3px 15px;
+}
+
 
 header .navbar-brand img {
     height: 40px;
-}
-
-.navbar-brand {
-    padding: 5px 15px
 }
 
 .page-header {
@@ -89,15 +98,15 @@ header .navbar-brand img {
     font-size: 12px;
 }
 .trail-wrapper .breadcrumb>li+li:before {
-    color: #ff884e;
+    color: #ff5600;
 }
 
 .trail-wrapper .breadcrumb>li>a:hover{
-    color: #ff884e;
+    color: #ff5600;
     text-decoration: none;
 }
 .trail-wrapper .breadcrumb>li.active{
-    color: #ff884e;
+    color: #ff5600;
 }
 
 .breadcrumb {
@@ -111,16 +120,63 @@ header .navbar-brand img {
 }
 
 .community-browser-row a[name='community-browser-link']:hover {
-	color: #ff884e;
-    text-decoration: none;
+	color: #ff5600;
 }
 
 .community-browser-row a.toggler{
-	padding: 5px 8px;
-	margin-top: 10px;
-}
-
-.community-browser-row a.toggler {
+    padding: 5px 8px;
+    margin-top: 10px;
     font-size: 9px;
     line-height: 1.5;
+}
+
+.community-browser-row a.toggler:hover,
+.community-browser-row a.toggler:active,
+.community-browser-row a.toggler:focus {
+    color: #ff5600;
+}
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       body
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    background-color: #1a1f27;
+    border-color: #1a1f27;
+    color: #ffffff;
+
+}
+
+a.list-group-item:hover, a.list-group-item:focus{
+    color: #ff5600;
+}
+
+
+
+.btn-primary, .btn-primary:hover {
+    color: #fff;
+    background-color: #1a1f27;
+    border-color: #1a1f27;
+}
+
+.artifact-title {
+    font-size: 14px;
+}
+
+.label {
+    padding: 5px 10px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    border-radius: .25em;
+}
+
+
+.label-primary {
+    background-color: #ffffff;
+    color: #1a1f27;
+    border:1px solid #1a1f27;
+}
+
+.label-primary:hover, .label-primary:focus, .label-primary:active {
+    background-color: #ffffff !important;
+    border:1px solid #ff5600;
+    color: #ff5600;
 }
