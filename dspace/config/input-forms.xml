@@ -350,6 +350,21 @@ it, please enter the types and the actual numbers or codes.</hint>
        <stored-value>Other</stored-value>
      </pair>
    </value-pairs>
+   
+   <value-pairs value-pairs-name="common_authorship" dc-term="authorshipType">
+     <pair>
+       <displayed-value>Non-IITA in developed country</displayed-value>
+       <stored-value>Non-IITA in developed country</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Non-IITA in developing country</displayed-value>
+       <stored-value>Non-IITA in developing country</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>IITA publication</displayed-value>
+       <stored-value>IITA publication</stored-value>
+     </pair>
+   </value-pairs>
 
    <!-- default language order: (from dspace 1.2.1)
         "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""

@@ -2499,5 +2499,14 @@
     <message key="xmlui.Submission.submit.StartSubmissionLookupStep.submit_publication_item">Imported publication Record</message>
     <message key="xmlui.Submission.submit.progressbar.lookup">Lookup</message>
 
-
+    <message key="xmlui.metadata.dc.contributor.author">Author</message>
+    <message key="xmlui.metadata.dc.date.issued">Issued on</message>
+    <message key="xmlui.metadata.dc.identifier.citation">Citation</message>
+    <message key="xmlui.metadata.dc.identifier.uri">Item URI</message>
+    <message key="xmlui.metadata.dc.description">Description</message>
+    <message key="xmlui.metadata.dc.description.sponsorship">Sponsorships</message>
+    <message key="xmlui.metadata.dc.publisher">Published By</message>
+    <message key="xmlui.metadata.dc.relation.ispartofseries">Is part of series</message>
+    <message key="xmlui.metadata.dc.subject">Subject</message>
+    <message key="xmlui.metadata.dc.title">Title</message>
 </catalogue>
