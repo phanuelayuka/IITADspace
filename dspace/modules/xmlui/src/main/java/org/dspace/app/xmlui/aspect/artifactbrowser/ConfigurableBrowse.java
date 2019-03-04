@@ -62,37 +62,21 @@ public class ConfigurableBrowse extends AbstractDSpaceTransformer implements
      * Static Messages for common text
      */
     private static final Message T_dspace_home = message("xmlui.general.dspace_home");
-
     private static final Message T_go = message("xmlui.general.go");
-
     private static final Message T_update = message("xmlui.general.update");
-
     private static final Message T_choose_month = message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_month");
-
     private static final Message T_choose_year = message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_year");
-
     private static final Message T_jump_year = message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_year");
-
     private static final Message T_jump_year_help = message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_year_help");
-
     private static final Message T_jump_select = message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_select");
-
     private static final Message T_starts_with = message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with");
-
     private static final Message T_starts_with_help = message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with_help");
-
     private static final Message T_sort_by = message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.sort_by");
-
     private static final Message T_order = message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.order");
-
     private static final Message T_no_results= message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.no_results");
-
     private static final Message T_rpp = message("xmlui.ArtifactBrowser.ConfigurableBrowse.general.rpp");
-
     private static final Message T_order_asc = message("xmlui.ArtifactBrowser.ConfigurableBrowse.order.asc");
-
     private static final Message T_order_desc = message("xmlui.ArtifactBrowser.ConfigurableBrowse.order.desc");
-
     private static final String BROWSE_URL_BASE = "browse";
 
     /**

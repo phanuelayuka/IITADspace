@@ -36,23 +36,15 @@ import java.util.Map;
  */
 public class CommunityBrowse extends AbstractDSpaceTransformer {
 
-    private static final Message T_head_browse =
-        message("xmlui.ArtifactBrowser.CommunityViewer.head_browse");
-
-    private static final Message T_browse_titles =
-        message("xmlui.ArtifactBrowser.CommunityViewer.browse_titles");
-
-    private static final Message T_browse_authors =
-        message("xmlui.ArtifactBrowser.CommunityViewer.browse_authors");
-
-    private static final Message T_browse_dates =
-        message("xmlui.ArtifactBrowser.CommunityViewer.browse_dates");
+    private static final Message T_head_browse = message("xmlui.ArtifactBrowser.CommunityViewer.head_browse");
+    private static final Message T_browse_titles = message("xmlui.ArtifactBrowser.CommunityViewer.browse_titles");
+    private static final Message T_browse_authors = message("xmlui.ArtifactBrowser.CommunityViewer.browse_authors");
+    private static final Message T_browse_dates = message("xmlui.ArtifactBrowser.CommunityViewer.browse_dates");
 
     @Override
     public void addBody(Body body) throws SAXException, WingException, SQLException, IOException, AuthorizeException, ProcessingException {
         DSpaceObject dso = HandleUtil.obtainHandle(objectModel);
-        if (!(dso instanceof Community))
-        {
+        if (!(dso instanceof Community)) {
             return;
         }
 
@@ -60,14 +52,11 @@ public class CommunityBrowse extends AbstractDSpaceTransformer {
         Community community = (Community) dso;
 
         Division home = body.addDivision("community-home", "primary repository community");
-
-        Division search = home.addDivision("community-search-browse",
-                "secondary search-browse");
+        Division search = home.addDivision("community-search-browse","secondary search-browse");
 
         // Browse by list
         Division browseDiv = search.addDivision("community-browse", "secondary browse");
-        List browse = browseDiv.addList("community-browse", List.TYPE_SIMPLE,
-                "community-browse");
+        List browse = browseDiv.addList("community-browse", List.TYPE_SIMPLE, "community-browse");
         browse.setHead(T_head_browse);
         String url = contextPath + "/handle/" + community.getHandle();
 

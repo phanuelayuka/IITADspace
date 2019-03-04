@@ -104,7 +104,7 @@ public class AddEPersonForm extends AbstractDSpaceTransformer
     {
         pageMeta.addMetadata("title").addContent(T_title);
         pageMeta.addTrailLink(contextPath + "/", T_dspace_home);
-        pageMeta.addTrailLink(contextPath + "/admin/epeople",T_eperson_trail);
+        pageMeta.addTrailLink(contextPath + "/admin/systemusers",T_eperson_trail);
         pageMeta.addTrail().addContent(T_trail);
     }
 	

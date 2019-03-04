@@ -45,20 +45,11 @@ import java.util.Map;
 public class Navigation extends AbstractDSpaceTransformer implements CacheableProcessingComponent {
 
     /** Language Strings */
-    private static final Message T_head_all_of_dspace =
-        message("xmlui.ArtifactBrowser.Navigation.head_all_of_dspace");
-
-    private static final Message T_head_browse =
-        message("xmlui.ArtifactBrowser.Navigation.head_browse");
-
-    private static final Message T_communities_and_collections =
-        message("xmlui.ArtifactBrowser.Navigation.communities_and_collections");
-
-    private static final Message T_head_this_collection =
-        message("xmlui.ArtifactBrowser.Navigation.head_this_collection");
-
-    private static final Message T_head_this_community =
-        message("xmlui.ArtifactBrowser.Navigation.head_this_community");
+    private static final Message T_head_all_of_dspace = message("xmlui.ArtifactBrowser.Navigation.head_all_of_dspace");
+    private static final Message T_head_browse = message("xmlui.ArtifactBrowser.Navigation.head_browse");
+    private static final Message T_communities_and_collections = message("xmlui.ArtifactBrowser.Navigation.communities_and_collections");
+    private static final Message T_head_this_collection = message("xmlui.ArtifactBrowser.Navigation.head_this_collection");
+    private static final Message T_head_this_community = message("xmlui.ArtifactBrowser.Navigation.head_this_community");
 
 
     /**
@@ -115,10 +106,8 @@ public class Navigation extends AbstractDSpaceTransformer implements CacheablePr
         options.addList("account");
         options.addList("context");
         options.addList("administrative");
-
-
         browse.setHead(T_head_browse);
-
+        
         List browseGlobal = browse.addList("global");
         List browseContext = browse.addList("context");
 

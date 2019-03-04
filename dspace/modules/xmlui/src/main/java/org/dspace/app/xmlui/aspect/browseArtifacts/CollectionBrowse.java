@@ -36,17 +36,10 @@ import java.util.Map;
  */
 public class CollectionBrowse extends AbstractDSpaceTransformer {
 
-    private static final Message T_head_browse =
-        message("xmlui.ArtifactBrowser.CollectionViewer.head_browse");
-
-    private static final Message T_browse_titles =
-        message("xmlui.ArtifactBrowser.CollectionViewer.browse_titles");
-
-    private static final Message T_browse_authors =
-        message("xmlui.ArtifactBrowser.CollectionViewer.browse_authors");
-
-    private static final Message T_browse_dates =
-        message("xmlui.ArtifactBrowser.CollectionViewer.browse_dates");
+    private static final Message T_head_browse = message("xmlui.ArtifactBrowser.CollectionViewer.head_browse");
+    private static final Message T_browse_titles = message("xmlui.ArtifactBrowser.CollectionViewer.browse_titles");
+    private static final Message T_browse_authors = message("xmlui.ArtifactBrowser.CollectionViewer.browse_authors");
+    private static final Message T_browse_dates = message("xmlui.ArtifactBrowser.CollectionViewer.browse_dates");
 
     @Override
     public void addBody(Body body) throws SAXException, WingException, SQLException, IOException, AuthorizeException, ProcessingException {
@@ -58,16 +51,12 @@ public class CollectionBrowse extends AbstractDSpaceTransformer {
 
         // Set up the major variables
         Collection collection = (Collection) dso;
-
         Division home = body.addDivision("collection-home", "primary repository collection");
-
-        Division search = home.addDivision("collection-search-browse",
-                "secondary search-browse");
+        Division search = home.addDivision("collection-search-browse", "secondary search-browse");
 
         // Browse by list
         Division browseDiv = search.addDivision("collection-browse", "secondary browse");
-        List browse = browseDiv.addList("collection-browse", List.TYPE_SIMPLE,
-                "collection-browse");
+        List browse = browseDiv.addList("collection-browse", List.TYPE_SIMPLE, "collection-browse");
         browse.setHead(T_head_browse);
         String url = contextPath + "/handle/" + collection.getHandle();
 
@@ -77,9 +66,7 @@ public class CollectionBrowse extends AbstractDSpaceTransformer {
             for (BrowseIndex bix : bis) {
                 // Create a Map of the query parameters for this link
                 Map<String, String> queryParams = new HashMap<String, String>();
-
                 queryParams.put("type", bix.getName());
-
                 // Add a link to this browse
                 browse.addItemXref(generateURL(url + "/browse", queryParams),
                         message("xmlui.ArtifactBrowser.Navigation.browse_" + bix.getName()));
