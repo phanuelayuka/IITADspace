@@ -1,17 +1,3 @@
-/**
- * The contents of this file are subject to the license and copyright
- * detailed in the LICENSE and NOTICE files at the root of the source
- * tree and available online at
- *
- * http://www.dspace.org/license/
- */
-
-/**
- * You can put your own style in this file.
- * It will be included in all color schemes
- */
-
-//example mixin to set the text-selection style
 @mixin selection {
     ::-moz-selection { @content; }
     ::selection { @content; }
@@ -39,41 +25,38 @@
   background-color: #E2E2E2;
 }
 
-#aspect_submission_StepTransformer_div_StartSubmissionLookupStep {
+#aspect_submission_StepTransformer_field_search {
+  width: 81%;
+  display: inline;
+}
 
-  #aspect_submission_StepTransformer_field_search {
-    width: 81%;
-    display: inline;
-  }
+#aspect_submission_StepTransformer_field_lookup {
+  width:19%
+}
 
-  #aspect_submission_StepTransformer_field_lookup {
-    width:19%
-  }
+.modal .modal-body {
+  max-height: 500px;
+  overflow-y: auto;
+}
 
-  .modal .modal-body {
-    max-height: 500px;
-    overflow-y: auto;
-  }
-
-  #aspect_submission_StepTransformer_item_publication-title{
-    margin-bottom:5px;
-  }
+#aspect_submission_StepTransformer_item_publication-title{
+  margin-bottom:5px;
 }
 
 body {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 a:hover {
-    color: #ff5600;
+  color: #ff5600;
 }
 
 .iita_theme_color {
-	color: #ff5600;
+  color: #ff5600;
 }
 
 .iita_theme_bg_color{
-	background-color: #ff5600 !important;
+  background-color: #ff5600 !important;
 }
 
 
@@ -83,7 +66,7 @@ header{
 
 header .navbar-default {
   background-color: #ffffff;
-  padding: 6px 0px;
+  padding: 6px 30px;
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -95,27 +78,27 @@ header .navbar-default .navbar-nav > li > a {
 }
 
 header .navbar-brand {
-    padding: 3px 15px;
+  padding: 3px 15px;
 }
 
 
 header .navbar-brand img {
-    height: 40px;
+  height: 40px;
 }
 
 .page-header {
-    font-weight: bold;
-    font-size: 14px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .trail-wrapper {
   background-color: #1a1f27;
   border-bottom: none;
-  margin-bottom: 15px;
+  padding: 0px 30px;
 }
 
 .trail-wrapper .breadcrumb, .trail-wrapper .breadcrumb i {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 
@@ -124,82 +107,137 @@ header .navbar-brand img {
 }
 
 .trail-wrapper .breadcrumb>li>a:hover{
-    color: #ff5600;
-    text-decoration: none;
-}
-.trail-wrapper .breadcrumb>li.active{
-    color: #ffffff;
+  color: #ff5600;
+  text-decoration: none;
 }
 
 .breadcrumb {
-    padding: 12px 0px;
+  padding: 12px 0px;
+}
+
+.breadcrumb li{
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .community-browser-row a[name='community-browser-link'] {
-    line-height: 40px;
-    font-size: 14px;
-    color: #223c60;
+  line-height: 40px;
+  font-size: 14px;
+  color: #223c60;
 }
 
 .community-browser-row a[name='community-browser-link']:hover {
-	color: #ff5600;
+  color: #ff5600;
 }
 
 .community-browser-row a.toggler{
-    padding: 5px 8px;
-    margin-top: 10px;
-    font-size: 9px;
-    line-height: 1.5;
+  padding: 5px 8px;
+  margin-top: 10px;
+  font-size: 9px;
+  line-height: 1.5;
 }
 
 .community-browser-row a.toggler:hover,
 .community-browser-row a.toggler:active,
 .community-browser-row a.toggler:focus {
-    color: #ff5600;
+  color: #ff5600;
 }
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       body
+body
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-    background-color: #1a1f27;
-    border-color: #1a1f27;
-    color: #ffffff;
+  background-color: #1a1f27;
+  border-color: #1a1f27;
+  color: #ffffff;
 
 }
 
+a.list-group-item{
+  padding: 7px 20px 7px 40px;
+}
 a.list-group-item:hover, a.list-group-item:focus{
-    color: #ff5600;
+  text-decoration: none;
+  color: #555;
+  background-color: #d9d9d9;
 }
 
 
 
 .btn-primary, .btn-primary:hover {
-    color: #fff;
-    background-color: #1a1f27;
-    border-color: #1a1f27;
+  color: #fff;
+  background-color: #f26522;
+  border-color: #f26522;
 }
 
 .artifact-title {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .label {
-    padding: 5px 10px;
-    font-weight: bold;
-    line-height: 1;
-    color: #fff;
-    border-radius: .25em;
+  padding: 5px 10px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  border-radius: .25em;
 }
 
 
 .label-primary {
-    background-color: #ffffff;
-    color: #1a1f27;
-    border:1px solid #1a1f27;
+  background-color: #ffffff;
+  color: #1a1f27;
+  border:1px solid #1a1f27;
 }
 
 .label-primary:hover, .label-primary:focus, .label-primary:active {
-    background-color: #ffffff !important;
-    border:1px solid #ff5600;
-    color: #ff5600;
+  background-color: #ffffff !important;
+  border:1px solid #ff5600;
+  color: #ff5600;
 }
+
+#sidebar{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.list-group-item{
+  background: none;
+  border: none;
+}
+
+body .list-group-item.active
+{
+  background: none;
+  border: none;
+  color: #1a1f27;
+}
+
+#ds-options {
+  padding-top: 0px;
+}
+
+#ds-search-form{
+  padding: 20px 15px 0px 40px;
+}
+
+#ds-options .ds-option-set-head{
+  padding: 0px 15px 0px 40px;
+  color: #f26522;
+}
+
+.main-content{
+  padding-top: 30px;
+  padding-right:40px;
+}
+
+@media (min-width: 768px) {
+  .container{
+    width: 100%;
+  }
+  #sidebar{
+    width: 21%;
+  }
+  .main-content{
+    width: 79%;
+  }
+}
+
+
 
