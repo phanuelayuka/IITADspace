@@ -140,7 +140,12 @@
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Authors Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">Subject</message>
-
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.regionoffocus.column_heading">Regions of Focus</message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.country.column_heading">Counries</message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.scienceresearcharea.column_heading">Science Research Area</message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.afflitiation.column_heading">Affiliations</message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.authorhub.column_heading">Author Hubs</message>
+        
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">Browsing {0} by Author {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Browsing {0} by Author</message>
 
@@ -155,7 +160,21 @@
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateaccessioned">Browsing {0} by Submit Date {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateaccessioned">Browsing {0} by Submit Date</message>
+        
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.regionoffocus">Browsing {0} by Regions of Focus {1}</message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.regionoffocus">Browsing {0} by Regions of Focus</message>
 
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.country">Browsing {0} by Country {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.country">Browsing {0} by Country</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.scienceresearcharea">Browsing {0} by Science Research Areas {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.scienceresearcharea">Browsing {0} by Science Research Areas</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.afflitiation">Browsing {0} by Affiliations {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.afflitiation">Browsing {0} by Affiliations</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.authorhub">Browsing {0} by Author Hubs {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.authorhub">Browsing {0} by Author Hubs</message>
 
 	<!-- org.dspace.app.xmlui.administrative.WithdrawnItems.java -->
 	<message key="xmlui.Administrative.WithdrawnItems.title.item.title">Withdrawn Items by Title</message>
@@ -166,6 +185,21 @@
 
 	<message key="xmlui.Administrative.WithdrawnItems.title.item.dateaccessioned">Withdrawn Items by Submit Date</message>
 	<message key="xmlui.Administrative.WithdrawnItems.trail.item.dateaccessioned">Withdrawn Items by Submit Date</message>
+        
+        <message key="xmlui.Administrative.WithdrawnItems.title.metadata.regionoffocus">Withdrawn Items by Regions of Focus</message>
+        <message key="xmlui.Administrative.WithdrawnItems.trail.metadata.regionoffocus">Withdrawn Items by Regions of Focus</message>
+
+        <message key="xmlui.Administrative.WithdrawnItems.title.metadata.country">Withdrawn Items by Country</message>
+        <message key="xmlui.Administrative.WithdrawnItems.trail.metadata.country">Withdrawn Items by Country</message>
+
+        <message key="xmlui.Administrative.WithdrawnItems.title.metadata.scienceresearcharea">Withdrawn Items by Science Research Area</message>
+        <message key="xmlui.Administrative.WithdrawnItems.trail.metadata.scienceresearcharea">Withdrawn Items by Science Research Area</message>
+
+        <message key="xmlui.Administrative.WithdrawnItems.title.metadata.afflitiation">Withdrawn Items by Affiliation</message>
+        <message key="xmlui.Administrative.WithdrawnItems.trail.metadata.afflitiation">Withdrawn Items by Affiliation</message>
+
+        <message key="xmlui.Administrative.WithdrawnItems.title.metadata.authorhub">Withdrawn Items by Author Hubs</message>
+        <message key="xmlui.Administrative.WithdrawnItems.trail.metadata.authorhub">Withdrawn Items by Author Hubs</message>
 
 	<!-- org.dspace.app.xmlui.administrative.PrivateItems.java -->
 	<message key="xmlui.Administrative.PrivateItems.title.item.title">Private Items by Title</message>
@@ -174,8 +208,22 @@
 	<message key="xmlui.Administrative.PrivateItems.title.item.dateissued">Private Items by Issue Date</message>
 	<message key="xmlui.Administrative.PrivateItems.trail.item.dateissued">Private Items by Issue Date</message>
 
-	<message key="xmlui.Administrative.PrivateItems.title.item.dateaccessioned">Private Items by Submit Date</message>
-	<message key="xmlui.Administrative.PrivateItems.trail.item.dateaccessioned">Private Items by Submit Date</message>
+	<message key="xmlui.Administrative.PrivateItems.title.metadata.regionoffocus">Private Items by Regions of Focus</message>
+	<message key="xmlui.Administrative.PrivateItems.trail.metadata.regionoffocus">Private Items by Regions of Focus</message>
+        
+        <message key="xmlui.Administrative.PrivateItems.title.metadata.country">Private Items by Country</message>
+        <message key="xmlui.Administrative.PrivateItems.trail.metadata.country">Private Items by Country</message>
+                
+	<message key="xmlui.Administrative.PrivateItems.title.metadata.scienceresearcharea">Private Items by Science Research Area</message>
+	<message key="xmlui.Administrative.PrivateItems.trail.metadata.scienceresearcharea">Private Items by Science Research Area</message>
+        
+	<message key="xmlui.Administrative.PrivateItems.title.metadata.afflitiation">Private Items by Affiliation</message>
+	<message key="xmlui.Administrative.PrivateItems.trail.metadata.afflitiation">Private Items by Affiliation</message>
+        
+	<message key="xmlui.Administrative.PrivateItems.title.metadata.authorhub">Private Items by Author Hubs</message>
+	<message key="xmlui.Administrative.PrivateItems.trail.metadata.authorhub">Private Items by Author Hubs</message>
+        
+
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Search Scope</message>
@@ -252,6 +300,11 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_author">Authors</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_subject">Subjects</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateissued">By Issue Date</message>
+         <message key="xmlui.ArtifactBrowser.Navigation.browse_authorhub">By Hubs</message>
+        <message key="xmlui.ArtifactBrowser.Navigation.browse_afflitiation">By Affiliations</message>
+        <message key="xmlui.ArtifactBrowser.Navigation.browse_regionoffocus">By Regions of Focus</message>
+        <message key="xmlui.ArtifactBrowser.Navigation.browse_scienceresearcharea">By Science Research Area</message>
+        <message key="xmlui.ArtifactBrowser.Navigation.browse_country">By Country</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateaccessioned">By Submit Date</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.head_this_collection">This Sub-collection</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.head_this_community">This Collection</message>

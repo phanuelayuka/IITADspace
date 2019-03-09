@@ -169,7 +169,19 @@
                     <repeatable>true</repeatable>
                     <label>Regions of Focus</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the main region of focus for the item.</hint>
+                    <hint>Enter the main regions of focus for the item.</hint>
+                    <required></required>
+                </field>
+                
+                
+                <field>
+                    <dc-schema>local</dc-schema>
+                    <dc-element>country</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Contries</label>
+                    <input-type value-pairs-name="common_countries">dropdown</input-type>
+                    <hint>Enter the counties associated with instance of this item.</hint>
                     <required></required>
                 </field>
 
@@ -281,18 +293,6 @@
                     <label>Sponsors</label>
                     <input-type>textarea</input-type>
                     <hint>Enter the names of any sponsors and/or funding codes in the box. </hint>
-                    <required></required>
-                </field>
-
-       
-                <field>
-                    <dc-schema>local</dc-schema>
-                    <dc-element>country</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Contries</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the counties associated with instance of this item.</hint>
                     <required></required>
                 </field>
        
@@ -641,6 +641,914 @@
                 <stored-value>other</stored-value>
             </pair>
         </value-pairs>
+        
+        <value-pairs value-pairs-name="common_countries" dc-term="country">
+            <pair>
+                <displayed-value>Afghanistan</displayed-value>
+                <stored-value>Afghanistan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Albania</displayed-value>
+                <stored-value>Albania</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Algeria</displayed-value>
+                <stored-value>Algeria</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Andorra</displayed-value>
+                <stored-value>Andorra</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Angola</displayed-value>
+                <stored-value>Angola</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Antigua and Barbuda</displayed-value>
+                <stored-value>Antigua and Barbuda</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Argentina</displayed-value>
+                <stored-value>Argentina</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Armenia</displayed-value>
+                <stored-value>Armenia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Australia</displayed-value>
+                <stored-value>Australia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Austria</displayed-value>
+                <stored-value>Austria</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Austrian Empire</displayed-value>
+                <stored-value>Austrian Empire</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Azerbaijan</displayed-value>
+                <stored-value>Azerbaijan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Baden*</displayed-value>
+                <stored-value>Baden*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Bahrain</displayed-value>
+                <stored-value>Bahrain</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Bangladesh</displayed-value>
+                <stored-value>Bangladesh</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Barbados</displayed-value>
+                <stored-value>Barbados</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Bavaria*</displayed-value>
+                <stored-value>Bavaria*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Belarus</displayed-value>
+                <stored-value>Belarus</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Belgium</displayed-value>
+                <stored-value>Belgium</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Belize</displayed-value>
+                <stored-value>Belize</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Benin (Dahomey)</displayed-value>
+                <stored-value>Benin (Dahomey)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Bolivia</displayed-value>
+                <stored-value>Bolivia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Bosnia and Herzegovina</displayed-value>
+                <stored-value>Bosnia and Herzegovina</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Botswana</displayed-value>
+                <stored-value>Botswana</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Brazil</displayed-value>
+                <stored-value>Brazil</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Brunei</displayed-value>
+                <stored-value>Brunei</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Brunswick and Lüneburg</displayed-value>
+                <stored-value>Brunswick and Lüneburg</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Bulgaria</displayed-value>
+                <stored-value>Bulgaria</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Burkina Faso (Upper Volta)</displayed-value>
+                <stored-value>Burkina Faso (Upper Volta)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Burma</displayed-value>
+                <stored-value>Burma</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Burundi</displayed-value>
+                <stored-value>Burundi</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Cabo Verde</displayed-value>
+                <stored-value>Cabo Verde</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Cambodia</displayed-value>
+                <stored-value>Cambodia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Cameroon</displayed-value>
+                <stored-value>Cameroon</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Canada</displayed-value>
+                <stored-value>Canada</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Central African Republic</displayed-value>
+                <stored-value>Central African Republic</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Central American Federation*</displayed-value>
+                <stored-value>Central American Federation*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Chad</displayed-value>
+                <stored-value>Chad</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Chile</displayed-value>
+                <stored-value>Chile</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>China</displayed-value>
+                <stored-value>China</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Colombia</displayed-value>
+                <stored-value>Colombia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Comoros</displayed-value>
+                <stored-value>Comoros</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Costa Rica</displayed-value>
+                <stored-value>Costa Rica</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Cote d’Ivoire (Ivory Coast)</displayed-value>
+                <stored-value>Cote d’Ivoire (Ivory Coast)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Croatia</displayed-value>
+                <stored-value>Croatia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Cuba</displayed-value>
+                <stored-value>Cuba</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Cyprus</displayed-value>
+                <stored-value>Cyprus</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Czechia</displayed-value>
+                <stored-value>Czechia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Czechoslovakia</displayed-value>
+                <stored-value>Czechoslovakia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Democratic Republic of the Congo</displayed-value>
+                <stored-value>Democratic Republic of the Congo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Denmark</displayed-value>
+                <stored-value>Denmark</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Djibouti</displayed-value>
+                <stored-value>Djibouti</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Dominica</displayed-value>
+                <stored-value>Dominica</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Dominican Republic</displayed-value>
+                <stored-value>Dominican Republic</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>East Germany (German Democratic Republic)</displayed-value>
+                <stored-value>East Germany (German Democratic Republic)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ecuador</displayed-value>
+                <stored-value>Ecuador</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Egypt</displayed-value>
+                <stored-value>Egypt</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>El Salvador</displayed-value>
+                <stored-value>El Salvador</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Equatorial Guinea</displayed-value>
+                <stored-value>Equatorial Guinea</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Eritrea</displayed-value>
+                <stored-value>Eritrea</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Estonia</displayed-value>
+                <stored-value>Estonia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Eswatini</displayed-value>
+                <stored-value>Eswatini</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ethiopia</displayed-value>
+                <stored-value>Ethiopia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Federal Government of Germany (1848-49)*</displayed-value>
+                <stored-value>Federal Government of Germany (1848-49)*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fiji</displayed-value>
+                <stored-value>Fiji</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Finland</displayed-value>
+                <stored-value>Finland</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>France</displayed-value>
+                <stored-value>France</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Gabon</displayed-value>
+                <stored-value>Gabon</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Georgia</displayed-value>
+                <stored-value>Georgia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Germany</displayed-value>
+                <stored-value>Germany</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ghana</displayed-value>
+                <stored-value>Ghana</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Greece</displayed-value>
+                <stored-value>Greece</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Grenada</displayed-value>
+                <stored-value>Grenada</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Guatemala</displayed-value>
+                <stored-value>Guatemala</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Guinea</displayed-value>
+                <stored-value>Guinea</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Guinea-Bissau</displayed-value>
+                <stored-value>Guinea-Bissau</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Guyana</displayed-value>
+                <stored-value>Guyana</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Haiti</displayed-value>
+                <stored-value>Haiti</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Hanover*</displayed-value>
+                <stored-value>Hanover*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Hanseatic Republics*</displayed-value>
+                <stored-value>Hanseatic Republics*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Hawaii*</displayed-value>
+                <stored-value>Hawaii*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Hesse*</displayed-value>
+                <stored-value>Hesse*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Holy See</displayed-value>
+                <stored-value>Holy See</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Honduras</displayed-value>
+                <stored-value>Honduras</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Hungary</displayed-value>
+                <stored-value>Hungary</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Iceland</displayed-value>
+                <stored-value>Iceland</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>India</displayed-value>
+                <stored-value>India</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Indonesia</displayed-value>
+                <stored-value>Indonesia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Iran</displayed-value>
+                <stored-value>Iran</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Iraq</displayed-value>
+                <stored-value>Iraq</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ireland</displayed-value>
+                <stored-value>Ireland</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Israel</displayed-value>
+                <stored-value>Israel</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Italy</displayed-value>
+                <stored-value>Italy</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Jamaica</displayed-value>
+                <stored-value>Jamaica</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Japan</displayed-value>
+                <stored-value>Japan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Jordan</displayed-value>
+                <stored-value>Jordan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Kazakhstan</displayed-value>
+                <stored-value>Kazakhstan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Kenya</displayed-value>
+                <stored-value>Kenya</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Kingdom of Serbia/Yugoslavia*</displayed-value>
+                <stored-value>Kingdom of Serbia/Yugoslavia*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Kiribati</displayed-value>
+                <stored-value>Kiribati</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Korea</displayed-value>
+                <stored-value>Korea</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Kosovo</displayed-value>
+                <stored-value>Kosovo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Kuwait</displayed-value>
+                <stored-value>Kuwait</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Kyrgyzstan</displayed-value>
+                <stored-value>Kyrgyzstan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Laos</displayed-value>
+                <stored-value>Laos</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Latvia</displayed-value>
+                <stored-value>Latvia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Lebanon</displayed-value>
+                <stored-value>Lebanon</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Lesotho</displayed-value>
+                <stored-value>Lesotho</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Lew Chew (Loochoo)*</displayed-value>
+                <stored-value>Lew Chew (Loochoo)*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Liberia</displayed-value>
+                <stored-value>Liberia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Libya</displayed-value>
+                <stored-value>Libya</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Liechtenstein</displayed-value>
+                <stored-value>Liechtenstein</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Lithuania</displayed-value>
+                <stored-value>Lithuania</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Luxembourg</displayed-value>
+                <stored-value>Luxembourg</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Macedonia</displayed-value>
+                <stored-value>Macedonia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Madagascar</displayed-value>
+                <stored-value>Madagascar</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Malawi</displayed-value>
+                <stored-value>Malawi</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Malaysia</displayed-value>
+                <stored-value>Malaysia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Maldives</displayed-value>
+                <stored-value>Maldives</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mali</displayed-value>
+                <stored-value>Mali</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Malta</displayed-value>
+                <stored-value>Malta</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Marshall Islands</displayed-value>
+                <stored-value>Marshall Islands</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mauritania</displayed-value>
+                <stored-value>Mauritania</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mauritius</displayed-value>
+                <stored-value>Mauritius</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mecklenburg-Schwerin*</displayed-value>
+                <stored-value>Mecklenburg-Schwerin*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mecklenburg-Strelitz*</displayed-value>
+                <stored-value>Mecklenburg-Strelitz*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mexico</displayed-value>
+                <stored-value>Mexico</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Micronesia</displayed-value>
+                <stored-value>Micronesia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Moldova</displayed-value>
+                <stored-value>Moldova</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Monaco</displayed-value>
+                <stored-value>Monaco</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mongolia</displayed-value>
+                <stored-value>Mongolia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Montenegro</displayed-value>
+                <stored-value>Montenegro</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Morocco</displayed-value>
+                <stored-value>Morocco</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mozambique</displayed-value>
+                <stored-value>Mozambique</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Namibia</displayed-value>
+                <stored-value>Namibia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Nassau*</displayed-value>
+                <stored-value>Nassau*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Nauru</displayed-value>
+                <stored-value>Nauru</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Nepal</displayed-value>
+                <stored-value>Nepal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>New Zealand</displayed-value>
+                <stored-value>New Zealand</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Nicaragua</displayed-value>
+                <stored-value>Nicaragua</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Niger</displayed-value>
+                <stored-value>Niger</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Nigeria</displayed-value>
+                <stored-value>Nigeria</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>North German Confederation*</displayed-value>
+                <stored-value>North German Confederation*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>North German Union*</displayed-value>
+                <stored-value>North German Union*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Norway</displayed-value>
+                <stored-value>Norway</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Oldenburg*</displayed-value>
+                <stored-value>Oldenburg*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Oman</displayed-value>
+                <stored-value>Oman</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Orange Free State*</displayed-value>
+                <stored-value>Orange Free State*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Pakistan</displayed-value>
+                <stored-value>Pakistan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Palau</displayed-value>
+                <stored-value>Palau</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Panama</displayed-value>
+                <stored-value>Panama</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Papal States*</displayed-value>
+                <stored-value>Papal States*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Papua New Guinea</displayed-value>
+                <stored-value>Papua New Guinea</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Paraguay</displayed-value>
+                <stored-value>Paraguay</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Peru</displayed-value>
+                <stored-value>Peru</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Philippines</displayed-value>
+                <stored-value>Philippines</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Piedmont-Sardinia*</displayed-value>
+                <stored-value>Piedmont-Sardinia*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Poland</displayed-value>
+                <stored-value>Poland</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Portugal</displayed-value>
+                <stored-value>Portugal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Qatar</displayed-value>
+                <stored-value>Qatar</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Republic of Genoa*</displayed-value>
+                <stored-value>Republic of Genoa*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Republic of Korea (South Korea)</displayed-value>
+                <stored-value>Republic of Korea (South Korea)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Republic of the Congo</displayed-value>
+                <stored-value>Republic of the Congo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Romania</displayed-value>
+                <stored-value>Romania</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Russia</displayed-value>
+                <stored-value>Russia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Rwanda</displayed-value>
+                <stored-value>Rwanda</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Saint Kitts and Nevis</displayed-value>
+                <stored-value>Saint Kitts and Nevis</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Saint Lucia</displayed-value>
+                <stored-value>Saint Lucia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Saint Vincent and the Grenadines</displayed-value>
+                <stored-value>Saint Vincent and the Grenadines</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Samoa</displayed-value>
+                <stored-value>Samoa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>San Marino</displayed-value>
+                <stored-value>San Marino</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Sao Tome and Principe</displayed-value>
+                <stored-value>Sao Tome and Principe</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Saudi Arabia</displayed-value>
+                <stored-value>Saudi Arabia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Schaumburg-Lippe*</displayed-value>
+                <stored-value>Schaumburg-Lippe*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Senegal</displayed-value>
+                <stored-value>Senegal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Serbia</displayed-value>
+                <stored-value>Serbia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Seychelles</displayed-value>
+                <stored-value>Seychelles</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Sierra Leone</displayed-value>
+                <stored-value>Sierra Leone</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Singapore</displayed-value>
+                <stored-value>Singapore</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Slovakia</displayed-value>
+                <stored-value>Slovakia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Slovenia</displayed-value>
+                <stored-value>Slovenia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Somalia</displayed-value>
+                <stored-value>Somalia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>South Africa</displayed-value>
+                <stored-value>South Africa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>South Sudan</displayed-value>
+                <stored-value>South Sudan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Spain</displayed-value>
+                <stored-value>Spain</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Sri Lanka</displayed-value>
+                <stored-value>Sri Lanka</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Sudan</displayed-value>
+                <stored-value>Sudan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Suriname</displayed-value>
+                <stored-value>Suriname</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Sweden</displayed-value>
+                <stored-value>Sweden</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Switzerland</displayed-value>
+                <stored-value>Switzerland</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Syria</displayed-value>
+                <stored-value>Syria</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tajikistan</displayed-value>
+                <stored-value>Tajikistan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tanzania</displayed-value>
+                <stored-value>Tanzania</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Texas*</displayed-value>
+                <stored-value>Texas*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Thailand</displayed-value>
+                <stored-value>Thailand</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The Bahamas</displayed-value>
+                <stored-value>The Bahamas</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The Cayman Islands</displayed-value>
+                <stored-value>The Cayman Islands</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The Congo Free State</displayed-value>
+                <stored-value>The Congo Free State</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The Duchy of Parma*</displayed-value>
+                <stored-value>The Duchy of Parma*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The Gambia</displayed-value>
+                <stored-value>The Gambia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The Grand Duchy of Tuscany*</displayed-value>
+                <stored-value>The Grand Duchy of Tuscany*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The Netherlands</displayed-value>
+                <stored-value>The Netherlands</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The Solomon Islands</displayed-value>
+                <stored-value>The Solomon Islands</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The United Arab Emirates</displayed-value>
+                <stored-value>The United Arab Emirates</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The United Kingdom</displayed-value>
+                <stored-value>The United Kingdom</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Timor-Leste</displayed-value>
+                <stored-value>Timor-Leste</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Togo</displayed-value>
+                <stored-value>Togo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tonga</displayed-value>
+                <stored-value>Tonga</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Trinidad and Tobago</displayed-value>
+                <stored-value>Trinidad and Tobago</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tunisia</displayed-value>
+                <stored-value>Tunisia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Turkey</displayed-value>
+                <stored-value>Turkey</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Turkmenistan</displayed-value>
+                <stored-value>Turkmenistan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tuvalu</displayed-value>
+                <stored-value>Tuvalu</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Two Sicilies*</displayed-value>
+                <stored-value>Two Sicilies*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Uganda</displayed-value>
+                <stored-value>Uganda</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ukraine</displayed-value>
+                <stored-value>Ukraine</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Union of Soviet Socialist Republics*</displayed-value>
+                <stored-value>Union of Soviet Socialist Republics*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Uruguay</displayed-value>
+                <stored-value>Uruguay</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Uzbekistan</displayed-value>
+                <stored-value>Uzbekistan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Vanuatu</displayed-value>
+                <stored-value>Vanuatu</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Venezuela</displayed-value>
+                <stored-value>Venezuela</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Vietnam</displayed-value>
+                <stored-value>Vietnam</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Württemberg*</displayed-value>
+                <stored-value>Württemberg*</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Yemen</displayed-value>
+                <stored-value>Yemen</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Zambia</displayed-value>
+                <stored-value>Zambia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Zimbabwe</displayed-value>
+                <stored-value>Zimbabwe</stored-value>
+            </pair>
+          </value-pairs>
+
 
     </form-value-pairs>
 
