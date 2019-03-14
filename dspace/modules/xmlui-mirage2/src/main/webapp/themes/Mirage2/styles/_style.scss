@@ -187,57 +187,18 @@ a.list-group-item:hover, a.list-group-item:focus{
 }
 
 .label-primary:hover, .label-primary:focus, .label-primary:active {
-  background-color: #ffffff !important;
-  border:1px solid #ff5600;
-  color: #ff5600;
+    background-color: #ffffff !important;
+    border:1px solid #ff5600;
+    color: #ff5600;
 }
 
-#sidebar{
-  padding-left: 0px;
-  padding-right: 0px;
+h3.ds-div-head { 
+	font-size: 15px;
+	color: #ff5600;
 }
 
-.list-group-item{
-  background: none;
-  border: none;
+h3.ds-list-head {
+	font-size: 17px;
+	color: #ff5600;
+	font-weight: bold;
 }
-
-body .list-group-item.active
-{
-  background: none;
-  border: none;
-  color: #1a1f27;
-}
-
-#ds-options {
-  padding-top: 0px;
-}
-
-#ds-search-form{
-  padding: 20px 15px 0px 40px;
-}
-
-#ds-options .ds-option-set-head{
-  padding: 0px 15px 0px 40px;
-  color: #f26522;
-}
-
-.main-content{
-  padding-top: 30px;
-  padding-right:40px;
-}
-
-@media (min-width: 768px) {
-  .container{
-    width: 100%;
-  }
-  #sidebar{
-    width: 21%;
-  }
-  .main-content{
-    width: 79%;
-  }
-}
-
-
-
