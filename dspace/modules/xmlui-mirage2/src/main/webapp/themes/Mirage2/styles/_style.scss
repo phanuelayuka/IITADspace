@@ -91,6 +91,7 @@ header .navbar-default {
 
 header .navbar-default .navbar-nav > li > a {
   color: #333;
+  padding:15px 10px;
 }
 
 header .navbar-brand {
@@ -99,11 +100,21 @@ header .navbar-brand {
 
 
 header .navbar-brand img {
-  height: 40px;
+  height: 35px;
+}
+
+header .navbar-default .navbar-nav > li > a{
+  background: #fff;
 }
 
 header .navbar-default .navbar-nav > li > a:hover, header .navbar-default .navbar-nav > li > a:focus{
-  background: none !important;
+  background: #fff !important;
+  color:#f26522;
+}
+
+header .navbar-default .navbar-nav > .open > a, header .navbar-default .navbar-nav > .open > a:focus{
+  color: #f26522;
+  background: #fff;
 }
 
 
