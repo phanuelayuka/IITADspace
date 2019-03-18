@@ -106,19 +106,13 @@
                                         <div class="col-xs-12 col-sm-12 col-md-9 main-content">
                                             <xsl:call-template name="buildTrail"/>
                                             <div class="main-content-body">
-                                                <xsl:apply-templates select="*[not(self::dri:options)]"/>
-                                            </div>
-                                            <div class="visible-xs visible-sm">
+                                                <div class ="white-box">
+                                                    <xsl:apply-templates select="*[not(self::dri:options)]"/>
+                                                </div>
                                                 <xsl:call-template name="buildFooter"/>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!--
-                                The footer div, dropping whatever extra information is needed on the page. It will
-                                most likely be something similar in structure to the currently given example. -->
-                                <div class="hidden-xs hidden-sm">
-                                    <xsl:call-template name="buildFooter"/>
                                 </div>
                             </div>
                         </xsl:otherwise>
@@ -699,51 +693,13 @@
     <!-- Like the header, the footer contains various miscellaneous text, links, and image placeholders -->
     <xsl:template name="buildFooter">
         <footer>
-                <div class="row">
-                    <hr/>
-                    <div class="col-xs-4 col-sm-4">
-                        <div>
-                            <a href="http://www.dspace.org/" target="_blank">IITASpace</a> copyright&#160;&#169;&#160;2002-2019&#160;
-                            <p><a href="http://www.iita.org/" target="_blank">International Institute for Tropical Agriculture</a></p>
-                        </div>
-                        <div class="hidden-print">
-                            <a>
-                                <xsl:attribute name="href">
-                                    <xsl:value-of
-                                            select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
-                                    <xsl:text>/contact</xsl:text>
-                                </xsl:attribute>
-                                <i18n:text>xmlui.dri2xhtml.structural.contact-link</i18n:text>
-                            </a>
-                            <xsl:text> | </xsl:text>
-                            <a>
-                                <xsl:attribute name="href">
-                                    <xsl:value-of
-                                            select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
-                                    <xsl:text>/feedback</xsl:text>
-                                </xsl:attribute>
-                                <i18n:text>xmlui.dri2xhtml.structural.feedback-link</i18n:text>
-                            </a>
-                        </div>
+                <div class="site-footer">
+                    <div class="pull-left footer-copyright">
+                        <span>copyright&#160;&#169;&#160;2019&#160; <strong>IITASpace</strong>. All rights reserved.</span>
                     </div>
-                    <div class="col-xs-4 col-sm-4">
-                        <div>
-                            <p class="iita_theme_color">IITA OPEN ACCESS</p> 
-                        </div>
-                        <div>
-                            Making data findable, accessible, interoperable and reusable
-                            <p>Promoting open access.</p>
-                            <a href="http://data.iita.org/" target="_blank">View CKAN Open Access Repository</a> 
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-4 hidden-print">
-                        <div class="pull-right">
-                            <span class="theme-by">IITA is a member of CGIAR&#160;</span>
-                            <br/>
-                            <a title="IITA Big Data" target="_blank" href="cgspace.cgiar.org">
-                                <img alt="IITA Big Data" src="{concat($theme-path, 'images/cg_big_data.png')}"/>
-                            </a>
-                        </div>
+                    <div class="pull-right footer-social">
+                        <a href="http://www.iita.org/" target="_blank">IITA</a> |
+                        <a href="http://data.iita.org/" target="_blank">Open Access Repository</a>
                     </div>
                 </div>
                 <!--Invisible link to HTML sitemap (for search engines) -->
