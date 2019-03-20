@@ -75,6 +75,17 @@
 
                 <!-- puplication related fields -->
                 <field>
+                    <dc-schema>local</dc-schema>
+                    <dc-element>journal</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Journal Title</label>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                    <vocabulary>journals</vocabulary>
+                </field>
+
+                <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier></dc-qualifier>
@@ -191,9 +202,9 @@
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Research Theme</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the reserach theme for the item.</hint>
-                    <required></required>
+                    <input-type value-pairs-name="common_research_themes">dropdown</input-type>
+                    <hint>Enter the research theme for the item.</hint>
+                    <required>Research theme for the item is needed</required>
                 </field>
 
                 <field>
@@ -233,13 +244,13 @@
 
                 <field>
                     <dc-schema>local</dc-schema>
-                    <dc-element>orchid</dc-element>
+                    <dc-element>orcid</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Authors ORCHIDs</label>
+                    <label>Authors ORCIDs</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the ORCHIDS of the authors of this item.</hint>
-                    <required>You must enter at least one orchid</required>
+                    <hint>Enter the ORCIDS of the authors of this item.</hint>
+                    <required>You must enter at least one orcid</required>
                 </field>
                 <field>
                     <dc-schema>local</dc-schema>
@@ -280,9 +291,10 @@
                     <dc-element>afflitiation</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Affilitions</label>
+                    <label>Affiliations</label>
                     <input-type>onebox</input-type>
-                    <required></required>
+                    <required>Please provide an affiliation</required>
+                    <vocabulary>affiliations</vocabulary>
                 </field>
 
                 <field>
@@ -291,9 +303,10 @@
                     <dc-qualifier>sponsorship</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Sponsors</label>
-                    <input-type>textarea</input-type>
+                    <input-type>onebox</input-type>
                     <hint>Enter the names of any sponsors and/or funding codes in the box. </hint>
                     <required></required>
+                    <vocabulary>sponsors</vocabulary>
                 </field>
        
                 <field>
@@ -357,18 +370,6 @@
                     <hint>Enter appropriate subject keywords or phrases. </hint>
                     <required></required>
                     <vocabulary>srsc</vocabulary>
-                </field>
-
-
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>description</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Description</label>
-                    <input-type>textarea</input-type>
-                    <hint>Enter any other description or comments in this box. </hint>
-                    <required></required>
                 </field>
 
                 <field>
@@ -559,6 +560,34 @@
                 <displayed-value>IITA publication</displayed-value>
                 <stored-value>IITA publication</stored-value>
             </pair>
+            <pair>
+                <displayed-value>CGIAR Single Centre</displayed-value>
+                <stored-value>CGIAR Single Centre</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CGIAR Multi Centre</displayed-value>
+                <stored-value>CGIAR Multi Centre</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CGIAR and developing country institute</displayed-value>
+                <stored-value>CGIAR and developing country institute</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CGIAR and advanced research institute</displayed-value>
+                <stored-value>CGIAR and advanced research institute</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Consultant</displayed-value>
+                <stored-value>Consultant</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Not CGIAR developing country institute</displayed-value>
+                <stored-value>Not CGIAR developing country institute</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Not CGIAR international institute</displayed-value>
+                <stored-value>Not CGIAR international institute</stored-value>
+            </pair>
         </value-pairs>
 
         <value-pairs value-pairs-name="common_review_status" dc-term="reviewstatus">
@@ -571,7 +600,6 @@
                 <stored-value>Peer Review</stored-value>
             </pair>
         </value-pairs>
-   
    
         <value-pairs value-pairs-name="common_hubs" dc-term="authorhub">
             <pair>
@@ -591,7 +619,34 @@
                 <stored-value>Headquarters and Western Africa Hub</stored-value>
             </pair>
         </value-pairs>
-
+        
+        <value-pairs value-pairs-name="common_research_themes" dc-term="researchtheme">
+            <pair>
+                <displayed-value>Biometrics</displayed-value>
+                <stored-value>Biometrics</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Biotech and Plant Breeding</displayed-value>
+                <stored-value>Biotech and Plant Breeding</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Natural Resource Management</displayed-value>
+                <stored-value>Natural Resource Management</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Nutrition and Human Health</displayed-value>
+                <stored-value>Nutrition and Human Health</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Plant Production and Health</displayed-value>
+                <stored-value>Plant Production and Health</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Social Science and Agribusiness</displayed-value>
+                <stored-value>Social Science and Agribusiness</stored-value>
+            </pair>
+        </value-pairs>
+        
         <!-- default language order: (from dspace 1.2.1)
            "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
         -->
@@ -1548,7 +1603,6 @@
                 <stored-value>Zimbabwe</stored-value>
             </pair>
           </value-pairs>
-
 
     </form-value-pairs>
 

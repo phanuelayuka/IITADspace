@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<node label="">
+    <isComposedBy>
+        <node id="S0" label="African Agricultural Technology Foundation"/>
+        <node id="S1" label="African Development Bank" />
+        <node id="S2" label="African Union Commission" />
+        <node id="S3" label="Agriculture and Agri-Food Canada" />
+        <node id="S4" label="Alliance for a Green Revolution in Africa" />
+        <node id="S5" label="Amina Ado Foundation" />
+        <node id="S6" label="Asian Development Bank" />
+        <node id="S7" label="Association for Strengthening Agricultural Research in Eastern and Central Africa" />
+        <node id="S8" label="Australian Aid" />
+        <node id="S9" label="Australian Centre for International Agricultural Research" />
+        <node id="S10" label="Austrian Development Agency" />
+        <node id="S11" label="Belgian Development Agency" />
+        <node id="S12" label="Belgium Fonds de la Recherche Scientifique" />
+        <node id="S13" label="Bill and Melinda Gates Foundation" />
+        <node id="S14" label="Biotechnology and Biological Sciences Research Council, United Kingdom" />
+        <node id="S15" label="Biovision Foundation" />
+        <node id="S16" label="CARE" />
+        <node id="S17" label="CGIAR Challenge Programme on Water and Food" />
+        <node id="S18" label="CGIAR Generation Challenge Program" />
+        <node id="S19" label="CGIAR Systemwide Livestock Programme" />
+        <node id="S20" label="CGIAR" />
+        <node id="S21" label="Canadian International Development Agency" />
+        <node id="S22" label="Chevron" />
+        <node id="S23" label="Citrus Research International" />
+        <node id="S24" label="Climate Focus" />
+        <node id="S25" label="Climate and Clean Air Coalition" />
+        <node id="S26" label="Common Fund for Commodities" />
+        <node id="S27" label="Cordaid" />
+        <node id="S28" label="Danish International Development Agency" />
+        <node id="S29" label="Defence Science and Technology Laboratory, United Kingdom" />
+        <node id="S30" label="Department for International Development, United Kingdom" />
+        <node id="S31" label="Department of Foreign Affairs and Trade, Australia" />
+        <node id="S32" label="Department of Foreign Affairs, Trade and Development, Canada" />
+        <node id="S33" label="Deutsche Gesellschaft für Internationale Zusammenarbeit" />
+        <node id="S34" label="Economic and Social Research Council, United Kingdom" />
+        <node id="S35" label="Ecosystem Services for Poverty Alleviation Programme" />
+        <node id="S36" label="Embassy of the Kingdom of the Netherlands in Uganda" />
+        <node id="S37" label="European Commission for the Control of Foot-and-Mouth Disease" />
+        <node id="S38" label="European Commission" />
+        <node id="S39" label="European Union" />
+        <node id="S40" label="Evans Allen Fund" />
+        <node id="S41" label="FONTAGRO" />
+        <node id="S42" label="Fonds pour la Formation it la Recherche dans l'Industrie et dans l' Agriculture" />
+        <node id="S43" label="Food and Agriculture Organization of the United Nations" />
+        <node id="S44" label="Ford Foundation" />
+        <node id="S45" label="Foundation Fiat Panis" />
+        <node id="S46" label="Foundation for Science and Technology" />
+        <node id="S47" label="Fulbright Foundation" />
+        <node id="S48" label="Future Earth" />
+        <node id="S49" label="Generation Challenge Program" />
+        <node id="S50" label="German Academic Exchange Service" />
+        <node id="S51" label="German Federal Ministry for Economic Cooperation and Development" />
+        <node id="S52" label="German Federal Ministry for Education and Research" />
+        <node id="S53" label="German Research Foundation" />
+        <node id="S54" label="Global Affairs Canada" />
+        <node id="S55" label="Global Crop Diversity Trust" />
+        <node id="S56" label="Global Environment Facility" />
+        <node id="S57" label="Global Environment Programme" />
+        <node id="S58" label="Google.org" />
+        <node id="S59" label="HarvestPlus" />
+        <node id="S60" label="HarvetPlus Challenge Program of the Consultative Group on International Agricultural Research" />
+        <node id="S61" label="Hewlett Foundation" />
+        <node id="S62" label="Hivos" />
+        <node id="S63" label="Howard Buffet Foundation" />
+        <node id="S64" label="ICCO" />
+        <node id="S65" label="Innovative Metrics and Methods for Agriculture and Nutrition Actions" />
+        <node id="S66" label="Inter-American Development Bank" />
+        <node id="S67" label="International Atomic Energy Agency" />
+        <node id="S68" label="International Development Research Centre" />
+        <node id="S69" label="International Foundation for Science" />
+        <node id="S70" label="International Fund for Agricultural Development" />
+        <node id="S71" label="International Fund for Agricultural Research" />
+        <node id="S72" label="Irish Aid" />
+        <node id="S73" label="Japan International Cooperation Agency" />
+        <node id="S74" label="Japan International Research Center for Agricultural Sciences" />
+        <node id="S75" label="Japan Science and Technology Organization" />
+        <node id="S76" label="Japanese Society for the Promotion of Science" />
+        <node id="S77" label="Kellogg Foundation" />
+        <node id="S78" label="Kirkhouse Trust" />
+        <node id="S79" label="Koepon Foundation" />
+        <node id="S80" label="Leverhulme Centre for Integrative Research on Agriculture and Health" />
+        <node id="S81" label="Leverhulme Trust" />
+        <node id="S82" label="Liechtenstein Development Service" />
+        <node id="S83" label="Mars Inc." />
+        <node id="S84" label="McKnight Foundation" />
+        <node id="S85" label="Medical Research Council, United Kingdom" />
+        <node id="S86" label="Mercator Foundation Switzerland" />
+        <node id="S87" label="Ministry of Economy and Finance, Italy" />
+        <node id="S88" label="Ministry of Foreign Affairs, Finland" />
+        <node id="S89" label="Ministry of Foreign Affairs, Japan" />
+        <node id="S90" label="Ministry of Foreign Affairs, Netherlands" />
+        <node id="S91" label="Multi-Donors for the Forest and Environment sector Program" />
+        <node id="S92" label="NEPAD Pan African Cassava Initiative" />
+        <node id="S93" label="National Council for Science and Technology, Kenya" />
+        <node id="S94" label="National Natural Science Foundation of China" />
+        <node id="S95" label="National Research Foundation, South Africa" />
+        <node id="S96" label="National Science Foundation of China" />
+        <node id="S97" label="National Science Foundation" />
+        <node id="S98" label="Natural Environment Research Council, United Kingdom" />
+        <node id="S99" label="Netherlands Organisation for International Cooperation in Higher Education" />
+        <node id="S100" label="Netherlands Organisation for Scientific Research" />
+        <node id="S101" label="Nippon Foundation" />
+        <node id="S102" label="Norman Borlaug Commemorative Research Initiative" />
+        <node id="S103" label="Norman E. Borlaug Leadership Enhancement in Agriculture Program" />
+        <node id="S104" label="Norwegian Agency for Development Cooperation" />
+        <node id="S105" label="OPEC Fund for International Development" />
+        <node id="S106" label="Orskov Foundation" />
+        <node id="S107" label="Oxfam Novib" />
+        <node id="S108" label="Pan-African Bean Research Alliance" />
+        <node id="S109" label="Regional Fund for Agricultural Technology" />
+        <node id="S110" label="Regional Universities Forum for Capacity Building in Agriculture" />
+        <node id="S111" label="Rockefeller Foundation" />
+        <node id="S112" label="Royal Zoological Society of Scotland" />
+        <node id="S113" label="Rural Development Administration, Republic of Korea" />
+        <node id="S114" label="Sir Ratan Tata Trust" />
+        <node id="S115" label="Swedish International Development Cooperation Agency" />
+        <node id="S116" label="Swiss Agency for Development and Cooperation" />
+        <node id="S117" label="Swiss Center for International Agriculture" />
+        <node id="S118" label="Swiss National Science Foundation" />
+        <node id="S119" label="Syngenta Foundation for Sustainable Agriculture" />
+        <node id="S120" label="Technical Centre for Agricultural and Rural Cooperation" />
+        <node id="S121" label="U.S. Agency for International Development" />
+        <node id="S122" label="United Nations Development Programme" />
+        <node id="S123" label="United Nations Environment Programme" />
+        <node id="S124" label="United States Agency for International Development" />
+        <node id="S125" label="United States Department of Agriculture" />
+        <node id="S126" label="Veterinarians Without Borders" />
+        <node id="S127" label="Vlaamse Interuniversitaire Raad" />
+        <node id="S128" label="Wellcome Trust" />
+        <node id="S129" label="World Bank" />
+        <node id="S130" label="World Food Prize Foundation" />
+        <node id="S131" label="World Health Organization" />
+    </isComposedBy>
+</node>

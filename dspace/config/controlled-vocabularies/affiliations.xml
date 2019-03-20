@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- affiliations vocabularies -->
+
+<node label="">
+    <isComposedBy>
+        <node id="AF0" label="Aarhus University" />
+        <node id="AF1" label="Aberystwyth University" />
+        <node id="AF2" label="Addis Ababa University" />
+        <node id="AF3" label="Africa Rice Center" />
+        <node id="AF4" label="Africa RISING" />
+        <node id="AF5" label="Agro-Insight" />
+        <node id="AF6" label="Ahmadu Bello University" />
+        <node id="AF7" label="Ain Shams University" />
+        <node id="AF8" label="Alemaya University" />
+        <node id="AF9" label="Amhara Regional Agricultural Research Institute, Ethiopia" />
+        <node id="AF10" label="Asian Development Bank" />
+        <node id="AF11" label="Association for Strengthening Agricultural Research in East and Central Africa" />
+        <node id="AF12" label="Association Malienne d’Eveil au Développement Durable" />
+        <node id="AF13" label="Australian Animal Health Laboratory" />
+        <node id="AF14" label="Australian National University" />
+        <node id="AF15" label="Bahir Dar University" />
+        <node id="AF16" label="Basque Centre for Climate Change" />
+        <node id="AF17" label="Bill and Melinda Gates Foundation" />
+        <node id="AF18" label="Bioversity International" />
+        <node id="AF19" label="CAB International" />
+        <node id="AF20" label="Cambodia Supreme National Economic Council" />
+        <node id="AF21" label="CARE" />
+        <node id="AF22" label="Catholic Relief Services" />
+        <node id="AF23" label="Center for International Forestry Research" />
+        <node id="AF24" label="Center for Public Health and Ecosystem Research, Vietnam" />
+        <node id="AF25" label="Centre de Cooperation Internationale en Recherche Agronomique pour le Developpement" />
+        <node id="AF26" label="Centre Suisse de Recherches Scientifiques en Côte d'Ivoire" />
+        <node id="AF27" label="Centro Agronómico Tropical de Investigación y Enseñanza" />
+        <node id="AF28" label="CGIAR" />
+        <node id="AF29" label="CGIAR Challenge Program on Water and Food" />
+        <node id="AF30" label="CGIAR Research Program on Climate Change, Agriculture and Food Security" />
+        <node id="AF31" label="CGIAR Research Program on Livestock and Fish" />
+        <node id="AF32" label="CGIAR Research Program on Water, Land and Ecosystems" />
+        <node id="AF33" label="Charles Darwin University" />
+        <node id="AF34" label="Chiang Mai University" />
+        <node id="AF35" label="China Agricultural University" />
+        <node id="AF36" label="Chinese Academy of Agricultural Sciences" />
+        <node id="AF37" label="Chinese Academy of Forestry" />
+        <node id="AF38" label="Chinese Academy of Sciences" />
+        <node id="AF39" label="Colorado State University" />
+        <node id="AF40" label="Columbia University" />
+        <node id="AF41" label="Commonwealth Scientific and Industrial Research Organisation" />
+        <node id="AF42" label="Consiglio Nazionale delle Ricerche, Italia" />
+        <node id="AF43" label="Consorcio para el Desarrollo Sostenible de la Ecorregion Andina" />
+        <node id="AF44" label="Cornell University" />
+        <node id="AF45" label="Council for Scientific and Industrial Research, Ghana" />
+        <node id="AF46" label="Crops for the Future, Malaysia" />
+        <node id="AF47" label="Crops Research Institute, Ghana" />
+        <node id="AF48" label="Culture and Environment Preservation Association" />
+        <node id="AF49" label="Debre Berhan University" />
+        <node id="AF50" label="Deutsche Gesellschaft für Internationale Zusammenarbeit" />
+        <node id="AF51" label="Donald Danforth Plant Science Center" />
+        <node id="AF52" label="East Africa Dairy Development Project" />
+        <node id="AF53" label="Eastern and Central Africa Programme for Policy Analysis" />
+        <node id="AF54" label="Egerton University" />
+        <node id="AF55" label="Ekiti State University" />
+        <node id="AF56" label="Eldoret University" />
+        <node id="AF57" label="Empresa Brasileira de Pesquisa Agropecuaria" />
+        <node id="AF58" label="Ethiopian Institute of Agricultural Research" />
+        <node id="AF59" label="European Commission for the Control of Foot-and-Mouth Disease" />
+        <node id="AF60" label="Federal University of Agriculture, Abeokuta" />
+        <node id="AF61" label="Food, Agriculture and Natural Resources Policy Analysis Network" />
+        <node id="AF62" label="Food and Agriculture Organization of the United Nations" />
+        <node id="AF63" label="Forest Research Institute of Malaysia" />
+        <node id="AF64" label="Forum for Agricultural Research in Africa" />
+        <node id="AF65" label="Freie Universität Berlin" />
+        <node id="AF66" label="Fundación PROINPA" />
+        <node id="AF67" label="Ghent University" />
+        <node id="AF68" label="Global Crop Diversity Trust" />
+        <node id="AF69" label="Global Water Partnership" />
+        <node id="AF70" label="Hanoi School of Public Health" />
+        <node id="AF71" label="Haramaya University" />
+        <node id="AF72" label="HarvestPlus" />
+        <node id="AF73" label="Hatfield Consultants" />
+        <node id="AF74" label="Hawassa University" />
+        <node id="AF75" label="Hokkaido University" />
+        <node id="AF76" label="IGAD Sheikh Technical Veterinary School" />
+        <node id="AF77" label="Imperial College, London" />
+        <node id="AF78" label="Indian Council of Agricultural Research" />
+        <node id="AF79" label="Insight Editing London" />
+        <node id="AF80" label="Institut d'Elevage et de Medecine Veterinaire des Pays Tropicaux" />
+        <node id="AF81" label="Institut de Recherche Agricole pour le Developpement, Cameroon" />
+        <node id="AF82" label="Institut de Recherche pour le Développement, France" />
+        <node id="AF83" label="Institut des Sciences Agronomiques du Burundi" />
+        <node id="AF84" label="Institut d’Economic Rurale, Mali" />
+        <node id="AF85" label="Institute of Agricultural Research" />
+        <node id="AF86" label="Institute of Experimental Botany, Czech Republic" />
+        <node id="AF87" label="Institute of Policy and Strategy for Agriculture and Rural Development, Vietnam" />
+        <node id="AF88" label="Institute of Tropical Medicine, Antwerp" />
+        <node id="AF89" label="Institut National de la Recherche Agronomique, France" />
+        <node id="AF90" label="Institut National de la Recherche Agronomique du Niger" />
+        <node id="AF91" label="Institut National des Recherches Agricoles du Bénin" />
+        <node id="AF92" label="Instituto Interamericano de Cooperacion para la Agricultura" />
+        <node id="AF93" label="Instituto Nacional de Innovacion Agraria, Peru" />
+        <node id="AF94" label="Instituto Nacional de Tecnologia Agropecuaria, Argentina" />
+        <node id="AF95" label="Institut Sénégalais de Recherches Agricoles" />
+        <node id="AF96" label="International Center for Agricultural Research in the Dry Areas" />
+        <node id="AF97" label="International Center for Tropical Agriculture" />
+        <node id="AF98" label="International Centre of Insect Physiology and Ecology" />
+        <node id="AF99" label="International Crops Research Institute for the Semi-Arid Tropics" />
+        <node id="AF100" label="International Development Research Centre" />
+        <node id="AF101" label="International Fertilizer Development Center" />
+        <node id="AF102" label="International Food Policy Research Institute" />
+        <node id="AF103" label="International Fund for Agricultural Development" />
+        <node id="AF104" label="International Institute for Applied Systems Analysis" />
+        <node id="AF105" label="International Institute for Environment and Development" />
+        <node id="AF106" label="International Institute of Rural Reconstruction" />
+        <node id="AF107" label="International Institute of Tropical Agriculture" />
+        <node id="AF108" label="International Irrigation Management Institute" />
+        <node id="AF109" label="International Laboratory for Research on Animal Diseases" />
+        <node id="AF110" label="International Livestock Centre for Africa" />
+        <node id="AF111" label="International Livestock Research Institute" />
+        <node id="AF112" label="International Maize and Wheat Improvement Center" />
+        <node id="AF113" label="International Plant Nutrition Institute" />
+        <node id="AF114" label="International Potato Center" />
+        <node id="AF115" label="International Rice Research Institute" />
+        <node id="AF116" label="International Union for Conservation of Nature" />
+        <node id="AF117" label="International Water Management Institute" />
+        <node id="AF118" label="James Hutton Institute" />
+        <node id="AF119" label="Japan International Research Center for Agricultural Sciences" />
+        <node id="AF120" label="Jimma University" />
+        <node id="AF121" label="Johns Hopkins University" />
+        <node id="AF122" label="Jomo Kenyatta University of Agriculture and Technology" />
+        <node id="AF123" label="Kansas State University" />
+        <node id="AF124" label="Karlsruhe Institute of Technology" />
+        <node id="AF125" label="Katholieke Universiteit, Leuven" />
+        <node id="AF126" label="Kenya Agricultural and Livestock Research Organization" />
+        <node id="AF127" label="Kenya Agricultural Research Institute" />
+        <node id="AF128" label="Kenya Medical Research Institute" />
+        <node id="AF129" label="Kenyatta University" />
+        <node id="AF130" label="Kwame Nkrumah University of Science and Technology" />
+        <node id="AF131" label="Kyoto University" />
+        <node id="AF132" label="Ladoke Akintola University of Technology" />
+        <node id="AF133" label="Leibniz Universität Hannover" />
+        <node id="AF134" label="Leverhulme Centre for Integrated Research on Agriculture and Health" />
+        <node id="AF135" label="Local Initiatives for Biodiversity, Research, and Development" />
+        <node id="AF136" label="London School of Hygiene and Tropical Medicine" />
+        <node id="AF137" label="Louisiana State University" />
+        <node id="AF138" label="Mahidol University" />
+        <node id="AF139" label="Makerere University" />
+        <node id="AF140" label="Masinde Muliro University of Science and Technology" />
+        <node id="AF141" label="McGill University" />
+        <node id="AF142" label="Medical Research Council" />
+        <node id="AF143" label="Mekelle University" />
+        <node id="AF144" label="Michigan State University" />
+        <node id="AF145" label="Mikocheni Agricultural Research Institute, Tanzania" />
+        <node id="AF146" label="Ministry of Agriculture, Animal Industry and Fisheries, Uganda" />
+        <node id="AF147" label="Ministry of Agriculture, Botswana" />
+        <node id="AF148" label="Ministry of Agriculture, Ethiopia" />
+        <node id="AF149" label="Ministry of Foreign Affairs, Kenya" />
+        <node id="AF150" label="Ministry of Water Resources and Meteorology, Cambodia" />
+        <node id="AF151" label="National Agricultural Research Organisation, Uganda" />
+        <node id="AF152" label="National Crops Resources Research Institute, Uganda" />
+        <node id="AF153" label="National Livestock Resources Research Institute, Uganda" />
+        <node id="AF154" label="National Museums of Kenya" />
+        <node id="AF155" label="National Root Crops Research Institute, Nigeria" />
+        <node id="AF156" label="National University of Ireland" />
+        <node id="AF157" label="National Veterinary Institute, Sweden" />
+        <node id="AF158" label="Natural Resources Institute, Finland" />
+        <node id="AF159" label="Nature Conservancy" />
+        <node id="AF160" label="Nepal Agricultural Research Council" />
+        <node id="AF161" label="Netherlands Development Organisation" />
+        <node id="AF162" label="North Carolina State University" />
+        <node id="AF163" label="North-West University" />
+        <node id="AF164" label="Norwegian University of Life Sciences" />
+        <node id="AF165" label="Obafemi Awolowo University" />
+        <node id="AF166" label="Ohio State University" />
+        <node id="AF167" label="Organization of African Unity" />
+        <node id="AF168" label="Oromia Agricultural Research Institute, Ethiopia" />
+        <node id="AF169" label="Overseas Development Institute" />
+        <node id="AF170" label="Pan-Africa Bean Research Alliance" />
+        <node id="AF171" label="Pirbright Institute" />
+        <node id="AF172" label="Plum Island Animal Disease Center" />
+        <node id="AF173" label="Public Health Foundation of India" />
+        <node id="AF174" label="Purdue University" />
+        <node id="AF175" label="Rakuno Gakuen University" />
+        <node id="AF176" label="Royal Botanic Gardens, UK" />
+        <node id="AF177" label="Royal Museum for Central Africa, Belgium" />
+        <node id="AF178" label="Royal Tropical Institute" />
+        <node id="AF179" label="Royal Veterinary College, UK" />
+        <node id="AF180" label="Rwanda Agriculture Board" />
+        <node id="AF181" label="Savanna Agricultural Research Institute, Ghana" />
+        <node id="AF182" label="Scotland's Rural College" />
+        <node id="AF183" label="Secretariat of the Pacific Community" />
+        <node id="AF184" label="Sierra Leone Agricultural Research Institute" />
+        <node id="AF185" label="Smallholder Dairy Project" />
+        <node id="AF186" label="Small Ruminant Collaborative Research Support Programme" />
+        <node id="AF187" label="Sokoine University of Agriculture" />
+        <node id="AF188" label="Southern Agricultural Research Institute, Ethiopia" />
+        <node id="AF189" label="Stellenbosch University" />
+        <node id="AF190" label="Stockholm Environment Institute" />
+        <node id="AF191" label="Stockholm University" />
+        <node id="AF192" label="Swedish University of Agricultural Sciences" />
+        <node id="AF193" label="Swiss Federal Institute of Technology" />
+        <node id="AF194" label="Swiss Tropical and Public Health Institute" />
+        <node id="AF195" label="Tanzania Livestock Research Institute" />
+        <node id="AF196" label="Tanzania Society of Animal Production" />
+        <node id="AF197" label="Technical Centre for Agricultural and Rural Cooperation" />
+        <node id="AF198" label="Technical University of Denmark" />
+        <node id="AF199" label="Terra Nuova" />
+        <node id="AF200" label="Texas AandM University" />
+        <node id="AF201" label="Tigray Agricultural Research Institute, Ethiopia" />
+        <node id="AF202" label="Tonle Sap Authority" />
+        <node id="AF203" label="United Nations Development Programme" />
+        <node id="AF204" label="United Nations Environment Program" />
+        <node id="AF205" label="United States Agency for International Development" />
+        <node id="AF206" label="United States Department of Agriculture" />
+        <node id="AF207" label="Universidad del Valle" />
+        <node id="AF208" label="Universidad Nacional Autonoma de Mexico" />
+        <node id="AF209" label="Université Catholique de Louvain" />
+        <node id="AF210" label="Université Catholique du Graben" />
+        <node id="AF211" label="Université Cheikh Anta Diop" />
+        <node id="AF212" label="Université de Dakar" />
+        <node id="AF213" label="Université de Lomé" />
+        <node id="AF214" label="Université de Montpellier" />
+        <node id="AF215" label="Université de Parakou" />
+        <node id="AF216" label="Université d’Abomey Calavi" />
+        <node id="AF217" label="Université d’Agriculture de Kétou" />
+        <node id="AF218" label="Université Libre de Bruxelles" />
+        <node id="AF219" label="Université Nangui Abrogoua" />
+        <node id="AF220" label="University College London" />
+        <node id="AF221" label="University for Development Studies, Ghana" />
+        <node id="AF222" label="University of Aberdeen" />
+        <node id="AF223" label="University of Agricultural Sciences, India" />
+        <node id="AF224" label="University of Alberta" />
+        <node id="AF225" label="University of Arizona" />
+        <node id="AF226" label="University of Basel" />
+        <node id="AF227" label="University of Benin" />
+        <node id="AF228" label="University of Bern" />
+        <node id="AF229" label="University of Birmingham" />
+        <node id="AF230" label="University of Bonn" />
+        <node id="AF231" label="University of British Columbia" />
+        <node id="AF232" label="University of California" />
+        <node id="AF233" label="University of Cambridge" />
+        <node id="AF234" label="University of Catania" />
+        <node id="AF235" label="University of Copenhagen" />
+        <node id="AF236" label="University of Douala" />
+        <node id="AF237" label="University of Dschang" />
+        <node id="AF238" label="University of East Anglia" />
+        <node id="AF239" label="University of Edinburgh" />
+        <node id="AF240" label="University of Exeter" />
+        <node id="AF241" label="University of Florida" />
+        <node id="AF242" label="University of Georgia" />
+        <node id="AF243" label="University of Ghana" />
+        <node id="AF244" label="University of Göttingen" />
+        <node id="AF245" label="University of Greenwich" />
+        <node id="AF246" label="University of Guelph" />
+        <node id="AF247" label="University of Helsinki" />
+        <node id="AF248" label="University of Hohenheim" />
+        <node id="AF249" label="University of Ibadan" />
+        <node id="AF250" label="University of Illinois" />
+        <node id="AF251" label="University of Khartoum" />
+        <node id="AF252" label="University of Kisangani" />
+        <node id="AF253" label="University of KwaZulu-Natal" />
+        <node id="AF254" label="University of Leeds" />
+        <node id="AF255" label="University of Liège" />
+        <node id="AF256" label="University of Liverpool" />
+        <node id="AF257" label="University of London" />
+        <node id="AF258" label="University of Malawi" />
+        <node id="AF259" label="University of Manchester" />
+        <node id="AF260" label="University of Maryland" />
+        <node id="AF261" label="University of Melbourne" />
+        <node id="AF262" label="University of Minnesota" />
+        <node id="AF263" label="University of Miyazaki" />
+        <node id="AF264" label="University of Nairobi" />
+        <node id="AF265" label="University of Natural Resources and Life Sciences, Austria" />
+        <node id="AF266" label="University of New England" />
+        <node id="AF267" label="University of Nottingham" />
+        <node id="AF268" label="University of Oxford" />
+        <node id="AF269" label="University of Pretoria" />
+        <node id="AF270" label="University of Queensland" />
+        <node id="AF271" label="University of Reading" />
+        <node id="AF272" label="University of Saskatchewan" />
+        <node id="AF273" label="University of Sydney" />
+        <node id="AF274" label="University of the Free State" />
+        <node id="AF275" label="University of the Philippines" />
+        <node id="AF276" label="University of Twente" />
+        <node id="AF277" label="University of Vermont" />
+        <node id="AF278" label="University of Washington" />
+        <node id="AF279" label="University of Western Australia" />
+        <node id="AF280" label="University of Wisconsin" />
+        <node id="AF281" label="University of Wuppertal" />
+        <node id="AF282" label="University of Yaoundé" />
+        <node id="AF283" label="University of Zimbabwe" />
+        <node id="AF284" label="University of Zurich" />
+        <node id="AF285" label="Utrecht University" />
+        <node id="AF286" label="Vétérinaires Sans Frontières" />
+        <node id="AF287" label="Vietnam National University of Agriculture" />
+        <node id="AF288" label="Virginia Polytechnic Institute and State University" />
+        <node id="AF289" label="Wageningen University and Research Centre" />
+        <node id="AF290" label="Washington State University" />
+        <node id="AF291" label="Winrock International" />
+        <node id="AF292" label="World Agroforestry Centre" />
+        <node id="AF293" label="World Bank" />
+        <node id="AF294" label="WorldFish" />
+        <node id="AF295" label="World Health Organization" />
+        <node id="AF296" label="World Vegetable Center" />
+        <node id="AF297" label="WRENmedia" />
+        <node id="AF298" label="Yunnan Academy of Agricultural Sciences" />
+    </isComposedBy>
+</node>

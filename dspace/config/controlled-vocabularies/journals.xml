@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<node label="">
+    <isComposedBy>
+        <node id="J0" label="Acta Agronómica" />
+        <node id="J1" label="Acta Horticulturae" />
+        <node id="J2" label="Acta Physiologiae Plantarum" />
+        <node id="J3" label="Acta Tropica" />
+        <node id="J4" label="Acta Veterinaria et Zootechnica Sinica" />
+        <node id="J5" label="Advances in Agronomy" />
+        <node id="J6" label="Advances in Animal Biosciences" />
+        <node id="J7" label="Advances in Virus Research" />
+        <node id="J8" label="African Crop Science Conference Proceedings" />
+        <node id="J9" label="African Crop Science Journal" />
+        <node id="J10" label="African Journal of Agricultural and Resource Economics" />
+        <node id="J11" label="African Journal of Agricultural Research" />
+        <node id="J12" label="African Journal of Biotechnology" />
+        <node id="J13" label="African Journal of Ecology" />
+        <node id="J14" label="African Journal of Food, Agriculture, Nutrition and Development" />
+        <node id="J15" label="African Journal of Microbiology Research" />
+        <node id="J16" label="African Journal of Plant Science" />
+        <node id="J17" label="African Journal of Range and Forage Science" />
+        <node id="J18" label="African Journal of Root and Tuber Crops" />
+        <node id="J19" label="AgClim Letters" />
+        <node id="J20" label="Agrekon" />
+        <node id="J21" label="Agribusiness" />
+        <node id="J22" label="Agricultural and Forest Meteorology" />
+        <node id="J23" label="Agricultural Economics" />
+        <node id="J24" label="Agricultural Economics Research Review" />
+        <node id="J25" label="Agricultural Information Worldwide" />
+        <node id="J26" label="Agricultural Sciences" />
+        <node id="J27" label="Agricultural Systems" />
+        <node id="J28" label="Agricultural Water Management" />
+        <node id="J29" label="Agriculture, Ecosystems and Environment" />
+        <node id="J30" label="Agriculture and Food Security" />
+        <node id="J31" label="Agriculture and Human Values" />
+        <node id="J32" label="Agritrade" />
+        <node id="J33" label="Agroecology and Sustainable Food Systems" />
+        <node id="J34" label="Agroforestry Systems" />
+        <node id="J35" label="Agronomía Colombiana" />
+        <node id="J36" label="Agronomía Mesoamericana" />
+        <node id="J37" label="Agronomy" />
+        <node id="J38" label="Agronomy for Sustainable Development" />
+        <node id="J39" label="Agronomy Journal" />
+        <node id="J40" label="Ambio" />
+        <node id="J41" label="American Journal of Agricultural Economics" />
+        <node id="J42" label="American Journal of Botany" />
+        <node id="J43" label="American Journal of Plant Sciences" />
+        <node id="J44" label="American Journal of Potato Research" />
+        <node id="J45" label="American Journal of Tropical Medicine and Hygiene" />
+        <node id="J46" label="American Journal of Veterinary Research" />
+        <node id="J47" label="Animal" />
+        <node id="J48" label="Animal Feed Science and Technology" />
+        <node id="J49" label="Animal Genetic Resources" />
+        <node id="J50" label="Animal Genetic Resources Information Bulletin" />
+        <node id="J51" label="Animal Genetics" />
+        <node id="J52" label="Animal Health Research Reviews" />
+        <node id="J53" label="Animal Nutrition and Feed Technology" />
+        <node id="J54" label="Animal Production" />
+        <node id="J55" label="Animal Production Science" />
+        <node id="J56" label="Animal Reproduction Science" />
+        <node id="J57" label="Animal Science" />
+        <node id="J58" label="Animal Science Journal" />
+        <node id="J59" label="Annales de la Societe Belge de Medecine Tropicale" />
+        <node id="J60" label="Annals of Botany" />
+        <node id="J61" label="Annals of Nutrition and Metabolism" />
+        <node id="J62" label="Annals of the New York Academy of Sciences" />
+        <node id="J63" label="Annals of Tropical Medicine and Parasitology" />
+        <node id="J64" label="Antimicrobial Agents and Chemotherapy" />
+        <node id="J65" label="AOB Plants" />
+        <node id="J66" label="Applied and Environmental Microbiology" />
+        <node id="J67" label="Applied Geography" />
+        <node id="J68" label="Applied Soil Ecology" />
+        <node id="J69" label="Applied Vegetation Science" />
+        <node id="J70" label="Appropriate Technology" />
+        <node id="J71" label="Aquaculture" />
+        <node id="J72" label="Aquaculture Research" />
+        <node id="J73" label="Archives of Agronomy and Soil Science" />
+        <node id="J74" label="Archives of Phytopathology and Plant Protection" />
+        <node id="J75" label="Archives of Virology" />
+        <node id="J76" label="Archiv fur Tierzucht" />
+        <node id="J77" label="Archivos Latinoamericanos de Producción Animal" />
+        <node id="J78" label="ASCOLFI Informa" />
+        <node id="J79" label="Asian-Australasian Journal of Animal Sciences" />
+        <node id="J80" label="Asian Journal of Agriculture and Development" />
+        <node id="J81" label="Bean Improvement Cooperative" />
+        <node id="J82" label="Biochemical Journal" />
+        <node id="J83" label="Biodiversity and Conservation" />
+        <node id="J84" label="Biogeosciences" />
+        <node id="J85" label="Biological Conservation" />
+        <node id="J86" label="Biological Control" />
+        <node id="J87" label="Biology and Fertility of Soils" />
+        <node id="J88" label="Biomass and Bioenergy" />
+        <node id="J89" label="BioScience" />
+        <node id="J90" label="Biotropica" />
+        <node id="J91" label="BMC Genetics" />
+        <node id="J92" label="BMC Genomics" />
+        <node id="J93" label="BMC Infectious Diseases" />
+        <node id="J94" label="BMC Plant Biology" />
+        <node id="J95" label="BMC Public Health" />
+        <node id="J96" label="BMC Veterinary Research" />
+        <node id="J97" label="Bois et Forets des Tropiques" />
+        <node id="J98" label="Bois et Forêts des Tropiques" />
+        <node id="J99" label="Borneo Research Bulletin" />
+        <node id="J100" label="British Journal of Nutrition" />
+        <node id="J101" label="Bulletin of Entomological Research" />
+        <node id="J102" label="Bulletin of the Ecological Society of America" />
+        <node id="J103" label="Bulletin of the World Health Organization" />
+        <node id="J104" label="Bulletin of Animal Health and Production in Africa" />
+        <node id="J106" label="Cahiers Agricultures" />
+        <node id="J107" label="Canadian Journal of Agricultural Economics" />
+        <node id="J108" label="Canadian Journal of Plant Pathology" />
+        <node id="J109" label="Canadian Journal of Plant Science" />
+        <node id="J110" label="Carbohydrate Polymers" />
+        <node id="J111" label="Catena" />
+        <node id="J112" label="CGIAR News" />
+        <node id="J113" label="China Animal Husbandry and Veterinary Medicine" />
+        <node id="J114" label="CIPEA Bulletin" />
+        <node id="J115" label="CIPEA Newsletter" />
+        <node id="J116" label="Climate and Development" />
+        <node id="J117" label="Climate Change" />
+        <node id="J118" label="Climate Research" />
+        <node id="J119" label="Climatic Change" />
+        <node id="J120" label="Clinical and Experimental Immunology" />
+        <node id="J121" label="Cogent Economics and Finance" />
+        <node id="J122" label="Collective Action News" />
+        <node id="J123" label="Commonwealth Forestry Review" />
+        <node id="J124" label="Communications in Soil Science and Plant Analysis" />
+        <node id="J125" label="Comparative Haematology International" />
+        <node id="J126" label="Computers and Electronics in Agriculture" />
+        <node id="J127" label="Connaissance pour le développement" />
+        <node id="J128" label="Conservation and Society" />
+        <node id="J129" label="Conservation Biology" />
+        <node id="J130" label="Conservation Ecology" />
+        <node id="J131" label="Conservation Letters" />
+        <node id="J132" label="CPWF Newsletter" />
+        <node id="J133" label="Crop Protection" />
+        <node id="J134" label="Crop Science" />
+        <node id="J135" label="CryoLetters" />
+        <node id="J136" label="Current Opinion in Environmental Sustainability" />
+        <node id="J137" label="Currents" />
+        <node id="J138" label="Current Science" />
+        <node id="J139" label="Development and Change" />
+        <node id="J140" label="Development in Practice" />
+        <node id="J141" label="Development Policy Review" />
+        <node id="J142" label="Discovery and Innovation" />
+        <node id="J143" label="Diversity" />
+        <node id="J144" label="East African Agricultural and Forestry Journal" />
+        <node id="J145" label="East African Medical Journal" />
+        <node id="J146" label="EcoHealth" />
+        <node id="J147" label="Ecological Applications" />
+        <node id="J148" label="Ecological Economics" />
+        <node id="J149" label="Ecological Indicators" />
+        <node id="J150" label="Ecological Modelling" />
+        <node id="J151" label="Ecology and Society" />
+        <node id="J152" label="Economic Botany" />
+        <node id="J153" label="Ecosystems" />
+        <node id="J154" label="Ecosystem Services" />
+        <node id="J155" label="Emerging Infectious Diseases" />
+        <node id="J156" label="Energy Economics" />
+        <node id="J157" label="Entwicklung und Laendlicher Raum" />
+        <node id="J158" label="Environment, Development and Sustainability" />
+        <node id="J159" label="Environmental Conservation" />
+        <node id="J160" label="Environmental Earth Sciences" />
+        <node id="J161" label="Environmental Flows" />
+        <node id="J162" label="Environmental Management" />
+        <node id="J163" label="Environmental Modelling and Software" />
+        <node id="J164" label="Environmental Monitoring and Assessment" />
+        <node id="J165" label="Environmental Research Letters" />
+        <node id="J166" label="Environmental Science and Policy" />
+        <node id="J167" label="Environment and Development Economics" />
+        <node id="J168" label="Epidemiology and Infection" />
+        <node id="J169" label="Epidemiology and Infection" />
+        <node id="J170" label="Esporo" />
+        <node id="J171" label="ETFRN News" />
+        <node id="J172" label="Ethiopian Journal of Animal Production" />
+        <node id="J173" label="Ethiopian Journal of Science" />
+        <node id="J174" label="Ethiopian Veterinary Journal" />
+        <node id="J175" label="Euphytica" />
+        <node id="J176" label="European Journal of Agronomy" />
+        <node id="J177" label="European Journal of Biochemistry" />
+        <node id="J178" label="European Journal of Cell Biology" />
+        <node id="J179" label="European Journal of Development Research" />
+        <node id="J180" label="European Journal of Immunology" />
+        <node id="J181" label="European Journal of Plant Pathology" />
+        <node id="J182" label="European Journal of Plant Science and Biotechnology" />
+        <node id="J183" label="European Journal of Soil Biology" />
+        <node id="J184" label="Experimental Agriculture" />
+        <node id="J185" label="Experimental and Applied Acarology" />
+        <node id="J186" label="Experimental Parasitology" />
+        <node id="J187" label="FANRPAN Dialogue Newsletter" />
+        <node id="J188" label="FAO World Animal Review" />
+        <node id="J189" label="Farming Matters" />
+        <node id="J190" label="FASEB Journal" />
+        <node id="J191" label="Field Crops Research" />
+        <node id="J192" label="Fitopatología Colombiana" />
+        <node id="J193" label="Florida Entomologist" />
+        <node id="J194" label="FMIS Newsletter" />
+        <node id="J195" label="Food and Nutrition Bulletin" />
+        <node id="J196" label="Food Chemistry" />
+        <node id="J197" label="Food Control" />
+        <node id="J198" label="Food Policy" />
+        <node id="J199" label="Food Science and Nutrition" />
+        <node id="J200" label="Food Security" />
+        <node id="J201" label="Forest Ecology and Management" />
+        <node id="J202" label="Forest Policy and Economics" />
+        <node id="J203" label="Forests" />
+        <node id="J204" label="Forests, Trees and Livelihoods" />
+        <node id="J205" label="Frontiers in Plant Science" />
+        <node id="J206" label="Fruits" />
+        <node id="J207" label="Functional Plant Biology" />
+        <node id="J208" label="Gender, Technology and Development" />
+        <node id="J209" label="Gene" />
+        <node id="J210" label="Genetic Resources and Crop Evolution" />
+        <node id="J211" label="Genetics" />
+        <node id="J212" label="Genome" />
+        <node id="J213" label="Genome Announcements" />
+        <node id="J214" label="Geoderma" />
+        <node id="J215" label="Geoforum" />
+        <node id="J216" label="Ghana Journal of Agricultural Science" />
+        <node id="J217" label="Global Biogeochemical Cycles" />
+        <node id="J218" label="Global Change Biology" />
+        <node id="J219" label="Global Ecology and Biogeograph" />
+        <node id="J220" label="Global Environmental Change" />
+        <node id="J221" label="Global Food Security" />
+        <node id="J222" label="Grass and Forage Science" />
+        <node id="J223" label="Heredity" />
+        <node id="J224" label="HortScience" />
+        <node id="J225" label="Human Ecology" />
+        <node id="J226" label="Human Health and Forests" />
+        <node id="J227" label="Hydrological Processes" />
+        <node id="J228" label="Hydrology and Earth System Sciences" />
+        <node id="J229" label="ICT Update" />
+        <node id="J230" label="IIMI Review" />
+        <node id="J231" label="ILCA Bulletin" />
+        <node id="J232" label="ILCA Newsletter" />
+        <node id="J233" label="ILCA Small Ruminant and Camel Group Newsletter" />
+        <node id="J234" label="ILCA Small Ruminant Research Network Newsletter" />
+        <node id="J235" label="ILRAD Reports" />
+        <node id="J236" label="ILRI/ICRAF Alignment and Collective Action Updates Newsletter" />
+        <node id="J237" label="Immunogenetics" />
+        <node id="J238" label="Immunology" />
+        <node id="J239" label="Indian Journal of Agricultural Economics" />
+        <node id="J240" label="Indian Journal of Agricultural Sciences" />
+        <node id="J241" label="Indian Journal of Animal Sciences" />
+        <node id="J242" label="Indian Journal of Plant Genetic Resources" />
+        <node id="J243" label="Infection, Genetics and Evolution" />
+        <node id="J244" label="Infection and Immunity" />
+        <node id="J245" label="Infectious Diseases of Poverty" />
+        <node id="J246" label="Information Development" />
+        <node id="J247" label="Information Techniques for Irrigation Systems" />
+        <node id="J248" label="Insect Science and its Application" />
+        <node id="J249" label="Interbulletin" />
+        <node id="J250" label="International Food and Agribusiness Management Review" />
+        <node id="J251" label="International Forestry Review" />
+        <node id="J252" label="International Irrigation Management Institute Review" />
+        <node id="J253" label="International Journal for Parasitology" />
+        <node id="J254" label="International Journal of Agricultural Resources, Governance and Ecology" />
+        <node id="J255" label="International Journal of Agricultural Sustainability" />
+        <node id="J256" label="International Journal of Agronomy and Agricultural Research" />
+        <node id="J257" label="International Journal of Applied Earth Observation and Geoinformation" />
+        <node id="J258" label="International Journal of Biodiversity and Conservation" />
+        <node id="J259" label="International Journal of Biological and Chemical Sciences" />
+        <node id="J260" label="International Journal of Climate Change Strategies and Management" />
+        <node id="J261" label="International Journal of Environmental Research and Public Health" />
+        <node id="J262" label="International Journal of Environmental Studies" />
+        <node id="J263" label="International Journal of Food Microbiology" />
+        <node id="J264" label="International Journal of Health Geographics" />
+        <node id="J265" label="International Journal of Infectious Diseases" />
+        <node id="J266" label="International Journal of Parasitology" />
+        <node id="J267" label="International Journal of Pest Management" />
+        <node id="J268" label="International Journal of Plant Production" />
+        <node id="J269" label="International Journal of Poultry Science" />
+        <node id="J270" label="International Journal of Public Health" />
+        <node id="J271" label="International Journal of Remote Sensing" />
+        <node id="J272" label="International Journal of Social Forestry" />
+        <node id="J273" label="International Journal of Sustainable Development and World Ecology" />
+        <node id="J274" label="International Journal of the Commons" />
+        <node id="J275" label="International Journal of Tropical Insect Science" />
+        <node id="J276" label="International Journal of Vegetable Science" />
+        <node id="J277" label="International Journal of Water Resources Development" />
+        <node id="J278" label="International Rice Research Newsletter" />
+        <node id="J279" label="International Rice Research Notes" />
+        <node id="J280" label="International Sorghum and Millets Newsletter" />
+        <node id="J281" label="International Tree Crops Journal" />
+        <node id="J282" label="Irrigation and Drainage" />
+        <node id="J283" label="ITTO Tropical Forest Update" />
+        <node id="J284" label="IWMI-Tata Comment" />
+        <node id="J285" label="IWMI-Tata Water Policy Research Highlight" />
+        <node id="J286" label="Jala Puwath" />
+        <node id="J287" label="Journal for Nature Conservation" />
+        <node id="J288" label="Journal of African Economies" />
+        <node id="J289" label="Journal of Agricultural and Food Chemistry" />
+        <node id="J290" label="Journal of Agricultural Economics" />
+        <node id="J291" label="Journal of Agricultural Education and Extension" />
+        <node id="J292" label="Journal of Agricultural Extension and Rural Development" />
+        <node id="J293" label="Journal of Agricultural Science" />
+        <node id="J294" label="Journal of Agriculture and Development" />
+        <node id="J295" label="Journal of Agriculture and Rural Development in the Tropics and Subtropics" />
+        <node id="J296" label="Journal of Agronomy and Crop Science" />
+        <node id="J297" label="Journal of Animal Breeding and Genetics" />
+        <node id="J298" label="Journal of Animal Physiology and Animal Nutrition" />
+        <node id="J299" label="Journal of Animal Production Research" />
+        <node id="J300" label="Journal of Animal Science" />
+        <node id="J301" label="Journal of Applied Animal Research" />
+        <node id="J302" label="Journal of Applied Biosciences" />
+        <node id="J303" label="Journal of Applied Ecology" />
+        <node id="J304" label="Journal of Applied Entomology" />
+        <node id="J305" label="Journal of Applied Research in Veterinary Medicine" />
+        <node id="J306" label="Journal of Arid Environments" />
+        <node id="J307" label="Journal of Biogeography" />
+        <node id="J308" label="Journal of Biological Chemistry" />
+        <node id="J309" label="Journal of Cell Biology" />
+        <node id="J310" label="Journal of Cell Science" />
+        <node id="J311" label="Journal of Cleaner Production" />
+        <node id="J312" label="Journal of Climate" />
+        <node id="J313" label="Journal of Crop Improvement" />
+        <node id="J314" label="Journal of Dairy Science" />
+        <node id="J315" label="Journal of Development and Agricultural Economics" />
+        <node id="J316" label="Journal of Development Studies" />
+        <node id="J317" label="Journal of Ecology" />
+        <node id="J318" label="Journal of Economic Entomology" />
+        <node id="J319" label="Journal of Economics and Sustainable Development" />
+        <node id="J320" label="Journal of Environmental Management" />
+        <node id="J321" label="Journal of Experimental Botany" />
+        <node id="J322" label="Journal of Food, Agriculture and Environment" />
+        <node id="J323" label="Journal of Food and Nutrition Research" />
+        <node id="J324" label="Journal of Food Composition and Analysis" />
+        <node id="J325" label="Journal of Food Protection" />
+        <node id="J326" label="Journal of Gansu Agricultural University" />
+        <node id="J327" label="Journal of Gender, Agriculture and Food Security" />
+        <node id="J328" label="Journal of General Virology" />
+        <node id="J329" label="Journal of Heredity" />
+        <node id="J330" label="Journal of Horticulture and Forestry" />
+        <node id="J331" label="Journal of Hydrology" />
+        <node id="J332" label="Journal of Immunological Methods" />
+        <node id="J333" label="Journal of Immunology" />
+        <node id="J334" label="Journal of Nutrition" />
+        <node id="J335" label="Journal of Parasitology" />
+        <node id="J336" label="Journal of Pest Science" />
+        <node id="J337" label="Journal of Phytopathology" />
+        <node id="J338" label="Journal of Plant Breeding and Crop Science" />
+        <node id="J339" label="Journal of Plant Genetic Resources" />
+        <node id="J340" label="Journal of Plant Nutrition" />
+        <node id="J341" label="Journal of Plant Nutrition (USA)" />
+        <node id="J342" label="Journal of Plant Registrations" />
+        <node id="J343" label="Journal of Practical Medicine" />
+        <node id="J344" label="Journal of Proteomics" />
+        <node id="J345" label="Journal of Protozoology" />
+        <node id="J346" label="Journal of Range Management" />
+        <node id="J347" label="Journal of Root Crops" />
+        <node id="J348" label="Journal of SAT Agricultural Research" />
+        <node id="J349" label="Journal of South African Veterinary Association" />
+        <node id="J350" label="Journal of Stored Products Research" />
+        <node id="J351" label="Journal of Sustainable Agriculture" />
+        <node id="J352" label="Journal of Sustainable Forestry" />
+        <node id="J353" label="Journal of the Science of Food and Agriculture" />
+        <node id="J354" label="Journal of Tropical Forest Science" />
+        <node id="J355" label="Journal of Veterinary Epidemiology" />
+        <node id="J356" label="Journal of Veterinary Medical Science" />
+        <node id="J357" label="Journal of Virological Methods" />
+        <node id="J358" label="Journal of Virology" />
+        <node id="J359" label="Journal of Zoology" />
+        <node id="J360" label="Kenya Veterinarian" />
+        <node id="J361" label="Knowledge Management for Development Journal" />
+        <node id="J362" label="Lancet" />
+        <node id="J363" label="Land Degradation and Development" />
+        <node id="J364" label="Land Use Policy" />
+        <node id="J365" label="Lao Journal of Agriculture and Forestry" />
+        <node id="J366" label="Leisa Magazine" />
+        <node id="J367" label="Livestock Production Science" />
+        <node id="J368" label="Livestock Research for Rural Development" />
+        <node id="J369" label="Livestock Science" />
+        <node id="J370" label="Mammalian Genome" />
+        <node id="J371" label="Maydica" />
+        <node id="J372" label="Medical and Veterinary Entomology" />
+        <node id="J373" label="Mitigation and Adaptation Strategies for Global Change" />
+        <node id="J374" label="Molecular and Biochemical Parasitology" />
+        <node id="J375" label="Molecular Breeding" />
+        <node id="J376" label="Molecular Ecology" />
+        <node id="J377" label="Molecular Plant Pathology" />
+        <node id="J378" label="Mountain Research and Development" />
+        <node id="J379" label="Natural Resources Forum" />
+        <node id="J380" label="Nature" />
+        <node id="J381" label="Nature and Faune" />
+        <node id="J382" label="Nature Climate Change" />
+        <node id="J383" label="Nature Communications" />
+        <node id="J384" label="Nature Genetics" />
+        <node id="J385" label="Nematology" />
+        <node id="J386" label="Neotropical Entomology" />
+        <node id="J387" label="New Forests" />
+        <node id="J388" label="New Phytologist" />
+        <node id="J389" label="Nucleic Acids Research" />
+        <node id="J390" label="Nutrient Cycling in Agroecosystems" />
+        <node id="J391" label="Onderstepoort Journal of Veterinary Research" />
+        <node id="J392" label="Oryx" />
+        <node id="J393" label="Outlook on Agriculture" />
+        <node id="J394" label="Parasite Immunology" />
+        <node id="J395" label="Parasites and Vectors" />
+        <node id="J396" label="Parasitology" />
+        <node id="J397" label="Parasitology Research" />
+        <node id="J398" label="Parasitology Today" />
+        <node id="J399" label="Pasturas Tropicales" />
+        <node id="J400" label="Pest Management Science" />
+        <node id="J401" label="Philosophical Transactions of the Royal Society B" />
+        <node id="J402" label="Physics and Chemistry of the Earth" />
+        <node id="J403" label="Phytopathology" />
+        <node id="J404" label="Plant and Soil" />
+        <node id="J405" label="Plant Cell, Tissue and Organ Culture" />
+        <node id="J406" label="Plant Disease" />
+        <node id="J407" label="Plant Ecology" />
+        <node id="J408" label="Plant Genetic Resources: Characterization and Utilization" />
+        <node id="J409" label="Plant Molecular Biology" />
+        <node id="J410" label="Plant Pathology" />
+        <node id="J411" label="Plant Science" />
+        <node id="J412" label="PLOS Neglected Tropical Diseases" />
+        <node id="J413" label="PLOS ONE" />
+        <node id="J414" label="Potato Journal" />
+        <node id="J415" label="Potato Research" />
+        <node id="J416" label="Preventive Veterinary Medicine" />
+        <node id="J417" label="Proceedings of the National Academy of Sciences of the United States of America" />
+        <node id="J419" label="Public Health Nutrition" />
+        <node id="J420" label="Quarterly Journal of International Agriculture" />
+        <node id="J421" label="Rangeland Journal" />
+        <node id="J422" label="Recursos Naturales y Ambiente" />
+        <node id="J423" label="Regional Environmental Change" />
+        <node id="J424" label="Remote Sensing" />
+        <node id="J425" label="Remote Sensing of Environment" />
+        <node id="J426" label="Renewable Agriculture and Food Systems" />
+        <node id="J427" label="Research in Veterinary Science" />
+        <node id="J428" label="Revista Brasileira de Sementes" />
+        <node id="J429" label="Revista Colombiana de Entomología" />
+        <node id="J430" label="Revista Corpoica" />
+        <node id="J431" label="Revista Forestal del Peru" />
+        <node id="J432" label="Revista Latinoamericana de la Papa" />
+        <node id="J433" label="Revista Peruana de Biologia" />
+        <node id="J434" label="Revue Africaine de Santé et de Productions Animales" />
+        <node id="J435" label="Revue d’élevage et de médecine vétérinaire des pays tropicaux" />
+        <node id="J436" label="Revue Scientifique et Technique d l'OIE" />
+        <node id="J437" label="Rural 21" />
+        <node id="J438" label="Science" />
+        <node id="J439" label="Scientia Horticulturae" />
+        <node id="J440" label="Scientific Reports" />
+        <node id="J441" label="Seed Science and Technology" />
+        <node id="J442" label="Small Ruminant Research" />
+        <node id="J443" label="Small-scale Forest Economics, Management and Policy" />
+        <node id="J444" label="Society and Natural Resources" />
+        <node id="J445" label="Soil and Tillage Research" />
+        <node id="J446" label="Soil Biology and Biochemistry" />
+        <node id="J447" label="Soil Science Society of America Journal" />
+        <node id="J448" label="South African Journal of Animal Science" />
+        <node id="J449" label="Spore" />
+        <node id="J450" label="SpringerPlus" />
+        <node id="J451" label="Sudan Journal of Animal Production" />
+        <node id="J452" label="Sudan Journal of Veterinary Science and Animal Husbandry" />
+        <node id="J453" label="Suelos Ecuatoriales" />
+        <node id="J454" label="Sustainability" />
+        <node id="J455" label="The Journal of Environment and Development" />
+        <node id="J456" label="The News - F.O.P. of IIMI" />
+        <node id="J457" label="Theoretical and Applied Climatology" />
+        <node id="J458" label="Theoretical and Applied Genetics" />
+        <node id="J459" label="Theriogenology" />
+        <node id="J460" label="Ticks and Tick-borne Diseases" />
+        <node id="J461" label="Tissue and Cell" />
+        <node id="J462" label="Transactions of the Royal Society of Tropical Medicine and Hygiene" />
+        <node id="J463" label="Transboundary and Emerging Diseases" />
+        <node id="J464" label="Tree Genetics and Genomes" />
+        <node id="J465" label="Trends in Ecology and Evolution" />
+        <node id="J466" label="Trends in Parasitology" />
+        <node id="J467" label="Tropical Agriculture" />
+        <node id="J468" label="Tropical and Subtropical Agroecosystems" />
+        <node id="J469" label="Tropical Animal Health and Production" />
+        <node id="J470" label="Tropical Animal Production" />
+        <node id="J471" label="Tropical Grasslands" />
+        <node id="J472" label="Tropical Medicine and International Health" />
+        <node id="J473" label="Tropical Medicine and Parasitology" />
+        <node id="J474" label="Tropical Plant Biology" />
+        <node id="J475" label="Tropical Science" />
+        <node id="J476" label="Tropicultura" />
+        <node id="J477" label="Unasylva" />
+        <node id="J478" label="Vaccine" />
+        <node id="J479" label="Veterinary Immunology and Immunopathology" />
+        <node id="J480" label="Veterinary Journal" />
+        <node id="J481" label="Veterinary Microbiology" />
+        <node id="J482" label="Veterinary Parasitology" />
+        <node id="J483" label="Veterinary Record" />
+        <node id="J484" label="Veterinary Research" />
+        <node id="J485" label="Veterinary Research Communications" />
+        <node id="J486" label="Vietnamese Journal of Preventive Medicine" />
+        <node id="J487" label="Vietnam Journal of Public Health" />
+        <node id="J488" label="Virus Research" />
+        <node id="J489" label="Water" />
+        <node id="J490" label="Water Alternatives" />
+        <node id="J491" label="Water Figures" />
+        <node id="J492" label="Water International" />
+        <node id="J493" label="Water Matters" />
+        <node id="J494" label="Water Policy" />
+        <node id="J495" label="Water Resources and Rural Development" />
+        <node id="J496" label="Weather and Climate Extremes" />
+        <node id="J497" label="World Animal Review" />
+        <node id="J498" label="World Development" />
+        <node id="J499" label="World Review of Animal Production" />
+        <node id="J500" label="Zimbabwe Science News" />
+    </isComposedBy>
+</node>
