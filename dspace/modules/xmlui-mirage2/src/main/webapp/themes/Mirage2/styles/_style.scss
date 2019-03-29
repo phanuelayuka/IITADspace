@@ -349,6 +349,28 @@ footer .site-footer{
   transition: max-height 0.2s ease-out;
 }
 
+/* Image thumbnails */
+.img-thumbnail{
+  background: none;
+  border: none;
+  padding:0px;
+}
+.thumbnail{
+  position: relative;
+  background: #ddd;
+  overflow: hidden;
+  padding:0px;
+}
+.thumbnail:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 10px solid;
+  border-color: white white #ddd #ddd;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6), -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 /* Pagination */
 .pagination-info{
   padding: 6px 15px;
