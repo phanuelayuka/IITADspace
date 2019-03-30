@@ -14,7 +14,7 @@
     <!-- the mapping for handle "default".                                    -->
 
     <form-map>
-        <name-map collection-handle="default" form-name="traditional" />
+        <name-map collection-handle="default" form-name="traditional"/>
     </form-map>
 
 
@@ -69,22 +69,60 @@
                     <input-type>date</input-type>
                     <hint>Please give the date of previous publication or public distribution.
                         You can leave out the day and/or month if they aren't
-                        applicable.</hint>
+                        applicable.
+                    </hint>
                     <required>You must enter at least the year.</required>
                 </field>
 
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of twobox MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Subject Keywords (Agrovoc Keywords)</label>
+                    <input-type>twobox</input-type>
+                    <hint>Enter appropriate subject keywords or phrases. Click the link below to select</hint>
+                    <required></required>
+                    <vocabulary closed="true">agrovoc_terms</vocabulary>
+                </field>
+
+
+                <field>
+                    <dc-schema>local</dc-schema>
+                    <dc-element>iitasubject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>IITA Subjects</label>
+                    <repeatable>true</repeatable>
+                    <input-type value-pairs-name="common_iita_subject">dropdown</input-type>
+                    <hint>Select the IITA Subject type of the item.</hint>
+                    <required></required>
+                </field>
+
                 <!-- puplication related fields -->
+                <field>
+                    <dc-schema>local</dc-schema>
+                    <dc-element>journal</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Journal Title</label>
+                    <input-type>onebox</input-type>
+                    <hint>Click the link below to select predefined journal titles</hint>
+                    <required></required>
+                    <vocabulary>journals</vocabulary>
+                </field>
+
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Publisher</label>
+                    <label>Publisher Name</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
                     <required></required>
                 </field>
-       
+
                 <field>
                     <dc-schema>local</dc-schema>
                     <dc-element>publicationplace</dc-element>
@@ -114,7 +152,7 @@
                     <repeatable>false</repeatable>
                     <label>Abstract</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter the abstract of the item. </hint>
+                    <hint>Enter the abstract of the item.</hint>
                     <required></required>
                 </field>
 
@@ -133,12 +171,13 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
                     <repeatable>true</repeatable>
                     <label>Identifiers</label>
                     <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-                    <hint>If the item has any identification numbers or codes associated with it, please enter the types and the actual numbers or codes.</hint>
-                    <required></required>
+                    <hint>If the item has any identification numbers or codes associated with it, please enter the types
+                        and the actual numbers or codes.
+                    </hint>
+                    <required>This is a required meatadata field</required>
                 </field>
 
                 <field>
@@ -148,8 +187,10 @@
                     <repeatable>true</repeatable>
                     <label>Type</label>
                     <input-type value-pairs-name="common_types">dropdown</input-type>
-                    <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
-                    <required></required>
+                    <hint>Select the type(s) of content of the item. To select more than one value in the list, you may
+                        have to hold down the "CTRL" or "Shift" key.
+                    </hint>
+                    <required>Please select the type of the submission</required>
                 </field>
 
                 <field>
@@ -158,30 +199,29 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Reveiw Status</label>
                     <input-type value-pairs-name="common_review_status">dropdown</input-type>
-                    <hint>Select the type(s) of review of the item.</hint>
-                    <required>true</required>
+                    <hint></hint>
+                    <required></required>
                 </field>
 
                 <field>
                     <dc-schema>local</dc-schema>
-                    <dc-element>regionoffocus</dc-element>
+                    <dc-element>regionofresearch</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Regions of Focus</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the main regions of focus for the item.</hint>
+                    <label>Region where this research was done</label>
+                    <input-type value-pairs-name="common_regions">dropdown</input-type>
                     <required></required>
                 </field>
-                
-                
+
+
                 <field>
                     <dc-schema>local</dc-schema>
                     <dc-element>country</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Contries</label>
+                    <label>Contries where research was conducted</label>
                     <input-type value-pairs-name="common_countries">dropdown</input-type>
-                    <hint>Enter the counties associated with instance of this item.</hint>
+                    <hint>You can selected more than one country</hint>
                     <required></required>
                 </field>
 
@@ -189,25 +229,25 @@
                     <dc-schema>local</dc-schema>
                     <dc-element>researchtheme</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Research Theme</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the reserach theme for the item.</hint>
+                    <input-type value-pairs-name="common_research_themes">dropdown</input-type>
+                    <hint>Enter the research theme for the item.</hint>
                     <required></required>
                 </field>
 
                 <field>
                     <dc-schema>local</dc-schema>
-                    <dc-element>scienceresearcharea</dc-element>
+                    <dc-element>targetaudience</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Science Research Area</label>
-                    <hint>Enter the science research area for the item.</hint>
-                    <input-type>onebox</input-type>
+                    <repeatable>true</repeatable>
+                    <label>Target Audience</label>
+                    <input-type value-pairs-name="common_audiences">dropdown</input-type>
                     <required></required>
                 </field>
+
             </page>
-     
+
             <page number="2">
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -217,9 +257,9 @@
                     <label>Authors</label>
                     <input-type>name</input-type>
                     <hint>Enter the names of the authors of this item.</hint>
-                    <required></required>
+                    <required>Athours profiles is a mandatory metadata field.</required>
                 </field>
-       
+
                 <field>
                     <dc-schema>local</dc-schema>
                     <dc-element>authorsemail</dc-element>
@@ -233,13 +273,13 @@
 
                 <field>
                     <dc-schema>local</dc-schema>
-                    <dc-element>orchid</dc-element>
+                    <dc-element>orcid</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Authors ORCHIDs</label>
+                    <label>Authors ORCIDs</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the ORCHIDS of the authors of this item.</hint>
-                    <required>You must enter at least one orchid</required>
+                    <hint>Enter the ORCIDS of the authors of this item.</hint>
+                    <required></required>
                 </field>
                 <field>
                     <dc-schema>local</dc-schema>
@@ -247,20 +287,18 @@
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Authors CRP</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the CRP of the authors of this item.</hint>
-                    <required>You must enter at least one CRP</required>
+                    <input-type value-pairs-name="common_crp">dropdown</input-type>
+                    <required></required>
                 </field>
-       
+
                 <field>
                     <dc-schema>local</dc-schema>
                     <dc-element>authorhub</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Authors Hubs</label>
-                    <required>You must select at least one hub</required>
+                    <required></required>
                     <input-type value-pairs-name="common_hubs">dropdown</input-type>
-                    <hint>Select the author hub of the main content of the item.</hint>
                 </field>
 
                 <field>
@@ -268,50 +306,72 @@
                     <dc-element>authorshiptype</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Authorship Type</label>
-                    <required>You must select at least one authorship type</required>
+                    <required></required>
                     <input-type value-pairs-name="common_authorship">dropdown</input-type>
                     <hint>Select the authorship of the main content of the item.</hint>
                 </field>
+
+                <field>
+                    <dc-schema>local</dc-schema>
+                    <dc-element>isistatus</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable></repeatable>
+                    <label>ISI Status</label>
+                    <required></required>
+                    <input-type value-pairs-name="common_isi_status">dropdown</input-type>
+                </field>
+
+                <field>
+                    <dc-schema>local</dc-schema>
+                    <dc-element>accessibilitystatus</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable></repeatable>
+                    <label>Accessibility Status</label>
+                    <required>This is a required metadata field </required>
+                    <input-type value-pairs-name="common_accesibility_status">dropdown</input-type>
+                </field>
+
+                <field>
+                    <dc-schema>local</dc-schema>
+                    <dc-element>usagerightslicense</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable></repeatable>
+                    <label>Usage Rights License</label>
+                    <required>You must select at least one usage right license</required>
+                    <input-type value-pairs-name="common_usage_rights">dropdown</input-type>
+                </field>
+
             </page>
 
             <page number="3">
                 <field>
                     <dc-schema>local</dc-schema>
-                    <dc-element>afflitiation</dc-element>
+                    <dc-element>affiliation</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Affilitions</label>
+                    <label>Affiliations</label>
                     <input-type>onebox</input-type>
                     <required></required>
+                    <vocabulary>affiliations</vocabulary>
                 </field>
 
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier>sponsorship</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Sponsors</label>
-                    <input-type>textarea</input-type>
-                    <hint>Enter the names of any sponsors and/or funding codes in the box. </hint>
+                    <input-type>onebox</input-type>
                     <required></required>
+                    <vocabulary>sponsors</vocabulary>
                 </field>
-       
+
                 <field>
                     <dc-schema>local</dc-schema>
                     <dc-element>doi</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>DOI</label>
-                    <required></required>
-                    <input-type>onebox</input-type>
-                </field>
-
-                <field>
-                    <dc-schema>local</dc-schema>
-                    <dc-element>cgiarresearchprogram</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>CGIAR Research Program</label>
                     <required></required>
                     <input-type>onebox</input-type>
                 </field>
@@ -347,38 +407,13 @@
                 </field>
 
                 <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>subject</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <!-- An input-type of twobox MUST be marked as repeatable -->
-                    <repeatable>true</repeatable>
-                    <label>Subject Keywords</label>
-                    <input-type>twobox</input-type>
-                    <hint>Enter appropriate subject keywords or phrases. </hint>
-                    <required></required>
-                    <vocabulary>srsc</vocabulary>
-                </field>
-
-
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>description</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Description</label>
-                    <input-type>textarea</input-type>
-                    <hint>Enter any other description or comments in this box. </hint>
-                    <required></required>
-                </field>
-
-                <field>
                     <dc-schema>local</dc-schema>
                     <dc-element>notes</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Notes</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter any other notes in this box. </hint>
+                    <hint>Enter any other notes in this box.</hint>
                     <required></required>
                 </field>
 
@@ -390,7 +425,10 @@
                     <repeatable>false</repeatable>
                     <label>Language</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-                    <hint>Select the language of the main content of the item.  If the language does not appear in the list, please select 'Other'.  If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
+                    <hint>Select the language of the main content of the item. If the language does not appear in the
+                        list, please select 'Other'. If the content does not really have a language (for example, if it
+                        is a dataset or an image) please select 'N/A'.
+                    </hint>
                     <required></required>
                 </field>
 
@@ -455,6 +493,498 @@
             </pair>
         </value-pairs>
 
+        <value-pairs value-pairs-name="common_crp" dc-term="authorcrp">
+            <pair>
+                <displayed-value>Agriculture for Nutrition and Health</displayed-value>
+                <stored-value>Agriculture for Nutrition and Health</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Aquatic Agricultural Systems</displayed-value>
+                <stored-value>Aquatic Agricultural Systems</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Big Data</displayed-value>
+                <stored-value>Big Data</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Climate Change, Agriculture and Food Security</displayed-value>
+                <stored-value>Climate Change, Agriculture and Food Security</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Dryland Cereals</displayed-value>
+                <stored-value>Dryland Cereals</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Dryland Systems</displayed-value>
+                <stored-value>Dryland Systems</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Excellence in Breeding</displayed-value>
+                <stored-value>Excellence in Breeding</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Forests, Trees and Agroforestry</displayed-value>
+                <stored-value>Forests, Trees and Agroforestry</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Genebanks</displayed-value>
+                <stored-value>Genebanks</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Grain Legumes</displayed-value>
+                <stored-value>Grain Legumes</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Integrated Systems for the Humid Tropics</displayed-value>
+                <stored-value>Integrated Systems for the Humid Tropics</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Livestock and Fish</displayed-value>
+                <stored-value>Livestock and Fish</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Maize</displayed-value>
+                <stored-value>Maize</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Roots, Tubers and Bananas</displayed-value>
+                <stored-value>Roots, Tubers and Bananas</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Policies, Institutions and Markets</displayed-value>
+                <stored-value>Policies, Institutions and Markets</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Water, Land and Ecosystems</displayed-value>
+                <stored-value>Water, Land and Ecosystems</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Rice</displayed-value>
+                <stored-value>Rice</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Wheat</displayed-value>
+                <stored-value>Wheat</stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="common_isi_status" dc-term="isistatus">
+            <pair>
+                <displayed-value>N/A</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISI Journal</displayed-value>
+                <stored-value>ISI Journal</stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="common_accesibility_status" dc-term="accesibilitystatus">
+            <pair>
+                <displayed-value>Open Access</displayed-value>
+                <stored-value>Open Access</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Limited Access</displayed-value>
+                <stored-value>Limited Access</stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="common_audiences" dc-term="audience">
+            <pair>
+                <displayed-value>general public</displayed-value>
+                <stored-value>general public</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>policy makers</displayed-value>
+                <stored-value>policy makers</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>scientists</displayed-value>
+                <stored-value>scientists</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>academics</displayed-value>
+                <stored-value>academics</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>cgiar</displayed-value>
+                <stored-value>cgiar</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>iita</displayed-value>
+                <stored-value>iita</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>affiliates</displayed-value>
+                <stored-value>affiliates</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>development practitioners</displayed-value>
+                <stored-value>development practitioners</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>donors &#38; sponsors</displayed-value>
+                <stored-value>donors &#38; sponsors</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>extension officers</displayed-value>
+                <stored-value>extension officers</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>farmers</displayed-value>
+                <stored-value>farmers</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>NGOs</displayed-value>
+                <stored-value>NGOs</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>governments</displayed-value>
+                <stored-value>governments</stored-value>
+            </pair>
+            <pair>
+                <displayed-value></displayed-value>
+                <stored-value></stored-value>
+            </pair>
+        </value-pairs>
+
+
+        <value-pairs value-pairs-name="common_iita_subject" dc-term="iitasubject">
+            <pair>
+                <displayed-value>aflatoxin</displayed-value>
+                <stored-value>aflatoxin</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>agribusiness</displayed-value>
+                <stored-value>agribusiness</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>agronomy</displayed-value>
+                <stored-value>agronomy</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>banana</displayed-value>
+                <stored-value>banana</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>baseline survey</displayed-value>
+                <stored-value>baseline survey</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>biodiversity</displayed-value>
+                <stored-value>biodiversity</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>biofortification</displayed-value>
+                <stored-value>biofortification</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>biometrics</displayed-value>
+                <stored-value>biometrics</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>bioscience</displayed-value>
+                <stored-value>bioscience</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>capacity development</displayed-value>
+                <stored-value>capacity development</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>cassava</displayed-value>
+                <stored-value>cassava</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>climate change</displayed-value>
+                <stored-value>climate change</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>cocoa</displayed-value>
+                <stored-value>cocoa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>cowpea</displayed-value>
+                <stored-value>cowpea</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>crop husbandry</displayed-value>
+                <stored-value>crop husbandry</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>crop systems</displayed-value>
+                <stored-value>crop systems</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>disease control</displayed-value>
+                <stored-value>disease control</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>domestic trade</displayed-value>
+                <stored-value>domestic trade</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>farm management</displayed-value>
+                <stored-value>farm management</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>farming systems</displayed-value>
+                <stored-value>farming systems</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>food science</displayed-value>
+                <stored-value>food science</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>food security</displayed-value>
+                <stored-value>food security</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>food systems</displayed-value>
+                <stored-value>food systems</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>forestry</displayed-value>
+                <stored-value>forestry</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>gender</displayed-value>
+                <stored-value>gender</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>genetic improvement</displayed-value>
+                <stored-value>genetic improvement</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>grain legumes</displayed-value>
+                <stored-value>grain legumes</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>handling, transport, storage and protection of agricultural products</displayed-value>
+                <stored-value>handling, transport, storage and protection of agricultural products</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>impact assessment</displayed-value>
+                <stored-value>impact assessment</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>integrated soil fertility management</displayed-value>
+                <stored-value>integrated soil fertility management</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>knowledge management</displayed-value>
+                <stored-value>knowledge management</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>land use</displayed-value>
+                <stored-value>land use</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>livelihoods</displayed-value>
+                <stored-value>livelihoods</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>maize</displayed-value>
+                <stored-value>maize</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>markets</displayed-value>
+                <stored-value>markets</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>meteorology and climatology</displayed-value>
+                <stored-value>meteorology and climatology</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>natural resource management</displayed-value>
+                <stored-value>natural resource management</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>nutrition</displayed-value>
+                <stored-value>nutrition</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>pests of plants</displayed-value>
+                <stored-value>pests of plants</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>plant breeding</displayed-value>
+                <stored-value>plant breeding</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>plant diseases</displayed-value>
+                <stored-value>plant diseases</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>plant ecology</displayed-value>
+                <stored-value>plant ecology</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>plant genetic resources</displayed-value>
+                <stored-value>plant genetic resources</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>plant health</displayed-value>
+                <stored-value>plant health</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>plant production</displayed-value>
+                <stored-value>plant production</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>plantain</displayed-value>
+                <stored-value>plantain</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>policies and institutions</displayed-value>
+                <stored-value>policies and institutions</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>post-harvesting technology</displayed-value>
+                <stored-value>post-harvesting technology</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>research method</displayed-value>
+                <stored-value>research method</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>smallholder farmers</displayed-value>
+                <stored-value>smallholder farmers</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>socioeconomy</displayed-value>
+                <stored-value>socioeconomy</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>soil fertility</displayed-value>
+                <stored-value>soil fertility</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>soil health</displayed-value>
+                <stored-value>soil health</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>soil information</displayed-value>
+                <stored-value>soil information</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>soil surveys and mapping</displayed-value>
+                <stored-value>soil surveys and mapping</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>soybean</displayed-value>
+                <stored-value>soybean</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>tissue culture</displayed-value>
+                <stored-value>tissue culture</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>value chains</displayed-value>
+                <stored-value>value chains</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>weeds</displayed-value>
+                <stored-value>weeds</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>yam</displayed-value>
+                <stored-value>yam</stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="common_regions" dc-term="regionofresearch">
+            <pair>
+                <displayed-value>Africa</displayed-value>
+                <stored-value>Africa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Africa South Of Sahara</displayed-value>
+                <stored-value>Africa South Of Sahara</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Asia</displayed-value>
+                <stored-value>Asia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Caribbean</displayed-value>
+                <stored-value>Caribbean</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Central Africa</displayed-value>
+                <stored-value>Central Africa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Central America</displayed-value>
+                <stored-value>Central America</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Central Asia</displayed-value>
+                <stored-value>Central Asia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>East Africa</displayed-value>
+                <stored-value>East Africa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>East Asia</displayed-value>
+                <stored-value>East Asia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Europe</displayed-value>
+                <stored-value>Europe</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Latin America</displayed-value>
+                <stored-value>Latin America</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Middle East</displayed-value>
+                <stored-value>Middle East</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>North Africa</displayed-value>
+                <stored-value>North Africa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>North America</displayed-value>
+                <stored-value>North America</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Pacific</displayed-value>
+                <stored-value>Pacific</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>South Asia</displayed-value>
+                <stored-value>South Asia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Southeast Asia</displayed-value>
+                <stored-value>Southeast Asia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Southern Africa</displayed-value>
+                <stored-value>Southern Africa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>South America</displayed-value>
+                <stored-value>South America</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>West Africa</displayed-value>
+                <stored-value>West Africa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>West Asia</displayed-value>
+                <stored-value>West Asia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>West And Central Africa</displayed-value>
+                <stored-value>West And Central Africa</stored-value>
+            </pair>
+        </value-pairs>
+
         <value-pairs value-pairs-name="common_types" dc-term="type">
             <pair>
                 <displayed-value>Animation</displayed-value>
@@ -465,36 +995,88 @@
                 <stored-value>Article</stored-value>
             </pair>
             <pair>
+                <displayed-value>Audio</displayed-value>
+                <stored-value>Audio</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Blog Post</displayed-value>
+                <stored-value>Blog Post</stored-value>
+            </pair>
+            <pair>
                 <displayed-value>Book</displayed-value>
                 <stored-value>Book</stored-value>
             </pair>
             <pair>
-                <displayed-value>Book chapter</displayed-value>
-                <stored-value>Book chapter</stored-value>
+                <displayed-value>Book Chapter</displayed-value>
+                <stored-value>Book Chapter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Brief</displayed-value>
+                <stored-value>Brief</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Brochure</displayed-value>
+                <stored-value>Brochure</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Case Study</displayed-value>
+                <stored-value>Case Study</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Conference Paper</displayed-value>
+                <stored-value>Conference Paper</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Conference Proceedings</displayed-value>
+                <stored-value>Conference Proceedings</stored-value>
             </pair>
             <pair>
                 <displayed-value>Dataset</displayed-value>
                 <stored-value>Dataset</stored-value>
             </pair>
             <pair>
-                <displayed-value>Learning Object</displayed-value>
-                <stored-value>Learning Object</stored-value>
+                <displayed-value>Equation</displayed-value>
+                <stored-value>Equation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Extension Material</displayed-value>
+                <stored-value>Extension Material</stored-value>
             </pair>
             <pair>
                 <displayed-value>Image</displayed-value>
                 <stored-value>Image</stored-value>
             </pair>
             <pair>
-                <displayed-value>Image, 3-D</displayed-value>
-                <stored-value>Image, 3-D</stored-value>
+                <displayed-value>Journal Article</displayed-value>
+                <stored-value>Journal Article</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Internal Document</displayed-value>
+                <stored-value>Internal Document</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Logo</displayed-value>
+                <stored-value>Logo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Manual</displayed-value>
+                <stored-value>Manual</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Manuscript-unpublished</displayed-value>
+                <stored-value>Manuscript-unpublished</stored-value>
             </pair>
             <pair>
                 <displayed-value>Map</displayed-value>
                 <stored-value>Map</stored-value>
             </pair>
             <pair>
-                <displayed-value>Musical Score</displayed-value>
-                <stored-value>Musical Score</stored-value>
+                <displayed-value>News Item</displayed-value>
+                <stored-value>News Item</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Newsletter</displayed-value>
+                <stored-value>Newsletter</stored-value>
             </pair>
             <pair>
                 <displayed-value>Plan or blueprint</displayed-value>
@@ -509,43 +1091,116 @@
                 <stored-value>Presentation</stored-value>
             </pair>
             <pair>
-                <displayed-value>Recording, acoustical</displayed-value>
-                <stored-value>Recording, acoustical</stored-value>
+                <displayed-value>Recording</displayed-value>
+                <stored-value>Recording</stored-value>
             </pair>
             <pair>
-                <displayed-value>Recording, musical</displayed-value>
-                <stored-value>Recording, musical</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Recording, oral</displayed-value>
-                <stored-value>Recording, oral</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Software</displayed-value>
-                <stored-value>Software</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Technical Report</displayed-value>
-                <stored-value>Technical Report</stored-value>
+                <displayed-value>Report</displayed-value>
+                <stored-value>Report</stored-value>
             </pair>
             <pair>
                 <displayed-value>Thesis</displayed-value>
                 <stored-value>Thesis</stored-value>
             </pair>
             <pair>
+                <displayed-value>Training Material</displayed-value>
+                <stored-value>Training Material</stored-value>
+            </pair>
+            <pair>
                 <displayed-value>Video</displayed-value>
                 <stored-value>Video</stored-value>
             </pair>
             <pair>
-                <displayed-value>Working Paper</displayed-value>
-                <stored-value>Working Paper</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Other</displayed-value>
-                <stored-value>Other</stored-value>
+                <displayed-value>Working Paper (Questionnaires, Templates, Field and laboratory documents, checklists)
+                </displayed-value>
+                <stored-value>Working Paper (Questionnaires, Templates, Field and laboratory documents, checklists)
+                </stored-value>
             </pair>
         </value-pairs>
-   
+
+        <value-pairs value-pairs-name="common_usage_rights" dc-term="usagerightslicense">
+            <pair>
+                <displayed-value>Copyrighted; all rights reserved</displayed-value>
+                <stored-value>Copyrighted; all rights reserved</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution 4.0 (CC BY 0.0)</displayed-value>
+                <stored-value>Creative Commons Attribution 4.0 (CC BY 0.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)</displayed-value>
+                <stored-value>Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NoDerivatives 4.0 (CC BY-ND 4.0)</displayed-value>
+                <stored-value>Creative Commons Attribution-NoDerivatives 4.0 (CC BY-ND 4.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)</displayed-value>
+                <stored-value>Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)</displayed-value>
+                <stored-value>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0)</displayed-value>
+                <stored-value>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution 3.0 (CC BY 30)</displayed-value>
+                <stored-value>Creative Commons Attribution 3.0 (CC BY 30)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)</displayed-value>
+                <stored-value>Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NoDerivs 10 (CC BY-ND 3.0)</displayed-value>
+                <stored-value>Creative Commons Attribution-NoDerivs 10 (CC BY-ND 3.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NonCommercial 3.0 (CC BY-NC 3.0)</displayed-value>
+                <stored-value>Creative Commons Attribution-NonCommercial 3.0 (CC BY-NC 3.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 (CC BY-NC-SA 3.0)</displayed-value>
+                <stored-value>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 (CC BY-NC-SA 3.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NonCommercial-NoDerivs 3.0 (CC BY-NC-ND 3.0)</displayed-value>
+                <stored-value>Creative Commons Attribution-NonCommercial-NoDerivs 3.0 (CC BY-NC-ND 3.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Zero Public Domain Dedication 1.0 (CCO 1.0)</displayed-value>
+                <stored-value>Creative Commons Zero Public Domain Dedication 1.0 (CCO 1.0)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution No Version (CC BY)</displayed-value>
+                <stored-value>Creative Commons Attribution No Version (CC BY)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-ShareAlike No Version (CC BY-SA)</displayed-value>
+                <stored-value>Creative Commons Attribution-ShareAlike No Version (CC BY-SA)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NoDerivatives No Verson (CC BY-ND)</displayed-value>
+                <stored-value>Creative Commons Attribution-NoDerivatives No Verson (CC BY-ND)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NonCommercial No Version (CC BY-NC) Croats.)</displayed-value>
+                <stored-value>Creative Commons Attribution-NonCommercial No Version (CC BY-NC) Croats.)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NonCommercial-ShareAlike No Vorsion (CC BY-NC-SA)</displayed-value>
+                <stored-value>Creative Commons Attribution-NonCommercial-ShareAlike No Vorsion (CC BY-NC-SA)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Creative Commons Attribution-NonCommercial-NoDerivatives No Version (CC BY-NC-ND)</displayed-value>
+                <stored-value>Creative Commons Attribution-NonCommercial-NoDerivatives No Version (CC BY-NC-ND)</stored-value>
+            </pair>
+        </value-pairs>
+
         <value-pairs value-pairs-name="common_authorship" dc-term="authorshiptype">
             <pair>
                 <displayed-value>Non-IITA in developed country</displayed-value>
@@ -559,6 +1214,34 @@
                 <displayed-value>IITA publication</displayed-value>
                 <stored-value>IITA publication</stored-value>
             </pair>
+            <pair>
+                <displayed-value>CGIAR Single Centre</displayed-value>
+                <stored-value>CGIAR Single Centre</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CGIAR Multi Centre</displayed-value>
+                <stored-value>CGIAR Multi Centre</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CGIAR and developing country institute</displayed-value>
+                <stored-value>CGIAR and developing country institute</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CGIAR and advanced research institute</displayed-value>
+                <stored-value>CGIAR and advanced research institute</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Consultant</displayed-value>
+                <stored-value>Consultant</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Not CGIAR developing country institute</displayed-value>
+                <stored-value>Not CGIAR developing country institute</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Not CGIAR international institute</displayed-value>
+                <stored-value>Not CGIAR international institute</stored-value>
+            </pair>
         </value-pairs>
 
         <value-pairs value-pairs-name="common_review_status" dc-term="reviewstatus">
@@ -571,8 +1254,7 @@
                 <stored-value>Peer Review</stored-value>
             </pair>
         </value-pairs>
-   
-   
+
         <value-pairs value-pairs-name="common_hubs" dc-term="authorhub">
             <pair>
                 <displayed-value>Southern Africa Hub</displayed-value>
@@ -589,6 +1271,33 @@
             <pair>
                 <displayed-value>Headquarters and Western Africa Hub</displayed-value>
                 <stored-value>Headquarters and Western Africa Hub</stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="common_research_themes" dc-term="researchtheme">
+            <pair>
+                <displayed-value>Biometrics</displayed-value>
+                <stored-value>Biometrics</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Biotech and Plant Breeding</displayed-value>
+                <stored-value>Biotech and Plant Breeding</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Natural Resource Management</displayed-value>
+                <stored-value>Natural Resource Management</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Nutrition and Human Health</displayed-value>
+                <stored-value>Nutrition and Human Health</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Plant Production and Health</displayed-value>
+                <stored-value>Plant Production and Health</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Social Science and Agribusiness</displayed-value>
+                <stored-value>Social Science and Agribusiness</stored-value>
             </pair>
         </value-pairs>
 
@@ -641,7 +1350,7 @@
                 <stored-value>other</stored-value>
             </pair>
         </value-pairs>
-        
+
         <value-pairs value-pairs-name="common_countries" dc-term="country">
             <pair>
                 <displayed-value>Afghanistan</displayed-value>
@@ -1547,8 +2256,7 @@
                 <displayed-value>Zimbabwe</displayed-value>
                 <stored-value>Zimbabwe</stored-value>
             </pair>
-          </value-pairs>
-
+        </value-pairs>
 
     </form-value-pairs>
 
