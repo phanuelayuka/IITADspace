@@ -35,103 +35,92 @@
 	<message key="xmlui.general.delete">Delete</message>
 	<message key="xmlui.general.next">Next</message>
 	<message key="xmlui.general.untitled">Untitled</message>
-        <message key="xmlui.general.perform">Perform</message>
-        <message key="xmlui.general.queue">Queue</message>
+	<message key="xmlui.general.perform">Perform</message>
+	<message key="xmlui.general.queue">Queue</message>
 
-        <!-- Keys which are used by exception2dri.xsl on error pages -->
-        <message key="xmlui.error.contact_msg">Please contact the site administrator if you wish to report this error. If possible, please  provide details about what you were doing at the time this error occurred.</message>
-        <message key="xmlui.error.contact">Contact site administrator</message>
-        <message key="xmlui.error.show_stack">Show underlying error stack</message>
+	<!-- Keys which are used by exception2dri.xsl on error pages -->
+	<message key="xmlui.error.contact_msg">Please contact the site administrator if you wish to report this error. If possible, please  provide details about what you were doing at the time this error occurred.</message>
+	<message key="xmlui.error.contact">Contact site administrator</message>
+	<message key="xmlui.error.show_stack">Show underlying error stack</message>
 
 	<!--
-		Page not found keys
+	Page not found keys
 
-        This is a special component that is not part of any aspect but is added
-        by manakin to all aspect chains.
-        -->
-        <message key="xmlui.PageNotFound.title">Page not found</message>
-        <message key="xmlui.PageNotFound.head">Page not found</message>
-        <message key="xmlui.PageNotFound.para1">We can't find the page you asked for.</message>
+	This is a special component that is not part of any aspect but is added
+	by manakin to all aspect chains.
+	-->
+	<message key="xmlui.PageNotFound.title">Page not found</message>
+	<message key="xmlui.PageNotFound.head">Page not found</message>
+	<message key="xmlui.PageNotFound.para1">We can't find the page you asked for.</message>
 
+	<!--
+		The "utils" non-aspect
+	-->
+	<message key="xmlui.utils.AuthenticationUtil.onlyAdmins">Only site administrators may assume login as another user.</message>
+	<message key="xmlui.utils.AuthenticationUtil.onlyAuthenticatedAdmins">Only authenticated users who are administrators may assume the login as another user.</message>
+	<message key="xmlui.utils.AuthenticationUtil.notAnotherAdmin">You may not assume the login as another administrator.</message>
 
-        <!--
-            The "utils" non-aspect
-        -->
-        <message key="xmlui.utils.AuthenticationUtil.onlyAdmins">Only site administrators may assume login as another user.</message>
-        <message key="xmlui.utils.AuthenticationUtil.onlyAuthenticatedAdmins">Only authenticated users who are administrators may assume the login as another user.</message>
-        <message key="xmlui.utils.AuthenticationUtil.notAnotherAdmin">You may not assume the login as another administrator.</message>
+	<!-- This section is for feed syndications (RSS, atom, etc) -->
+	<message key="xmlui.feed.general_description">The IITASpace digital repository system captures, stores, indexes, preserves, and distributes digital research material.</message>
+	<message key="xmlui.feed.header">RSS Feeds</message>
+	<message key="xmlui.feed.logo_title">The Channel Image</message>
+	<message key="xmlui.feed.untitled">Untitled</message>
 
+	<!-- Default notice header -->
+	<message key="xmlui.general.notice.default_head">Notice</message>
 
-        <!--
-                This section is for feed syndications (RSS, atom, etc)
-        -->
-        <message key="xmlui.feed.general_description">The IITASpace digital repository system captures, stores, indexes, preserves, and distributes digital research material.</message>
-        <message key="xmlui.feed.header">RSS Feeds</message>
-        <message key="xmlui.feed.logo_title">The Channel Image</message>
-        <message key="xmlui.feed.untitled">Untitled</message>
+	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+						ArtifactBrowser Aspect
+	NOTE: As of  6.0, the ArtifactBrowser Aspect was removed (in favor
+	of the ViewArtifacts, BrowseArtifacts and SearchArtifacts aspects). 
+	However, many of its classes and corresponding i18n keys still exist as 
+	they are used by other aspects.
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AbstractSearch has been removed. -->
+	<!-- The following keys are still in use by Discovery's AbstractSearch -->
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">Search produced no results.</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">All of Repository</message>
+	<message key="xmlui.Discovery.AbstractSearch.type_authorhub">Author Hub</message>
+	<message key="xmlui.Discovery.AbstractSearch.type_country">Country</message>
+	<message key="xmlui.Discovery.AbstractSearch.type_regionoffocus">Regions of Research</message>
+	<message key="xmlui.Discovery.AbstractSearch.type_cgiarresearchprogram">CGIAR Research Program</message>
+	<message key="xmlui.Discovery.AbstractSearch.type_scienceresearcharea">Science Research Area</message>
+	<message key="xmlui.Discovery.AbstractSearch.type_reviewstatus">Review Status</message>
+	<message key="xmlui.Discovery.AbstractSearch.type_authorcrp">Author CRP</message>
+	<message key="xmlui.Discovery.AbstractSearch.type_afflitiation">Affiliation</message>
 
-        <!--
-        Default notice header
-        -->
-        <message key="xmlui.general.notice.default_head">Notice</message>
+	<!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
+	<!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AdvancedSearch has been removed. -->
+	<!-- The following "type_*" i18n keys will be left as is as they're referenced by the Discovery's SidebarFacetsTransformer
+	but in future, they should be refactored to a more relevant key prefix -->
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Author</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Title</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Subject</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_abstract">Abstract</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Series</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Sponsor</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Identifier</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Language (ISO)</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Keyword</message>
 
-
-        <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                          ArtifactBrowser Aspect
-        NOTE: As of  6.0, the ArtifactBrowser Aspect was removed (in favor
-        of the ViewArtifacts, BrowseArtifacts and SearchArtifacts aspects). 
-        However, many of its classes and corresponding i18n keys still exist as 
-        they are used by other aspects.
-        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-        <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AbstractSearch has been removed. -->
-        <!-- The following keys are still in use by Discovery's AbstractSearch -->
-        <message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">Search produced no results.</message>
-        <message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">All of Repository</message>
-
-
-        <message key="xmlui.Discovery.AbstractSearch.type_authorhub">Author Hub</message>
-        <message key="xmlui.Discovery.AbstractSearch.type_country">Country</message>
-        <message key="xmlui.Discovery.AbstractSearch.type_regionoffocus">Regions of Focus</message>
-        <message key="xmlui.Discovery.AbstractSearch.type_cgiarresearchprogram">CGIAR Research Program</message>
-        <message key="xmlui.Discovery.AbstractSearch.type_scienceresearcharea">Science Research Area</message>
-        <message key="xmlui.Discovery.AbstractSearch.type_reviewstatus">Review Status</message>
-        <message key="xmlui.Discovery.AbstractSearch.type_authorcrp">Author CGIAR Research Program</message>
-        <message key="xmlui.Discovery.AbstractSearch.type_afflitiation">Affiliation</message>
-
-        <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
-        <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AdvancedSearch has been removed. -->
-        <!-- The following "type_*" i18n keys will be left as is as they're referenced by the Discovery's SidebarFacetsTransformer
-        but in future, they should be refactored to a more relevant key prefix -->
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Author</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Title</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Subject</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_abstract">Abstract</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Series</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Sponsor</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Identifier</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Language (ISO)</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Keyword</message>
-
-        <!--  some common other possibilities for Advanced Search Fields -->
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_creator">Creator</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_description">Description</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_relation">Relation</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_mime">Mime-Type</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_other">Other Contributor</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_advisor">Advisor</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_department">Department</message>
-
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ANY">Full Text</message>
-
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_authorhub">Author Hub</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_country">Country</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_regionoffocus">Regions of Focus</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cgiarresearchprogram">CGIAR Research Program</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_scienceresearcharea">Science Research Area</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_reviewstatus">Review Status</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_authorcrp">Author CGIAR Research Program</message>
-        <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_afflitiation">Affiliation</message>
+	<!--  some common other possibilities for Advanced Search Fields -->
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_creator">Creator</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_description">Description</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_relation">Relation</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_mime">Mime-Type</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_other">Other Contributor</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_advisor">Advisor</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_department">Department</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ANY">Full Text</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_authorhub">Author Hub</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_country">Country</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_regionoffocus">Regions of Research</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_cgiarresearchprogram">CGIAR Research Program</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_scienceresearcharea">Science Research Area</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_reviewstatus">Review Status</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_authorcrp">Author CRP</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_afflitiation">Affiliation</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.ConfigureableBrowse.java -->
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with">Or enter first few letters:</message>
@@ -146,23 +135,20 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.order"> Order: </message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.rpp"> Results: </message><!-- /Page -->
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.etal"> Authors/Item: </message>
-
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.etal.all">All</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.title">title</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.dateissued">issue date</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.dateaccessioned">submit date</message>
-
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.asc">ascending</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.desc">descending</message>
-
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Authors Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">Subject</message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.regionoffocus.column_heading">Regions of Focus</message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.country.column_heading">Counries</message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.scienceresearcharea.column_heading">Science Research Area</message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.afflitiation.column_heading">Affiliations</message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.authorhub.column_heading">Author Hubs</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.regionoffocus.column_heading">Regions of Focus</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.country.column_heading">Counries</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.scienceresearcharea.column_heading">Science Research Area</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.afflitiation.column_heading">Affiliations</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.authorhub.column_heading">Author Hubs</message>
         
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">Browsing {0} by Author {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Browsing {0} by Author</message>
@@ -179,8 +165,8 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateaccessioned">Browsing {0} by Submit Date {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateaccessioned">Browsing {0} by Submit Date</message>
         
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.regionoffocus">Browsing {0} by Regions of Focus {1}</message>
-        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.regionoffocus">Browsing {0} by Regions of Focus</message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.regionoffocus">Browsing {0} by Regions of Research {1}</message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.regionoffocus">Browsing {0} by Regions of Research</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.country">Browsing {0} by Country {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.country">Browsing {0} by Country</message>
@@ -204,20 +190,20 @@
 	<message key="xmlui.Administrative.WithdrawnItems.title.item.dateaccessioned">Withdrawn Items by Submit Date</message>
 	<message key="xmlui.Administrative.WithdrawnItems.trail.item.dateaccessioned">Withdrawn Items by Submit Date</message>
         
-        <message key="xmlui.Administrative.WithdrawnItems.title.metadata.regionoffocus">Withdrawn Items by Regions of Focus</message>
-        <message key="xmlui.Administrative.WithdrawnItems.trail.metadata.regionoffocus">Withdrawn Items by Regions of Focus</message>
+	<message key="xmlui.Administrative.WithdrawnItems.title.metadata.regionoffocus">Withdrawn Items by Regions of Focus</message>
+	<message key="xmlui.Administrative.WithdrawnItems.trail.metadata.regionoffocus">Withdrawn Items by Regions of Focus</message>
 
-        <message key="xmlui.Administrative.WithdrawnItems.title.metadata.country">Withdrawn Items by Country</message>
-        <message key="xmlui.Administrative.WithdrawnItems.trail.metadata.country">Withdrawn Items by Country</message>
+	<message key="xmlui.Administrative.WithdrawnItems.title.metadata.country">Withdrawn Items by Country</message>
+	<message key="xmlui.Administrative.WithdrawnItems.trail.metadata.country">Withdrawn Items by Country</message>
 
-        <message key="xmlui.Administrative.WithdrawnItems.title.metadata.scienceresearcharea">Withdrawn Items by Science Research Area</message>
-        <message key="xmlui.Administrative.WithdrawnItems.trail.metadata.scienceresearcharea">Withdrawn Items by Science Research Area</message>
+	<message key="xmlui.Administrative.WithdrawnItems.title.metadata.scienceresearcharea">Withdrawn Items by Science Research Area</message>
+	<message key="xmlui.Administrative.WithdrawnItems.trail.metadata.scienceresearcharea">Withdrawn Items by Science Research Area</message>
 
-        <message key="xmlui.Administrative.WithdrawnItems.title.metadata.afflitiation">Withdrawn Items by Affiliation</message>
-        <message key="xmlui.Administrative.WithdrawnItems.trail.metadata.afflitiation">Withdrawn Items by Affiliation</message>
+	<message key="xmlui.Administrative.WithdrawnItems.title.metadata.afflitiation">Withdrawn Items by Affiliation</message>
+	<message key="xmlui.Administrative.WithdrawnItems.trail.metadata.afflitiation">Withdrawn Items by Affiliation</message>
 
-        <message key="xmlui.Administrative.WithdrawnItems.title.metadata.authorhub">Withdrawn Items by Author Hubs</message>
-        <message key="xmlui.Administrative.WithdrawnItems.trail.metadata.authorhub">Withdrawn Items by Author Hubs</message>
+	<message key="xmlui.Administrative.WithdrawnItems.title.metadata.authorhub">Withdrawn Items by Author Hubs</message>
+	<message key="xmlui.Administrative.WithdrawnItems.trail.metadata.authorhub">Withdrawn Items by Author Hubs</message>
 
 	<!-- org.dspace.app.xmlui.administrative.PrivateItems.java -->
 	<message key="xmlui.Administrative.PrivateItems.title.item.title">Private Items by Title</message>
@@ -229,8 +215,8 @@
 	<message key="xmlui.Administrative.PrivateItems.title.metadata.regionoffocus">Private Items by Regions of Focus</message>
 	<message key="xmlui.Administrative.PrivateItems.trail.metadata.regionoffocus">Private Items by Regions of Focus</message>
         
-        <message key="xmlui.Administrative.PrivateItems.title.metadata.country">Private Items by Country</message>
-        <message key="xmlui.Administrative.PrivateItems.trail.metadata.country">Private Items by Country</message>
+	<message key="xmlui.Administrative.PrivateItems.title.metadata.country">Private Items by Country</message>
+	<message key="xmlui.Administrative.PrivateItems.trail.metadata.country">Private Items by Country</message>
                 
 	<message key="xmlui.Administrative.PrivateItems.title.metadata.scienceresearcharea">Private Items by Science Research Area</message>
 	<message key="xmlui.Administrative.PrivateItems.trail.metadata.scienceresearcharea">Private Items by Science Research Area</message>
@@ -304,8 +290,7 @@
 	<message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">This item appears in the following Collection(s)</message>
 	<message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Show simple item record</message>
 	<message key="xmlui.ArtifactBrowser.ItemViewer.show_full">Show full item record</message>
-
-        <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">This item has been withdrawn and is no longer available.</message>
+    <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">This item has been withdrawn and is no longer available.</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
         <!-- Note: As of System User 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.Navigation has been removed. -->
@@ -317,13 +302,13 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_title">Titles</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_author">Authors</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_subject">Subjects</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateissued">By Issue Date</message>
-         <message key="xmlui.ArtifactBrowser.Navigation.browse_authorhub">By Hubs</message>
-        <message key="xmlui.ArtifactBrowser.Navigation.browse_afflitiation">By Affiliations</message>
-        <message key="xmlui.ArtifactBrowser.Navigation.browse_regionoffocus">By Regions of Focus</message>
-        <message key="xmlui.ArtifactBrowser.Navigation.browse_scienceresearcharea">By Science Research Area</message>
-        <message key="xmlui.ArtifactBrowser.Navigation.browse_country">By Country</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateaccessioned">By Submit Date</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateissued">Issue Date</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_authorhub">Hubs</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_afflitiation">Affiliations</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_regionoffocus">Regions of Research</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_scienceresearcharea">Science Research Area</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_country">Country</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateaccessioned">Submit Date</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.head_this_collection">This Sub-collection</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.head_this_community">This Collection</message>
 
@@ -337,14 +322,14 @@
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.search_scope">Search Scope</message>
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.full_text_search">Full Text Search</message>
         
-        <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.authorhub">Author Hub</message>
-        <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.country">Country</message>
-        <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.regionoffocus">Regions of Focus</message>
-        <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.cgiarresearchprogram">CGIAR Research Program</message>
-        <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.scienceresearcharea">Science Research Area</message>
-        <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.reviewstatus">Review Status</message>
-        <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.authorcrp">Author CGIAR Research Program</message>
-        <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.afflitiation">Affiliation</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.authorhub">Author Hub</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.country">Country</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.regionoffocus">Regions of Research</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.cgiarresearchprogram">CGIAR Research Program</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.scienceresearcharea">Science Research Area</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.reviewstatus">Review Status</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.authorcrp">Author CGIAR Research Program</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.filter.afflitiation">Affiliation</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">This resource is restricted</message>
@@ -365,22 +350,22 @@
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_item">item</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_resource">resource</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.unknown">unknown</message>
-        <message key="xmlui.ArtifactBrowser.RestrictedItem.login">Proceed to login screen</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.login">Proceed to login screen</message>
 
-        <message key="xmlui.ArtifactBrowser.RestrictedItem.head_item_withdrawn">This item is withdrawn</message>
-        <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_withdrawn">The selected item is withdrawn and is no longer available.</message>
-        <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_restricted_auth">The selected item is access restricted and requires credentials to view. Please login to access the item.</message>
-        <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_restricted">Your user account does not have the credentials to view this item. Please contact the system administrator if you have any questions.</message>
-        
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_item_withdrawn">This item is withdrawn</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_withdrawn">The selected item is withdrawn and is no longer available.</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_restricted_auth">The selected item is access restricted and requires credentials to view. Please login to access the item.</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_restricted">Your user account does not have the credentials to view this item. Please contact the system administrator if you have any questions.</message>
+	
 	<!-- Authentication messages used at the top of the login page:  -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.auth_header">The item is restricted</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.auth_message">The item you are attempting to access is a restricted item and requires credentials to view. Please login below to access the item.</message>
 
-        <message key="xmlui.ArtifactBrowser.StatisticsViewer.choose_month">Monthly Reports</message>
-        <message key="xmlui.ArtifactBrowser.StatisticsViewer.report.title">Statistical Summary</message>
+	<message key="xmlui.ArtifactBrowser.StatisticsViewer.choose_month">Monthly Reports</message>
+	<message key="xmlui.ArtifactBrowser.StatisticsViewer.report.title">Statistical Summary</message>
 
-        <message key="xmlui.ArtifactBrowser.StatisticsViewer.no_report.title">No reports currently available</message>
-        <message key="xmlui.ArtifactBrowser.StatisticsViewer.no_report.text">There are currently no reports available for this service.  Please check back later.</message>
+	<message key="xmlui.ArtifactBrowser.StatisticsViewer.no_report.title">No reports currently available</message>
+	<message key="xmlui.ArtifactBrowser.StatisticsViewer.no_report.text">There are currently no reports available for this service.  Please check back later.</message>
 
     <!-- Authentication messages used for bitstream authentication -->
 	<message key="xmlui.BitstreamReader.auth_header">The file is restricted</message>
@@ -396,9 +381,9 @@
 	<message key="xmlui.ArtifactBrowser.ItemRequestForm.title">Request a copy of the document</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestForm.trail">Request a copy of the document</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestForm.head">Request a copy of the document</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestForm.login_para">Users of this system, can login to view this document.</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestForm.login">Login</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestForm.para1">Enter the following information to request a copy of the document from the responsible person.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.login_para">Users of this system, can login to view this document.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.login">Login</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.para1">Enter the following information to request a copy of the document from the responsible person.</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail">Your e-mail address</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail_help">This email address is used for sending the document.</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail.error">E-mail is mandatory</message>
@@ -423,9 +408,9 @@
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.head">Document copy request</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para1">IF YOU ARE THE AUTHOR (OR AN AUTHOR) OF DOCUMENT "{0}" use the buttons to answer the user's request.</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para2">This repository will propose an appropriate model reply, which you may edit.</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactRequester">Initial reply to requester</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactAuthor"> Author permission request</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.send">Send copy</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactRequester">Initial reply to requester</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactAuthor"> Author permission request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.send">Send copy</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.dontSend">Don't send copy</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseTrueForm.java -->
@@ -466,33 +451,33 @@
 	<message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.para1">Your request has been sent to the administrator</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.para2">Thanks</message>
 
-        <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestContactRequester.java -->
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.title">Document copy request</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.trail">Document copy request</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.head">Document copy request</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.para1">Initial communication with the requester, to let them know their request is being processed.</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.toEmail">To</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.subject">Subject</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.message">Message</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.mail">Send</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.back">Back</message>
+	<!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestContactRequester.java -->
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.title">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.trail">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.head">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.para1">Initial communication with the requester, to let them know their request is being processed.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.toEmail">To</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.subject">Subject</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.message">Message</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.mail">Send</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.back">Back</message>
 
-        <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestContactAuthor.java -->
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.title">Document copy request</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.trail">Document copy request</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.head">Document copy request</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.para1">This is the text to be sent to the applicant (together with the document).</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.toEmail">To</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.subject">Subject</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.message">Message</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.mail">Send</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.back">Back</message>
+	<!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestContactAuthor.java -->
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.title">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.trail">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.head">Document copy request</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.para1">This is the text to be sent to the applicant (together with the document).</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.toEmail">To</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.subject">Subject</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.message">Message</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.mail">Send</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.back">Back</message>
 
-        <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseSent.java -->
-        <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.title">Your response has been sent.</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.trail">Your response has been sent.</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.head">Your response has been sent.</message>
-        <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.para1">Your response has been sent.</message>
+	<!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseSent.java -->
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.title">Your response has been sent.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.trail">Your response has been sent.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.head">Your response has been sent.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.para1">Your response has been sent.</message>
 
 
 	
@@ -758,14 +743,14 @@
 	<message key="xmlui.Submission.Submissions.status_6">Submission being edited</message>
 	<message key="xmlui.Submission.Submissions.status_7">Submission has been archived</message>
 	<message key="xmlui.Submission.Submissions.status_unknown">Unknown state</message>
-        <!-- Same transformer, completed submissions section -->
-        <message key="xmlui.Submission.Submissions.completed.head">Archived Submissions</message>
-        <message key="xmlui.Submission.Submissions.completed.info">These are your completed submissions which have been accepted into IITASpace.</message>
-        <message key="xmlui.Submission.Submissions.completed.column1">Date accepted</message>
-        <message key="xmlui.Submission.Submissions.completed.column2">Title</message>
-        <message key="xmlui.Submission.Submissions.completed.column3">Collection</message>
-        <message key="xmlui.Submission.Submissions.completed.limit">We've only listed 50 of your archived submissions above. </message>
-        <message key="xmlui.Submission.Submissions.completed.displayall">Display all my archived submissions.</message>
+    <!-- Same transformer, completed submissions section -->
+	<message key="xmlui.Submission.Submissions.completed.head">Archived Submissions</message>
+	<message key="xmlui.Submission.Submissions.completed.info">These are your completed submissions which have been accepted into IITASpace.</message>
+	<message key="xmlui.Submission.Submissions.completed.column1">Date accepted</message>
+	<message key="xmlui.Submission.Submissions.completed.column2">Title</message>
+	<message key="xmlui.Submission.Submissions.completed.column3">Collection</message>
+	<message key="xmlui.Submission.Submissions.completed.limit">We've only listed 50 of your archived submissions above. </message>
+	<message key="xmlui.Submission.Submissions.completed.displayall">Display all my archived submissions.</message>
 
 	<!-- submission progress bar messages -->
 	<message key="xmlui.Submission.submit.progressbar.initial-questions">Initial Questions</message>
@@ -823,9 +808,9 @@
 	<message key="xmlui.Submission.submit.DescribeStep.day">Day</message>
 	<message key="xmlui.Submission.submit.DescribeStep.series_name">Series Name</message>
 	<message key="xmlui.Submission.submit.DescribeStep.report_no">Report or paper No.</message>
-	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.link">Subject Categories</message>
-	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.title">Subject Categories</message>
-	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.filter.label">Filter subjects</message>
+	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.link">select available values</message>
+	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.title">select available values</message>
+	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.filter.label">Filter available values</message>
 	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.filter.button">Filter</message>
 	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.loading">Please wait while the controlled vocabulary is loading.</message>
 	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.error">There was an issue when loading the controlled vocabulary, please try again later.</message>
