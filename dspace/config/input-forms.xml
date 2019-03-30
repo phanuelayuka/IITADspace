@@ -96,7 +96,7 @@
                     <repeatable>true</repeatable>
                     <input-type value-pairs-name="common_iita_subject">dropdown</input-type>
                     <hint>Select the IITA Subject type of the item.</hint>
-                    <required>This is a mandatory metadata field</required>
+                    <required></required>
                 </field>
 
                 <!-- puplication related fields -->
@@ -199,15 +199,15 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Reveiw Status</label>
                     <input-type value-pairs-name="common_review_status">dropdown</input-type>
-                    <hint>Select the type(s) of review of the item.</hint>
-                    <required>true</required>
+                    <hint></hint>
+                    <required></required>
                 </field>
 
                 <field>
                     <dc-schema>local</dc-schema>
                     <dc-element>regionofresearch</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <repeatable></repeatable>
+                    <repeatable>true</repeatable>
                     <label>Region where this research was done</label>
                     <input-type value-pairs-name="common_regions">dropdown</input-type>
                     <required></required>
@@ -222,19 +222,30 @@
                     <label>Contries where research was conducted</label>
                     <input-type value-pairs-name="common_countries">dropdown</input-type>
                     <hint>You can selected more than one country</hint>
-                    <required>Compulsory metadata</required>
+                    <required></required>
                 </field>
 
                 <field>
                     <dc-schema>local</dc-schema>
                     <dc-element>researchtheme</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Research Theme</label>
                     <input-type value-pairs-name="common_research_themes">dropdown</input-type>
                     <hint>Enter the research theme for the item.</hint>
-                    <required>Research theme for the item is needed</required>
+                    <required></required>
                 </field>
+
+                <field>
+                    <dc-schema>local</dc-schema>
+                    <dc-element>targetaudience</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Target Audience</label>
+                    <input-type value-pairs-name="common_audiences">dropdown</input-type>
+                    <required></required>
+                </field>
+
             </page>
 
             <page number="2">
@@ -246,7 +257,7 @@
                     <label>Authors</label>
                     <input-type>name</input-type>
                     <hint>Enter the names of the authors of this item.</hint>
-                    <required></required>
+                    <required>Athours profiles is a mandatory metadata field.</required>
                 </field>
 
                 <field>
@@ -268,7 +279,7 @@
                     <label>Authors ORCIDs</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the ORCIDS of the authors of this item.</hint>
-                    <required>This is a required metadata field</required>
+                    <required></required>
                 </field>
                 <field>
                     <dc-schema>local</dc-schema>
@@ -277,7 +288,7 @@
                     <repeatable>true</repeatable>
                     <label>Authors CRP</label>
                     <input-type value-pairs-name="common_crp">dropdown</input-type>
-                    <required>This metadata field is mandatory</required>
+                    <required></required>
                 </field>
 
                 <field>
@@ -286,7 +297,7 @@
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Authors Hubs</label>
-                    <required>You must select at least one hub</required>
+                    <required></required>
                     <input-type value-pairs-name="common_hubs">dropdown</input-type>
                 </field>
 
@@ -306,7 +317,7 @@
                     <dc-qualifier></dc-qualifier>
                     <repeatable></repeatable>
                     <label>ISI Status</label>
-                    <required>This is a required metadata field </required>
+                    <required></required>
                     <input-type value-pairs-name="common_isi_status">dropdown</input-type>
                 </field>
 
@@ -348,7 +359,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier>sponsorship</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Sponsors</label>
                     <input-type>onebox</input-type>
                     <required></required>
@@ -579,246 +590,306 @@
             </pair>
         </value-pairs>
 
+        <value-pairs value-pairs-name="common_audiences" dc-term="audience">
+            <pair>
+                <displayed-value>general public</displayed-value>
+                <stored-value>general public</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>policy makers</displayed-value>
+                <stored-value>policy makers</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>scientists</displayed-value>
+                <stored-value>scientists</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>academics</displayed-value>
+                <stored-value>academics</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>cgiar</displayed-value>
+                <stored-value>cgiar</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>iita</displayed-value>
+                <stored-value>iita</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>affiliates</displayed-value>
+                <stored-value>affiliates</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>development practitioners</displayed-value>
+                <stored-value>development practitioners</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>donors &#38; sponsors</displayed-value>
+                <stored-value>donors &#38; sponsors</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>extension officers</displayed-value>
+                <stored-value>extension officers</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>farmers</displayed-value>
+                <stored-value>farmers</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>NGOs</displayed-value>
+                <stored-value>NGOs</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>governments</displayed-value>
+                <stored-value>governments</stored-value>
+            </pair>
+            <pair>
+                <displayed-value></displayed-value>
+                <stored-value></stored-value>
+            </pair>
+        </value-pairs>
+
+
         <value-pairs value-pairs-name="common_iita_subject" dc-term="iitasubject">
             <pair>
-                <displayed-value>AFLATOXIN</displayed-value>
-                <stored-value>AFLATOXIN</stored-value>
+                <displayed-value>aflatoxin</displayed-value>
+                <stored-value>aflatoxin</stored-value>
             </pair>
             <pair>
-                <displayed-value>AGRIBUSINESS</displayed-value>
-                <stored-value>AGRIBUSINESS</stored-value>
+                <displayed-value>agribusiness</displayed-value>
+                <stored-value>agribusiness</stored-value>
             </pair>
             <pair>
-                <displayed-value>AGRONOMY</displayed-value>
-                <stored-value>AGRONOMY</stored-value>
+                <displayed-value>agronomy</displayed-value>
+                <stored-value>agronomy</stored-value>
             </pair>
             <pair>
-                <displayed-value>BANANA</displayed-value>
-                <stored-value>BANANA</stored-value>
+                <displayed-value>banana</displayed-value>
+                <stored-value>banana</stored-value>
             </pair>
             <pair>
-                <displayed-value>BASELINE SURVEY</displayed-value>
-                <stored-value>BASELINE SURVEY</stored-value>
+                <displayed-value>baseline survey</displayed-value>
+                <stored-value>baseline survey</stored-value>
             </pair>
             <pair>
-                <displayed-value>BIODIVERSITY</displayed-value>
-                <stored-value>BIODIVERSITY</stored-value>
+                <displayed-value>biodiversity</displayed-value>
+                <stored-value>biodiversity</stored-value>
             </pair>
             <pair>
-                <displayed-value>BIOFORTIFICATION</displayed-value>
-                <stored-value>BIOFORTIFICATION</stored-value>
+                <displayed-value>biofortification</displayed-value>
+                <stored-value>biofortification</stored-value>
             </pair>
             <pair>
-                <displayed-value>BIOMETRICS</displayed-value>
-                <stored-value>BIOMETRICS</stored-value>
+                <displayed-value>biometrics</displayed-value>
+                <stored-value>biometrics</stored-value>
             </pair>
             <pair>
-                <displayed-value>BIOSCIENCE</displayed-value>
-                <stored-value>BIOSCIENCE</stored-value>
+                <displayed-value>bioscience</displayed-value>
+                <stored-value>bioscience</stored-value>
             </pair>
             <pair>
-                <displayed-value>CAPACITY DEVELOPMENT</displayed-value>
-                <stored-value>CAPACITY DEVELOPMENT</stored-value>
+                <displayed-value>capacity development</displayed-value>
+                <stored-value>capacity development</stored-value>
             </pair>
             <pair>
-                <displayed-value>CASSAVA</displayed-value>
-                <stored-value>CASSAVA</stored-value>
+                <displayed-value>cassava</displayed-value>
+                <stored-value>cassava</stored-value>
             </pair>
             <pair>
-                <displayed-value>CLIMATE CHANGE</displayed-value>
-                <stored-value>CLIMATE CHANGE</stored-value>
+                <displayed-value>climate change</displayed-value>
+                <stored-value>climate change</stored-value>
             </pair>
             <pair>
-                <displayed-value>COCOA</displayed-value>
-                <stored-value>COCOA</stored-value>
+                <displayed-value>cocoa</displayed-value>
+                <stored-value>cocoa</stored-value>
             </pair>
             <pair>
-                <displayed-value>COWPEA</displayed-value>
-                <stored-value>COWPEA</stored-value>
+                <displayed-value>cowpea</displayed-value>
+                <stored-value>cowpea</stored-value>
             </pair>
             <pair>
-                <displayed-value>CROP HUSBANDRY</displayed-value>
-                <stored-value>CROP HUSBANDRY</stored-value>
+                <displayed-value>crop husbandry</displayed-value>
+                <stored-value>crop husbandry</stored-value>
             </pair>
             <pair>
-                <displayed-value>CROP SYSTEMS</displayed-value>
-                <stored-value>CROP SYSTEMS</stored-value>
+                <displayed-value>crop systems</displayed-value>
+                <stored-value>crop systems</stored-value>
             </pair>
             <pair>
-                <displayed-value>DISEASE CONTROL</displayed-value>
-                <stored-value>DISEASE CONTROL</stored-value>
+                <displayed-value>disease control</displayed-value>
+                <stored-value>disease control</stored-value>
             </pair>
             <pair>
-                <displayed-value>DOMESTIC TRADE</displayed-value>
-                <stored-value>DOMESTIC TRADE</stored-value>
+                <displayed-value>domestic trade</displayed-value>
+                <stored-value>domestic trade</stored-value>
             </pair>
             <pair>
-                <displayed-value>FARM MANAGEMENT</displayed-value>
-                <stored-value>FARM MANAGEMENT</stored-value>
+                <displayed-value>farm management</displayed-value>
+                <stored-value>farm management</stored-value>
             </pair>
             <pair>
-                <displayed-value>FARMING SYSTEMS</displayed-value>
-                <stored-value>FARMING SYSTEMS</stored-value>
+                <displayed-value>farming systems</displayed-value>
+                <stored-value>farming systems</stored-value>
             </pair>
             <pair>
-                <displayed-value>FOOD SCIENCE</displayed-value>
-                <stored-value>FOOD SCIENCE</stored-value>
+                <displayed-value>food science</displayed-value>
+                <stored-value>food science</stored-value>
             </pair>
             <pair>
-                <displayed-value>FOOD SECURITY</displayed-value>
-                <stored-value>FOOD SECURITY</stored-value>
+                <displayed-value>food security</displayed-value>
+                <stored-value>food security</stored-value>
             </pair>
             <pair>
-                <displayed-value>FOOD SYSTEMS</displayed-value>
-                <stored-value>FOOD SYSTEMS</stored-value>
+                <displayed-value>food systems</displayed-value>
+                <stored-value>food systems</stored-value>
             </pair>
             <pair>
-                <displayed-value>FORESTRY</displayed-value>
-                <stored-value>FORESTRY</stored-value>
+                <displayed-value>forestry</displayed-value>
+                <stored-value>forestry</stored-value>
             </pair>
             <pair>
-                <displayed-value>GENDER</displayed-value>
-                <stored-value>GENDER</stored-value>
+                <displayed-value>gender</displayed-value>
+                <stored-value>gender</stored-value>
             </pair>
             <pair>
-                <displayed-value>GENETIC IMPROVEMENT</displayed-value>
-                <stored-value>GENETIC IMPROVEMENT</stored-value>
+                <displayed-value>genetic improvement</displayed-value>
+                <stored-value>genetic improvement</stored-value>
             </pair>
             <pair>
-                <displayed-value>GRAIN LEGUMES</displayed-value>
-                <stored-value>GRAIN LEGUMES</stored-value>
+                <displayed-value>grain legumes</displayed-value>
+                <stored-value>grain legumes</stored-value>
             </pair>
             <pair>
-                <displayed-value>HANDLING, TRANSPORT, STORAGE AND PROTECTION OF AGRICULTURAL PRODUCTS</displayed-value>
-                <stored-value>HANDLING, TRANSPORT, STORAGE AND PROTECTION OF AGRICULTURAL PRODUCTS</stored-value>
+                <displayed-value>handling, transport, storage and protection of agricultural products</displayed-value>
+                <stored-value>handling, transport, storage and protection of agricultural products</stored-value>
             </pair>
             <pair>
-                <displayed-value>IMPACT ASSESSMENT</displayed-value>
-                <stored-value>IMPACT ASSESSMENT</stored-value>
+                <displayed-value>impact assessment</displayed-value>
+                <stored-value>impact assessment</stored-value>
             </pair>
             <pair>
-                <displayed-value>INTEGRATED SOIL FERTILITY MANAGEMENT</displayed-value>
-                <stored-value>INTEGRATED SOIL FERTILITY MANAGEMENT</stored-value>
+                <displayed-value>integrated soil fertility management</displayed-value>
+                <stored-value>integrated soil fertility management</stored-value>
             </pair>
             <pair>
-                <displayed-value>KNOWLEDGE MANAGEMENT</displayed-value>
-                <stored-value>KNOWLEDGE MANAGEMENT</stored-value>
+                <displayed-value>knowledge management</displayed-value>
+                <stored-value>knowledge management</stored-value>
             </pair>
             <pair>
-                <displayed-value>LAND USE</displayed-value>
-                <stored-value>LAND USE</stored-value>
+                <displayed-value>land use</displayed-value>
+                <stored-value>land use</stored-value>
             </pair>
             <pair>
-                <displayed-value>LIVELIHOODS</displayed-value>
-                <stored-value>LIVELIHOODS</stored-value>
+                <displayed-value>livelihoods</displayed-value>
+                <stored-value>livelihoods</stored-value>
             </pair>
             <pair>
-                <displayed-value>MAIZE</displayed-value>
-                <stored-value>MAIZE</stored-value>
+                <displayed-value>maize</displayed-value>
+                <stored-value>maize</stored-value>
             </pair>
             <pair>
-                <displayed-value>MARKETS</displayed-value>
-                <stored-value>MARKETS</stored-value>
+                <displayed-value>markets</displayed-value>
+                <stored-value>markets</stored-value>
             </pair>
             <pair>
-                <displayed-value>METEOROLOGY AND CLIMATOLOGY</displayed-value>
-                <stored-value>METEOROLOGY AND CLIMATOLOGY</stored-value>
+                <displayed-value>meteorology and climatology</displayed-value>
+                <stored-value>meteorology and climatology</stored-value>
             </pair>
             <pair>
-                <displayed-value>NATURAL RESOURCE MANAGEMENT</displayed-value>
-                <stored-value>NATURAL RESOURCE MANAGEMENT</stored-value>
+                <displayed-value>natural resource management</displayed-value>
+                <stored-value>natural resource management</stored-value>
             </pair>
             <pair>
-                <displayed-value>NUTRITION</displayed-value>
-                <stored-value>NUTRITION</stored-value>
+                <displayed-value>nutrition</displayed-value>
+                <stored-value>nutrition</stored-value>
             </pair>
             <pair>
-                <displayed-value>PESTS OF PLANTS</displayed-value>
-                <stored-value>PESTS OF PLANTS</stored-value>
+                <displayed-value>pests of plants</displayed-value>
+                <stored-value>pests of plants</stored-value>
             </pair>
             <pair>
-                <displayed-value>PLANT BREEDING</displayed-value>
-                <stored-value>PLANT BREEDING</stored-value>
+                <displayed-value>plant breeding</displayed-value>
+                <stored-value>plant breeding</stored-value>
             </pair>
             <pair>
-                <displayed-value>PLANT DISEASES</displayed-value>
-                <stored-value>PLANT DISEASES</stored-value>
+                <displayed-value>plant diseases</displayed-value>
+                <stored-value>plant diseases</stored-value>
             </pair>
             <pair>
-                <displayed-value>PLANT ECOLOGY</displayed-value>
-                <stored-value>PLANT ECOLOGY</stored-value>
+                <displayed-value>plant ecology</displayed-value>
+                <stored-value>plant ecology</stored-value>
             </pair>
             <pair>
-                <displayed-value>PLANT GENETIC RESOURCES</displayed-value>
-                <stored-value>PLANT GENETIC RESOURCES</stored-value>
+                <displayed-value>plant genetic resources</displayed-value>
+                <stored-value>plant genetic resources</stored-value>
             </pair>
             <pair>
-                <displayed-value>PLANT HEALTH</displayed-value>
-                <stored-value>PLANT HEALTH</stored-value>
+                <displayed-value>plant health</displayed-value>
+                <stored-value>plant health</stored-value>
             </pair>
             <pair>
-                <displayed-value>PLANT PRODUCTION</displayed-value>
-                <stored-value>PLANT PRODUCTION</stored-value>
+                <displayed-value>plant production</displayed-value>
+                <stored-value>plant production</stored-value>
             </pair>
             <pair>
-                <displayed-value>PLANTAIN</displayed-value>
-                <stored-value>PLANTAIN</stored-value>
+                <displayed-value>plantain</displayed-value>
+                <stored-value>plantain</stored-value>
             </pair>
             <pair>
-                <displayed-value>POLICIES AND INSTITUTIONS</displayed-value>
-                <stored-value>POLICIES AND INSTITUTIONS</stored-value>
+                <displayed-value>policies and institutions</displayed-value>
+                <stored-value>policies and institutions</stored-value>
             </pair>
             <pair>
-                <displayed-value>POST-HARVESTING TECHNOLOGY</displayed-value>
-                <stored-value>POST-HARVESTING TECHNOLOGY</stored-value>
+                <displayed-value>post-harvesting technology</displayed-value>
+                <stored-value>post-harvesting technology</stored-value>
             </pair>
             <pair>
-                <displayed-value>RESEARCH METHOD</displayed-value>
-                <stored-value>RESEARCH METHOD</stored-value>
+                <displayed-value>research method</displayed-value>
+                <stored-value>research method</stored-value>
             </pair>
             <pair>
-                <displayed-value>SMALLHOLDER FARMERS</displayed-value>
-                <stored-value>SMALLHOLDER FARMERS</stored-value>
+                <displayed-value>smallholder farmers</displayed-value>
+                <stored-value>smallholder farmers</stored-value>
             </pair>
             <pair>
-                <displayed-value>SOCIOECONOMY</displayed-value>
-                <stored-value>SOCIOECONOMY</stored-value>
+                <displayed-value>socioeconomy</displayed-value>
+                <stored-value>socioeconomy</stored-value>
             </pair>
             <pair>
-                <displayed-value>SOIL FERTILITY</displayed-value>
-                <stored-value>SOIL FERTILITY</stored-value>
+                <displayed-value>soil fertility</displayed-value>
+                <stored-value>soil fertility</stored-value>
             </pair>
             <pair>
-                <displayed-value>SOIL HEALTH</displayed-value>
-                <stored-value>SOIL HEALTH</stored-value>
+                <displayed-value>soil health</displayed-value>
+                <stored-value>soil health</stored-value>
             </pair>
             <pair>
-                <displayed-value>SOIL INFORMATION</displayed-value>
-                <stored-value>SOIL INFORMATION</stored-value>
+                <displayed-value>soil information</displayed-value>
+                <stored-value>soil information</stored-value>
             </pair>
             <pair>
-                <displayed-value>SOIL SURVEYS AND MAPPING</displayed-value>
-                <stored-value>SOIL SURVEYS AND MAPPING</stored-value>
+                <displayed-value>soil surveys and mapping</displayed-value>
+                <stored-value>soil surveys and mapping</stored-value>
             </pair>
             <pair>
-                <displayed-value>SOYBEAN</displayed-value>
-                <stored-value>SOYBEAN</stored-value>
+                <displayed-value>soybean</displayed-value>
+                <stored-value>soybean</stored-value>
             </pair>
             <pair>
-                <displayed-value>TISSUE CULTURE</displayed-value>
-                <stored-value>TISSUE CULTURE</stored-value>
+                <displayed-value>tissue culture</displayed-value>
+                <stored-value>tissue culture</stored-value>
             </pair>
             <pair>
-                <displayed-value>VALUE CHAINS</displayed-value>
-                <stored-value>VALUE CHAINS</stored-value>
+                <displayed-value>value chains</displayed-value>
+                <stored-value>value chains</stored-value>
             </pair>
             <pair>
-                <displayed-value>WEEDS</displayed-value>
-                <stored-value>WEEDS</stored-value>
+                <displayed-value>weeds</displayed-value>
+                <stored-value>weeds</stored-value>
             </pair>
             <pair>
-                <displayed-value>YAM</displayed-value>
-                <stored-value>YAM</stored-value>
+                <displayed-value>yam</displayed-value>
+                <stored-value>yam</stored-value>
             </pair>
         </value-pairs>
 
