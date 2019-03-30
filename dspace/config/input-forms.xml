@@ -96,7 +96,7 @@
                     <repeatable>true</repeatable>
                     <input-type value-pairs-name="common_iita_subject">dropdown</input-type>
                     <hint>Select the IITA Subject type of the item.</hint>
-                    <required>This is a mandatory metadata field</required>
+                    <required></required>
                 </field>
 
                 <!-- puplication related fields -->
@@ -199,15 +199,15 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Reveiw Status</label>
                     <input-type value-pairs-name="common_review_status">dropdown</input-type>
-                    <hint>Select the type(s) of review of the item.</hint>
-                    <required>true</required>
+                    <hint></hint>
+                    <required></required>
                 </field>
 
                 <field>
                     <dc-schema>local</dc-schema>
                     <dc-element>regionofresearch</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <repeatable></repeatable>
+                    <repeatable>true</repeatable>
                     <label>Region where this research was done</label>
                     <input-type value-pairs-name="common_regions">dropdown</input-type>
                     <required></required>
@@ -222,18 +222,18 @@
                     <label>Contries where research was conducted</label>
                     <input-type value-pairs-name="common_countries">dropdown</input-type>
                     <hint>You can selected more than one country</hint>
-                    <required>Compulsory metadata</required>
+                    <required></required>
                 </field>
 
                 <field>
                     <dc-schema>local</dc-schema>
                     <dc-element>researchtheme</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Research Theme</label>
                     <input-type value-pairs-name="common_research_themes">dropdown</input-type>
                     <hint>Enter the research theme for the item.</hint>
-                    <required>Research theme for the item is needed</required>
+                    <required></required>
                 </field>
             </page>
 
@@ -246,7 +246,7 @@
                     <label>Authors</label>
                     <input-type>name</input-type>
                     <hint>Enter the names of the authors of this item.</hint>
-                    <required></required>
+                    <required>Athours profiles is a mandatory metadata field.</required>
                 </field>
 
                 <field>
@@ -268,7 +268,7 @@
                     <label>Authors ORCIDs</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the ORCIDS of the authors of this item.</hint>
-                    <required>This is a required metadata field</required>
+                    <required></required>
                 </field>
                 <field>
                     <dc-schema>local</dc-schema>
@@ -277,7 +277,7 @@
                     <repeatable>true</repeatable>
                     <label>Authors CRP</label>
                     <input-type value-pairs-name="common_crp">dropdown</input-type>
-                    <required>This metadata field is mandatory</required>
+                    <required></required>
                 </field>
 
                 <field>
@@ -286,7 +286,7 @@
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Authors Hubs</label>
-                    <required>You must select at least one hub</required>
+                    <required></required>
                     <input-type value-pairs-name="common_hubs">dropdown</input-type>
                 </field>
 
@@ -306,7 +306,7 @@
                     <dc-qualifier></dc-qualifier>
                     <repeatable></repeatable>
                     <label>ISI Status</label>
-                    <required>This is a required metadata field </required>
+                    <required></required>
                     <input-type value-pairs-name="common_isi_status">dropdown</input-type>
                 </field>
 
@@ -348,7 +348,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier>sponsorship</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Sponsors</label>
                     <input-type>onebox</input-type>
                     <required></required>
