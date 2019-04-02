@@ -91,8 +91,10 @@
 
     <xsl:template match="dri:options//dri:list">
         <xsl:apply-templates select="dri:head"/>
-        <xsl:apply-templates select="dri:item"/>
-        <xsl:apply-templates select="dri:list"/>
+        <div class="list-group-items-container">
+            <xsl:apply-templates select="dri:item"/>
+            <xsl:apply-templates select="dri:list"/>
+        </div>
     </xsl:template>
 
     <xsl:template match="dri:options/dri:list" priority="3">
@@ -117,21 +119,19 @@
     </xsl:template>
 
     <xsl:template match="dri:options//dri:item[dri:xref]">
-        <div   class="list-group-items-container">
-            <a href="{dri:xref/@target}">
-                <xsl:call-template name="standardAttributes">
-                    <xsl:with-param name="class">list-group-item ds-option</xsl:with-param>
-                </xsl:call-template>
-                <xsl:choose>
-                    <xsl:when test="dri:xref/node()">
-                        <xsl:apply-templates select="dri:xref/node()"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="dri:xref"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </a>
-        </div>
+        <a href="{dri:xref/@target}">
+            <xsl:call-template name="standardAttributes">
+                <xsl:with-param name="class">list-group-item ds-option</xsl:with-param>
+            </xsl:call-template>
+            <xsl:choose>
+                <xsl:when test="dri:xref/node()">
+                    <xsl:apply-templates select="dri:xref/node()"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="dri:xref"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </a>
     </xsl:template>
 
     <xsl:template match="dri:options/dri:list/dri:head" priority="3">

@@ -204,7 +204,7 @@ a.list-group-item:hover, a.list-group-item:focus{
 }
 .artifact-description a{
   color: #333;
-  font-size:20px;
+  fon
 }
 .artifact-description a:hover{
   color: #f26522;
@@ -342,11 +342,18 @@ footer .site-footer{
   content: "\2212";
 }
 #aspect_discovery_Navigation_list_discovery .list-group-items-container {
-  padding: 0px 15px 0px 40px;
-  background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+#aspect_discovery_Navigation_list_discovery .list-group-item-heading{
+  color:#1a1f27;
+  font-weight: normal;
+}
+
+#aspect_discovery_Navigation_list_discovery .active_accordion .list-group-item-heading{
+  color:#333333;
+  font-weight: bold;
 }
 
 /* Image thumbnails */
