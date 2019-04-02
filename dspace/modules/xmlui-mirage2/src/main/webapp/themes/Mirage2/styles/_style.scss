@@ -190,6 +190,50 @@ a.list-group-item:hover, a.list-group-item:focus{
 #ds-feed-option img{
   width:23px;
 }
+/* Sidebar accordion */
+#sidebar .active {
+  cursor: pointer;
+  transition: 0.4s;
+}
+#sidebar .active:after {
+  content: '\002B';
+  float: right;
+  margin-left: 5px;
+}
+#sidebar .active_accordion:after {
+  content: "\2212";
+}
+#sidebar .list-group-items-container {
+  padding-left:15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+#sidebar .list-group-item.active .list-group-item-heading{
+  color:#555555;
+  font-weight: normal;
+}
+#sidebar .list-group-item.active_accordion .list-group-item-heading{
+  color:#1a1f27;
+  font-weight: bold;
+}
+/* Remove sidebar accordion on whole repository*/
+#aspect_viewArtifacts_Navigation_list_browse .active {
+  cursor: none;
+}
+#aspect_viewArtifacts_Navigation_list_browse .active:after {
+  content: none;
+}
+#aspect_viewArtifacts_Navigation_list_browse .list-group-items-container {
+  max-height: inherit;
+}
+#aspect_viewArtifacts_Navigation_list_browse .list-group-item.active .list-group-item-heading{
+  color:#1a1f27;
+  font-weight: bold;
+}
+#aspect_viewArtifacts_Navigation_list_browse .list-group-items-container{
+  padding: 0px;
+}
 
 /* Search */
 #ds-search-form{
@@ -325,34 +369,6 @@ footer .site-footer{
 /* Alerts */
 .alert{
   margin: 10px 20px 20px 20px;
-}
-
-/* Sidebar accordion */
-#aspect_discovery_Navigation_list_discovery .active {
-  cursor: pointer;
-  transition: 0.4s;
-}
-#aspect_discovery_Navigation_list_discovery .active:after {
-  content: '\002B';
-  float: right;
-  margin-left: 5px;
-}
-#aspect_discovery_Navigation_list_discovery .active_accordion:after {
-  content: "\2212";
-}
-#aspect_discovery_Navigation_list_discovery .list-group-items-container {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-#aspect_discovery_Navigation_list_discovery .list-group-item-heading{
-  color:#1a1f27;
-  font-weight: normal;
-}
-
-#aspect_discovery_Navigation_list_discovery .active_accordion .list-group-item-heading{
-  color:#333333;
-  font-weight: bold;
 }
 
 /* Image thumbnails */
