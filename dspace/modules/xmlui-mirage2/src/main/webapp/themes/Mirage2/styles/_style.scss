@@ -316,6 +316,33 @@ footer .site-footer{
 .publication-records-import-btn {
   margin: 5px 0px 15px 0px;
 }
+.item-wrapper{
+  padding-bottom: 5px;
+}
+/* Image thumbnails */
+.thumbnail > img, .thumbnail a > img{
+  width:100%;
+  height:150px;
+}
+.img-thumbnail{
+  background: none;
+  border: none;
+  padding:0px;
+}
+.thumbnail{
+  position: relative;
+  overflow: hidden;
+  padding:0px;
+}
+.thumbnail:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 10px solid;
+  border-color: white white #eee #eee;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
 
 #aspect_submission_StepTransformer_field_search {
   width: 81%;
@@ -369,28 +396,6 @@ footer .site-footer{
 /* Alerts */
 .alert{
   margin: 10px 20px 20px 20px;
-}
-
-/* Image thumbnails */
-.img-thumbnail{
-  background: none;
-  border: none;
-  padding:0px;
-}
-.thumbnail{
-  position: relative;
-  background: #ddd;
-  overflow: hidden;
-  padding:0px;
-}
-.thumbnail:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 10px solid;
-  border-color: white white #ddd #ddd;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6), -1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* Pagination */
