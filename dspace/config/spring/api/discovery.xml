@@ -108,10 +108,8 @@
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterAuthorHub"/>
                 <ref bean="searchFilterCountry"/>
-                <ref bean="searchFilterRegionOfFocus"/>
-                <ref bean="searchFilterCgiarResearchProgram"/>
-                <ref bean="searchFilterScienceResearchArea"/>
-                <ref bean="searchFilterAfflitiation"/>
+                <ref bean="searchFilterRegionOfResearch"/>
+                <ref bean="searchFilterAffiliation"/>
                 <ref bean="searchFilterAuthorCrp"/>
                 <ref bean="searchFilterReviewStatus"/>
                 <ref bean="searchFilterContentInOriginalBundle"/>
@@ -128,10 +126,8 @@
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterAuthorHub"/>
                 <ref bean="searchFilterCountry"/>
-                <ref bean="searchFilterRegionOfFocus"/>
-                <ref bean="searchFilterCgiarResearchProgram"/>
-                <ref bean="searchFilterScienceResearchArea"/>
-                <ref bean="searchFilterAfflitiation"/>
+                <ref bean="searchFilterRegionOfResearch"/>
+                <ref bean="searchFilterAffiliation"/>
                 <ref bean="searchFilterAuthorCrp"/>
                 <ref bean="searchFilterReviewStatus"/>
                 <ref bean="searchFilterContentInOriginalBundle"/>
@@ -236,10 +232,8 @@
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterAuthorHub"/>
                 <ref bean="searchFilterCountry"/>
-                <ref bean="searchFilterRegionOfFocus"/>
-                <ref bean="searchFilterCgiarResearchProgram"/>
-                <ref bean="searchFilterScienceResearchArea"/>
-                <ref bean="searchFilterAfflitiation"/>
+                <ref bean="searchFilterRegionOfResearch"/>
+                <ref bean="searchFilterAffiliation"/>
                 <ref bean="searchFilterAuthorCrp"/>
                 <ref bean="searchFilterReviewStatus"/>
                 <ref bean="searchFilterContentInOriginalBundle"/>
@@ -256,10 +250,8 @@
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterAuthorHub"/>
                 <ref bean="searchFilterCountry"/>
-                <ref bean="searchFilterRegionOfFocus"/>
-                <ref bean="searchFilterCgiarResearchProgram"/>
-                <ref bean="searchFilterScienceResearchArea"/>
-                <ref bean="searchFilterAfflitiation"/>
+                <ref bean="searchFilterRegionOfResearch"/>
+                <ref bean="searchFilterAffiliation"/>
                 <ref bean="searchFilterAuthorCrp"/>
                 <ref bean="searchFilterReviewStatus"/>
                 <ref bean="searchFilterContentInOriginalBundle"/>
@@ -499,6 +491,7 @@
         <property name="sortOrderFilterPage" value="COUNT"/>
         <property name="splitter" value="::"/>
     </bean>
+    
     <bean id="searchFilterCountry" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
         <property name="indexFieldName" value="country"/>
         <property name="metadataFields">
@@ -511,11 +504,11 @@
         <property name="sortOrderFilterPage" value="COUNT"/>
         <property name="splitter" value="::"/>
     </bean>
-    <bean id="searchFilterRegionOfFocus" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
-        <property name="indexFieldName" value="regionoffocus"/>
+    <bean id="searchFilterRegionOfResearch" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
+        <property name="indexFieldName" value="regionofresearch"/>
         <property name="metadataFields">
             <list>
-                <value>local.regionoffocus</value>
+                <value>local.regionofresearch</value>
             </list>
         </property>
         <property name="facetLimit" value="10"/>
@@ -523,36 +516,12 @@
         <property name="sortOrderFilterPage" value="COUNT"/>
         <property name="splitter" value="::"/>
     </bean>
-    <bean id="searchFilterCgiarResearchProgram" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
-        <property name="indexFieldName" value="cgiarresearchprogram"/>
+   
+    <bean id="searchFilterAffiliation" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
+        <property name="indexFieldName" value="affiliation"/>
         <property name="metadataFields">
             <list>
-                <value>local.cgiarresearchprogram</value>
-            </list>
-        </property>
-        <property name="facetLimit" value="10"/>
-        <property name="sortOrderSidebar" value="COUNT"/>
-        <property name="sortOrderFilterPage" value="COUNT"/>
-        <property name="splitter" value="::"/>
-    </bean>
-    <bean id="searchFilterScienceResearchArea" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
-        <property name="indexFieldName" value="scienceresearcharea"/>
-        <property name="metadataFields">
-            <list>
-                <value>local.scienceresearcharea</value>
-            </list>
-        </property>
-        <property name="facetLimit" value="10"/>
-        <property name="sortOrderSidebar" value="COUNT"/>
-        <property name="sortOrderFilterPage" value="COUNT"/>
-        <property name="splitter" value="::"/>
-    </bean>
-    
-    <bean id="searchFilterAfflitiation" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
-        <property name="indexFieldName" value="afflitiation"/>
-        <property name="metadataFields">
-            <list>
-                <value>local.afflitiation</value>
+                <value>local.affiliation</value>
             </list>
         </property>
         <property name="facetLimit" value="10"/>
