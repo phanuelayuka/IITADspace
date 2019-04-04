@@ -10,6 +10,7 @@
 /* Entire body */
 body {
   font-size: 14px;
+  background: #f6f6f6;
 }
 
 h3{
@@ -80,7 +81,7 @@ header{
 }
 header .navbar-default {
   background-color: #1a1f27;
-  padding: 2px 30px;
+  padding: 2px 0px;
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -91,7 +92,7 @@ header .navbar-default .navbar-nav > li > a {
   padding:15px 10px;
 }
 header .navbar-brand {
-  padding: 3px 15px;
+  padding: 3px 0px;
 }
 header .navbar-brand img {
   height: 35px;
@@ -111,12 +112,11 @@ header .navbar-default .navbar-nav > .open > a, header .navbar-default .navbar-n
 
 /* Breadcrumb */
 .trail-wrapper {
-  border-bottom: none;
-  background: none;
+  background: #fff;
+  margin-bottom:20px;
+  border-bottom: 1px solid #eee;
 }
-.trail-wrapper .container{
-  padding-left: 0px;
-}
+
 .trail-wrapper .breadcrumb, .trail-wrapper .breadcrumb i {
   font-size: 13px;
 }
@@ -128,7 +128,7 @@ header .navbar-default .navbar-nav > .open > a, header .navbar-default .navbar-n
   text-decoration: none;
 }
 .breadcrumb {
-  padding: 16px 0px;
+  padding: 12px 0px;
 }
 .breadcrumb li{
   color: #333;
@@ -141,11 +141,9 @@ header .navbar-default .navbar-nav > .open > a, header .navbar-default .navbar-n
 
 /* Sidebar */
 #main-container #sidebar{
-  padding-left: 0px;
-  padding-right: 0px;
   background: #fff;
-  padding-top: 20px;
-  border-right: 1px solid #eee;
+  padding: 15px 17px 15px 25px;
+  border: 1px solid #eee;
 }
 .list-group-item{
   background: none;
@@ -169,7 +167,7 @@ a.list-group-item.active:hover{
   padding-top: 0px;
 }
 #ds-options .ds-option-set-head{
-  padding: 0px 15px 0px 40px;
+  padding: 5px 0px;
   color: #f26522;
   text-shadow: none;
   font-weight: bold;
@@ -179,7 +177,7 @@ a.list-group-item.active:hover{
   border-bottom-left-radius: 0px;
 }
 a.list-group-item{
-  padding: 5px 20px 5px 40px;
+  padding: 5px 0px;
   color: #555555;
 }
 a.list-group-item:hover, a.list-group-item:focus{
@@ -237,11 +235,7 @@ a.list-group-item:hover, a.list-group-item:focus{
 
 /* Search */
 #ds-search-form{
-  padding: 10px 15px 10px 20px;
-}
-.white-box .discoverySearchBox .discover-search-box fieldset, .white-box .discoverySearchBox .discover-search-box .col-sm-3,
-.discoverySearchBox .ds-interactive-div .ds-div-head, .discoverySearchBox .discover-filters-box .ds-static-div,.discoverySearchBox .btn-group{
-  padding:0px;
+  padding: 10px 0px 20px 0px;
 }
 .advanced-filter-row .btn-group{
   padding: 0px;
@@ -253,38 +247,16 @@ a.list-group-item:hover, a.list-group-item:focus{
   color: #f26522;
   text-decoration: none;
 }
-.artifact-description h4{
-  font-size: 16px;
-}
 
 /* Right content */
 .main-content{
-  padding-top: 0px;
-  padding-right:40px;
-  padding-left:25px;
+  padding:0px 0px 0px 15px;
   background: #f6f6f6;
 }
-.white-box{
+.main-content-body{
   background: #fff;
   border: 1px solid #eee;
-  padding: 15px 0px;
-}
-.white-box .page-header, .white-box .ds-static-div, .ds-interactive-div .page-header, .ds-interactive-div .ds-div-head,
-.white-box .ds-interactive-div fieldset, .ds-interactive-div .ds-head{
-  padding-left: 20px;
-  padding-right:20px
-}
-.white-box .ds-static-div .browse-navigation-wrapper{
-  padding-left:7px;
-  padding-right:7px;
-}
-.ds-static-div .primary{
-  padding-left:10px;
-  padding-right: 10px;
-}
-.browse-navigation-wrapper .ds-static-div{
-  padding-left:8px;
-  padding-right:8px;
+  padding: 15px 25px;
 }
 .ds-div-head{
   font-size: 18px;
@@ -296,16 +268,20 @@ fieldset .ds-form-item{
 /* Main body */
 .page-header {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
 /* Footer */
 .main-content footer .site-footer a:hover{
   text-decoration: none;
 }
-footer .site-footer{
-  padding: 10px 2px;
-  border-top:1px solid #eee;
-  margin-top:20px;
+footer{
+  margin-top:25px;
+  background: #1a1f27;
+  color:#8a8a8a;
+  padding-top:20px;
+}
+footer a{
+  color:#fff;
 }
 
 /* Publications */
@@ -382,10 +358,6 @@ footer .site-footer{
 }
 
 /* Administrative */
-.administrative .ds-paragraph, .table-responsive{
-  padding-left:20px;
-  padding-right:20px;
-}
 .table-responsive{
   padding-top: 15px;
 }
@@ -405,22 +377,12 @@ footer .site-footer{
 
 @media (min-width: 768px) {
   .container{
-    width: 100%;
+    width: 91%;
   }
   #sidebar{
-    width: 21%;
     min-height: calc(100vh - 60px);
   }
   .main-content{
-    width: 79%;
     min-height: calc(100vh - 14px);
-  }
-  footer{
-    width:100%;
-  }
-  footer .site-footer{
-    position: fixed;
-    width: 74.2%;
-    bottom: 0;
   }
 }
