@@ -16,10 +16,6 @@ body {
 h3{
   font-size: 18px;
 }
-.container{
-  padding-left:10px;
-  padding-right:10px;
-}
 .bold {
   font-weight: bold;
 }
@@ -51,9 +47,6 @@ legend{
   color: #fff;
   background-color: #f26522;
   border-color: #f26522;
-}
-.btn-group{
-  padding: 0px 20px 15px 20px;
 }
 
 /* Labels */
@@ -167,10 +160,11 @@ a.list-group-item.active:hover{
   padding-top: 0px;
 }
 #ds-options .ds-option-set-head{
-  padding: 5px 0px;
+  padding: 0 10px;
   color: #f26522;
   text-shadow: none;
   font-weight: bold;
+  border-left: 2px solid #f26522;
 }
 .list-group-item:last-child{
   border-bottom-right-radius: 0px;
@@ -250,8 +244,9 @@ a.list-group-item:hover, a.list-group-item:focus{
 
 /* Right content */
 .main-content{
-  padding:0px 0px 0px 15px;
+  padding:0px 15px 10px 15px;
   background: #f6f6f6;
+  margin-bottom: 0;
 }
 .main-content-body{
   background: #fff;
@@ -276,12 +271,19 @@ fieldset .ds-form-item{
 }
 footer{
   margin-top:25px;
-  background: #1a1f27;
   color:#8a8a8a;
-  padding-top:20px;
+  padding-top:0;
+  background: #1a1f27;
 }
 footer a{
   color:#fff;
+}
+footer p{
+  margin: 0;
+}
+footer .site-footer .container{
+  padding-top:20px;
+
 }
 
 /* Publications */

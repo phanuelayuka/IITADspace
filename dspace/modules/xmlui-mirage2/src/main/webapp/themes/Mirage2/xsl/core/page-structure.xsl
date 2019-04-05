@@ -87,6 +87,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:call-template name="buildHeader"/>
+                            <xsl:call-template name="buildTrail"/>
 
                             <!--javascript-disabled warning, will be invisible if javascript is enabled-->
                             <div id="no-js-warning-wrapper" class="hidden">
@@ -104,7 +105,6 @@
                                             <xsl:apply-templates select="dri:options"/>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-9 main-content">
-                                            <xsl:call-template name="buildTrail"/>
                                             <div class="main-content-body">
                                                 <div class ="white-box">
                                                     <xsl:if test="not(contains(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='request'][@qualifier='URI'], 'discover'))">
@@ -187,12 +187,12 @@
                                                     </xsl:if>
                                                     <xsl:apply-templates select="*[not(self::dri:options)]"/>
                                                 </div>
-                                                <xsl:call-template name="buildFooter"/>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <xsl:call-template name="buildFooter"/>
                         </xsl:otherwise>
                     </xsl:choose>
                     <!-- Javascript at the bottom for fast page loading -->
@@ -772,12 +772,14 @@
     <xsl:template name="buildFooter">
         <footer>
             <div class="site-footer">
-                <div class="pull-left footer-copyright">
-                    <span>copyright&#160;&#169;&#160;2019&#160; <strong>IITASpace</strong>. All rights reserved.</span>
-                </div>
-                <div class="pull-right footer-social">
-                    <a href="http://www.iita.org/" target="_blank">IITA</a> |
-                    <a href="http://data.iita.org/" target="_blank">Open Access Repository</a>
+                <div class="container">
+                    <div class="pull-left footer-copyright">
+                        <span>copyright&#160;&#169;&#160;2019&#160; <strong>IITASpace</strong>. All rights reserved.</span>
+                    </div>
+                    <div class="pull-right footer-social">
+                        <a href="http://www.iita.org/" target="_blank">IITA</a> |
+                        <a href="http://data.iita.org/" target="_blank">Open Access Repository</a>
+                    </div>
                 </div>
             </div>
             <!--Invisible link to HTML sitemap (for search engines) -->
