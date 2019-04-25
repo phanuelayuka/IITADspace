@@ -2,15 +2,18 @@
 <document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
     <body>
         <div id="file.news.div.news" n="news" rend="primary" class="white-box">
-            <head>Welcome to the International Institute of Tropical Agriculture Research Repository</head>
-            <p>
-                IITA Bibliography is a collection of agricultural research publications produced by IITA scientists, research fellows, and
-                students from 1972 to date. The collection includes journal articles, books and book chapters, conference proceedings, training
-                and extension materials, theses, and other publications. IITA conducts research in these thematic areas: biotechnology and plant
-                breeding, natural resource management, social science and agribusiness, plant production and plant health,
-                and nutrition and human health.
-            </p>
-            <p>For more information please <xref target="/contact">contact us</xref> at the IITA Knowledge Center.</p>
+            <div class="welcome-msg">
+                <head>IITA Bibliography</head>
+                <p>
+                    IITA Bibliography is a collection of agricultural research publications produced by IITA scientists, research fellows, and
+                    students from 1972 to date. The collection includes journal articles, books and book chapters, conference proceedings, training
+                    and extension materials, theses, and other publications. IITA conducts research in these thematic areas: biotechnology and plant
+                    breeding, natural resource management, social science and agribusiness, plant production and plant health,
+                    and nutrition and human health.
+                </p>
+                <p>For more information please <xref target="/contact">contact us</xref> at the IITA Knowledge Center.</p>
+            </div>
+
         </div>
     </body>
     <options/>

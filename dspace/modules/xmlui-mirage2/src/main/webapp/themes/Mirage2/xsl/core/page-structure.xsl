@@ -113,6 +113,10 @@
                                                         <div id="ds-search-option" class="ds-option-set">
                                                             <!-- The form, complete with a text box and a button, all built from attributes referenced
                                                          from under pageMeta. -->
+                                                            <h2 class="banner-text">
+                                                                Welcome to the International Institute of Tropical Agriculture Research Repository
+                                                            </h2>
+                                                            <p class="banner-text">Search Repository</p>
                                                             <form id="ds-search-form" class="" method="post">
                                                                 <xsl:attribute name="action">
                                                                     <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
@@ -187,7 +191,9 @@
                                                             </form>
                                                         </div>
                                                     </xsl:if>
-                                                    <xsl:apply-templates select="*[not(self::dri:options)]"/>
+                                                    <div class="body-content">
+                                                        <xsl:apply-templates select="*[not(self::dri:options)]"/>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -855,6 +861,12 @@
         </script>
         <!--TODO concat & minify!-->
 
+        <script type="text/javascript">
+            if(window.location.pathname == '/xmlui/'){
+            var body = document.body;
+            body.classList.add("homepage");
+            }
+        </script>
         <script>
             <xsl:text>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='</xsl:text><xsl:value-of select="$context-path"/><xsl:text>';window.DSpace.theme_path='</xsl:text><xsl:value-of select="$theme-path"/><xsl:text>';</xsl:text>
         </script>
