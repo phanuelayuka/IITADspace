@@ -46,7 +46,7 @@ legend{
 }
 
 /* Buttons */
-.btn-primary, .btn-primary:hover {
+.btn-primary, .btn-primary:hover, .btn-default {
   color: #fff;
   background-color: #f26522;
   border-color: #f26522;
@@ -261,9 +261,11 @@ a.list-group-item:hover, a.list-group-item:focus{
 }
 
 /* Right content */
+.main-content, #main-container .row-offcanvas{
+  background: none;
+}
 .main-content{
   padding:0px 15px 10px 15px;
-  background: #f6f6f6;
   margin-bottom: 0;
 }
 .main-content-body{
@@ -478,6 +480,75 @@ footer .site-footer .container{
 }
 .homepage footer{
   margin-top: 0;
+}
+
+/* Login Page */
+.loginpage{
+  background: url("../images/login_bg.png"), no-repeat;
+  background-size: cover;
+}
+.loginpage .trail-wrapper, .loginpage #sidebar, .loginpage #ds-search-form, .loginpage  .navbar-default .pull-right, .loginpage .pull-right{
+  display: none;
+}
+.loginpage header .navbar-default, .loginpage footer{
+  background: none;
+}
+.loginpage header{
+  padding-bottom: 0;
+}
+.loginpage header .navbar-default{
+  border-bottom:none;
+  position: relative;
+  padding: 60px 0 30px 565px;
+}
+.loginpage header .navbar-default img{
+  width: auto;
+  height: 50px;
+}
+.loginpage .main-content{
+  width:100%;
+  padding:0 25%;
+  color:#fff;
+  min-height: auto;
+}
+.loginpage .main-content-body{
+  background: #154154;
+  border:none;
+  padding:30px 20px;
+  text-align: center;
+}
+.loginpage .main-content-body .control-group{
+  text-align: left;
+}
+.loginpage .main-content-body .control-group input{
+  margin-bottom: 7px;
+}
+.loginpage .main-content-body .control-group a{
+  padding-top: 20px;
+  color: #f26522;
+}
+.loginpage .main-content-body .control-group a:hover{
+  color:#fff;
+}
+.loginpage .col-md-6{
+  width: 100%;
+  padding:0 30px;
+}
+.loginpage .page-header{
+  margin-bottom: 30px;
+  font-size:19px;
+  text-transform: capitalize;
+}
+.loginpage .page-header:before{
+  left: 25%;
+}
+.loginpage footer{
+  margin-top: 0;
+}
+.loginpage footer .pull-left{
+  width: 100%;
+  text-align: center;
+  color:#fff;
 }
 
 @media (min-width: 768px) {
