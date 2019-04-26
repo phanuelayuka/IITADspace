@@ -116,7 +116,7 @@
                                                             <h2 class="banner-text">
                                                                 Welcome to the International Institute of Tropical Agriculture Research Repository
                                                             </h2>
-                                                            <p class="banner-text">Search Repository</p>
+                                                            <p class="banner-text">What would you like to view today?</p>
                                                             <form id="ds-search-form" class="" method="post">
                                                                 <xsl:attribute name="action">
                                                                     <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
@@ -865,6 +865,11 @@
             if(window.location.pathname == '/xmlui/'){
             var body = document.body;
             body.classList.add("homepage");
+            }
+
+            if(window.location.pathname == '/xmlui/password-login'){
+            var body = document.body;
+            body.classList.add("loginpage");
             }
         </script>
         <script>
