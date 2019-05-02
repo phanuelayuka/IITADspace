@@ -102,7 +102,9 @@
                                 <div class="row row-offcanvas row-offcanvas-right">
                                     <div class="horizontal-slider clearfix">
                                         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-                                            <xsl:apply-templates select="dri:options"/>
+                                            <div class="sidebar-container">
+                                                <xsl:apply-templates select="dri:options"/>
+                                            </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-9 main-content">
                                             <div class="main-content-body">
@@ -111,6 +113,10 @@
                                                         <div id="ds-search-option" class="ds-option-set">
                                                             <!-- The form, complete with a text box and a button, all built from attributes referenced
                                                          from under pageMeta. -->
+                                                            <h2 class="banner-text">
+                                                                Welcome to the International Institute of Tropical Agriculture Research Repository
+                                                            </h2>
+                                                            <p class="banner-text">What would you like to view today?</p>
                                                             <form id="ds-search-form" class="" method="post">
                                                                 <xsl:attribute name="action">
                                                                     <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
@@ -185,7 +191,9 @@
                                                             </form>
                                                         </div>
                                                     </xsl:if>
-                                                    <xsl:apply-templates select="*[not(self::dri:options)]"/>
+                                                    <div class="body-content">
+                                                        <xsl:apply-templates select="*[not(self::dri:options)]"/>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -854,6 +862,17 @@
         </script>
         <!--TODO concat & minify!-->
 
+        <script type="text/javascript">
+            if(window.location.pathname == '/xmlui/'){
+            var body = document.body;
+            body.classList.add("homepage");
+            }
+
+            if(window.location.pathname == '/xmlui/password-login'){
+            var body = document.body;
+            body.classList.add("loginpage");
+            }
+        </script>
         <script>
             <xsl:text>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='</xsl:text><xsl:value-of select="$context-path"/><xsl:text>';window.DSpace.theme_path='</xsl:text><xsl:value-of select="$theme-path"/><xsl:text>';</xsl:text>
         </script>
