@@ -36,6 +36,9 @@ a:hover {
 .iita_theme_bg_color{
   background-color: #ff5600 !important;
 }
+.banner-text{
+  display: none;
+}
 
 /* Tags */
 legend{
@@ -43,7 +46,7 @@ legend{
 }
 
 /* Buttons */
-.btn-primary, .btn-primary:hover {
+.btn-primary, .btn-primary:hover, .btn-default {
   color: #fff;
   background-color: #f26522;
   border-color: #f26522;
@@ -70,11 +73,10 @@ legend{
 
 /* Header */
 header{
-  padding-bottom: 55px;
+  padding-bottom: 51px;
 }
 header .navbar-default {
-  background-color: #1a1f27;
-  padding: 2px 0px;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -92,10 +94,11 @@ header .navbar-brand img {
 }
 
 header .navbar-default .navbar-nav > li > a{
-  background: #1a1f27;
+  background: #fff;
+  color:#333;
 }
 header .navbar-default .navbar-nav > li > a:hover, header .navbar-default .navbar-nav > li > a:focus{
-  background: #1a1f27 !important;
+  background: #fff !important;
   color:#f26522;
 }
 header .navbar-default .navbar-nav > .open > a, header .navbar-default .navbar-nav > .open > a:focus{
@@ -105,28 +108,43 @@ header .navbar-default .navbar-nav > .open > a, header .navbar-default .navbar-n
 
 /* Breadcrumb */
 .trail-wrapper {
-  background: #fff;
+  background: #1a1f27;
   margin-bottom:20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: none;
 }
 
 .trail-wrapper .breadcrumb, .trail-wrapper .breadcrumb i {
   font-size: 13px;
 }
 .trail-wrapper .breadcrumb a, .trail-wrapper .breadcrumb i, .trail-wrapper .breadcrumb>li+li:before{
-  color: #333;
+  color: #8a8a8a;
+}
+.trail-wrapper .breadcrumb>li+li.active:before{
+  display: none;
 }
 .trail-wrapper .breadcrumb>li>a:hover, .trail-wrapper .breadcrumb > .active{
-  color: #ff5600;
   text-decoration: none;
 }
+.trail-wrapper .breadcrumb>li>a:hover{
+  color: #f26522;
+}
+.trail-wrapper .breadcrumb > .active{
+  background: #f26522;
+  color: #fff;
+  padding: 8px;
+  margin-left:10px;
+}
+.trail-wrapper .col-xs-12{
+  padding-left: 0;
+  padding-right: 0;
+}
 .breadcrumb {
-  padding: 12px 0px;
+  padding: 0;
 }
 .breadcrumb li{
-  color: #333;
+  color: #8a8a8a;
+  padding: 8px 0;
 }
-
 /* Nav tabs */
 .nav-tabs > li > a{
   font-size:14px;
@@ -243,9 +261,11 @@ a.list-group-item:hover, a.list-group-item:focus{
 }
 
 /* Right content */
+.main-content, #main-container .row-offcanvas{
+  background: none;
+}
 .main-content{
   padding:0px 15px 10px 15px;
-  background: #f6f6f6;
   margin-bottom: 0;
 }
 .main-content-body{
@@ -264,6 +284,17 @@ fieldset .ds-form-item{
 .page-header {
   font-weight: bold;
   font-size: 16px;
+  border-bottom: none;
+  display: inline-block;
+  position: relative;
+}
+.page-header:before{
+  content:"";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  border-bottom: 2px solid #f26522;
 }
 /* Footer */
 .main-content footer .site-footer a:hover{
@@ -338,11 +369,11 @@ footer .site-footer .container{
 .community-browser-row a[name='community-browser-link'] {
   line-height: 40px;
   font-size: 14px;
-  color: #223c60;
+  color: #f26522;
 }
 
 .community-browser-row a[name='community-browser-link']:hover {
-  color: #ff5600;
+  color: #154154;
 }
 .community-browser-row a.toggler{
   padding: 5px 8px;
@@ -355,6 +386,9 @@ footer .site-footer .container{
 .community-browser-row a.toggler:focus {
   color: #ff5600;
 }
+.community-browser-row p{
+  color:#333;
+}
 .artifact-title {
   font-size: 14px;
 }
@@ -366,20 +400,163 @@ footer .site-footer .container{
 .table-striped{
   border: 1px solid #d9d9d9;
 }
-
 /* Alerts */
 .alert{
   margin: 10px 20px 20px 20px;
 }
-
 /* Pagination */
 .pagination-info{
   padding: 6px 15px;
 }
 
+/* Homepage */
+.homepage, .homepage #main-container .row-offcanvas, .homepage .main-content{
+  background: #fff;
+}
+.homepage header .navbar-default, .homepage .trail-wrapper, .homepage footer{
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.homepage .trail-wrapper{
+  display: none;
+}
+.homepage .container{
+  padding-right:0;
+}
+.homepage #main-container #sidebar{
+  border: none;
+  padding-left:0;
+  width:22%;
+}
+.homepage #main-container #sidebar .sidebar-container{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+  padding:20px 25px 20px 40px;
+  position: fixed;
+  bottom:0;
+  top:0;
+  overflow-y: auto;
+  width: 21.5%;
+}
+.homepage .main-content{
+  padding:0 25px 30px 5px;
+  background: #fff;
+  margin-bottom: 0;
+  width: 78%;
+}
+.homepage .main-content-body {
+  border: none;
+  padding: 0;
+}
+/* Front page banner */
+.homepage #ds-search-option{
+  margin-bottom:25px;
+  margin-top: 7px;
+  padding:50px 0 80px 20px;
+  background: url("../images/banner_bg.jpg") no-repeat;
+  background-size: cover;
+}
+.homepage .banner-text{
+  display: block;
+}
+.homepage #ds-search-option h2{
+  width: 50%;
+  color: #fff;
+  font-size:22px;
+  line-height:1.3;
+  font-weight: bold;
+}
+.homepage #ds-search-option p{
+  color:#fff;
+  font-size:17px;
+}
+.homepage #ds-search-form{
+  padding-bottom: 0;
+  padding-left:0;
+  padding-right: 0;
+  width:50%;
+}
+.homepage .body-content{
+  padding:10px 30px 0 30px;
+}
+.homepage footer{
+  margin-top: 0;
+}
+
+/* Login Page */
+.loginpage{
+  background: url("../images/login_bg.png"), no-repeat;
+  background-size: cover;
+}
+.loginpage .trail-wrapper, .loginpage #sidebar, .loginpage #ds-search-form, .loginpage  .navbar-default .pull-right, .loginpage .pull-right{
+  display: none;
+}
+.loginpage header .navbar-default, .loginpage footer{
+  background: none;
+}
+.loginpage header{
+  padding-bottom: 0;
+}
+.loginpage header .navbar-default{
+  border-bottom:none;
+  position: relative;
+  padding: 60px 0 30px 565px;
+}
+.loginpage header .navbar-default img{
+  width: auto;
+  height: 50px;
+}
+.loginpage .main-content{
+  width:100%;
+  padding:0 25%;
+  color:#fff;
+  min-height: auto;
+}
+.loginpage .main-content-body{
+  background: #154154;
+  border:none;
+  padding:30px 20px;
+  text-align: center;
+}
+.loginpage .main-content-body .control-group{
+  text-align: left;
+}
+.loginpage .main-content-body .control-group input{
+  margin-bottom: 7px;
+}
+.loginpage .main-content-body .control-group a{
+  padding-top: 20px;
+  color: #f26522;
+}
+.loginpage .main-content-body .control-group a:hover{
+  color:#fff;
+}
+.loginpage .col-md-6{
+  width: 100%;
+  padding:0 30px;
+}
+.loginpage .page-header{
+  margin-bottom: 30px;
+  font-size:19px;
+  text-transform: capitalize;
+}
+.loginpage .page-header:before{
+  left: 25%;
+}
+.loginpage footer{
+  margin-top: 0;
+}
+.loginpage footer .pull-left{
+  width: 100%;
+  text-align: center;
+  color:#fff;
+}
+
 @media (min-width: 768px) {
   .container{
     width: 91%;
+  }
+  .homepage .container{
+    width: 100%;
   }
   #sidebar{
     min-height: calc(100vh - 60px);
