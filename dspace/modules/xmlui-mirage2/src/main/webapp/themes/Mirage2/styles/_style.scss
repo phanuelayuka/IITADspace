@@ -426,22 +426,18 @@ footer .site-footer .container{
 .homepage #main-container #sidebar{
   border: none;
   padding-left:0;
-  width:22%;
 }
 .homepage #main-container #sidebar .sidebar-container{
   box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
   padding:20px 25px 20px 40px;
-  position: fixed;
   bottom:0;
   top:0;
   overflow-y: auto;
-  width: 21.5%;
 }
 .homepage .main-content{
   padding:0 25px 30px 5px;
   background: #fff;
   margin-bottom: 0;
-  width: 78%;
 }
 .homepage .main-content-body {
   border: none;
@@ -451,7 +447,7 @@ footer .site-footer .container{
 .homepage #ds-search-option{
   margin-bottom:25px;
   margin-top: 7px;
-  padding:50px 0 80px 20px;
+  padding:70px 30px;
   background: url("../images/banner_bg.jpg") no-repeat;
   background-size: cover;
 }
@@ -459,7 +455,6 @@ footer .site-footer .container{
   display: block;
 }
 .homepage #ds-search-option h2{
-  width: 50%;
   color: #fff;
   font-size:22px;
   line-height:1.3;
@@ -473,7 +468,6 @@ footer .site-footer .container{
   padding-bottom: 0;
   padding-left:0;
   padding-right: 0;
-  width:50%;
 }
 .homepage .body-content{
   padding:10px 30px 0 30px;
@@ -507,12 +501,12 @@ footer .site-footer .container{
 }
 .loginpage .main-content{
   width:100%;
-  padding:0 25%;
-  color:#fff;
+  padding:0 30%;
+  color:#333;
   min-height: auto;
 }
 .loginpage .main-content-body{
-  background: #154154;
+  background: #fff;
   border:none;
   padding:30px 20px;
   text-align: center;
@@ -551,17 +545,33 @@ footer .site-footer .container{
   color:#fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .container{
     width: 91%;
-  }
-  .homepage .container{
-    width: 100%;
   }
   #sidebar{
     min-height: calc(100vh - 60px);
   }
   .main-content{
     min-height: calc(100vh - 14px);
+  }
+  .homepage .container{
+    width: 100%;
+  }
+  .homepage .main-content{
+    width:78%;
+  }
+  .homepage #ds-search-option h2{
+    width: 50%;
+  }
+  .homepage #ds-search-form{
+    width:50%;
+  }
+  .homepage #main-container #sidebar{
+    width:22%;
+  }
+  .homepage #main-container #sidebar .sidebar-container{
+    width: 21.5%;
+    position: fixed;
   }
 }
