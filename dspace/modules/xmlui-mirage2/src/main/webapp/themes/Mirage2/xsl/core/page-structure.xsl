@@ -858,7 +858,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script>
-                    function get_citation(selected_style, doi){  
+                    function get_citation(selected_style, doi){ 
                         var datacite_doi_citation_url = 'https://data.datacite.org/text/x-bibliography;style=' + selected_style + '\/' + doi;
                         $.ajax({     
                             headers: {          
@@ -870,7 +870,7 @@
                                 $('#citation').html(response);                            
                             }, 
                             error: function(response){
-                                $('#citation').html("Error citing this publication. Please check if publication doi is correct.");                            
+                                $('#publication-citation').remove();                    
                             }
                         });
                     }
@@ -878,8 +878,8 @@
                     $(document).ready(function(){
                         var citation_style = 'apa';
                         var doi = $('#publication-doi').html();
-                        if ((doi == NaN) || (doi == " ")) {
-                            $('#publication_citation').html("Multi standard citaion not available. Please confirm that DOI metadata is filled.");
+                        if (doi.search('10.') == -1) {
+                            $('#publication-citation').remove();
                         }
                         else{
                             get_citation(citation_style, doi);
