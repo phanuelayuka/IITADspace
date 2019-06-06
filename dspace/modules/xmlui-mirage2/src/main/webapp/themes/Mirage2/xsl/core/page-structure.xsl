@@ -87,6 +87,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:call-template name="buildHeader"/>
+                            <xsl:call-template name="buildTrail"/>
 
                             <!--javascript-disabled warning, will be invisible if javascript is enabled-->
                             <div id="no-js-warning-wrapper" class="hidden">
@@ -101,16 +102,21 @@
                                 <div class="row row-offcanvas row-offcanvas-right">
                                     <div class="horizontal-slider clearfix">
                                         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-                                            <xsl:apply-templates select="dri:options"/>
+                                            <div class="sidebar-container">
+                                                <xsl:apply-templates select="dri:options"/>
+                                            </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-9 main-content">
-                                            <xsl:call-template name="buildTrail"/>
                                             <div class="main-content-body">
                                                 <div class ="white-box">
                                                     <xsl:if test="not(contains(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='request'][@qualifier='URI'], 'discover'))">
                                                         <div id="ds-search-option" class="ds-option-set">
                                                             <!-- The form, complete with a text box and a button, all built from attributes referenced
                                                          from under pageMeta. -->
+                                                            <h2 class="banner-text">
+                                                                Welcome to the International Institute of Tropical Agriculture Research Repository
+                                                            </h2>
+                                                            <p class="banner-text">What would you like to view today?</p>
                                                             <form id="ds-search-form" class="" method="post">
                                                                 <xsl:attribute name="action">
                                                                     <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
@@ -185,14 +191,16 @@
                                                             </form>
                                                         </div>
                                                     </xsl:if>
-                                                    <xsl:apply-templates select="*[not(self::dri:options)]"/>
+                                                    <div class="body-content">
+                                                        <xsl:apply-templates select="*[not(self::dri:options)]"/>
+                                                    </div>
                                                 </div>
-                                                <xsl:call-template name="buildFooter"/>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <xsl:call-template name="buildFooter"/>
                         </xsl:otherwise>
                     </xsl:choose>
                     <!-- Javascript at the bottom for fast page loading -->
@@ -385,7 +393,8 @@
                     }
                     });
                 </script>
-                <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">&#160;</script>
+                
+
             </xsl:if>
 
         </head>
@@ -772,12 +781,14 @@
     <xsl:template name="buildFooter">
         <footer>
             <div class="site-footer">
-                <div class="pull-left footer-copyright">
-                    <span>copyright&#160;&#169;&#160;2019&#160; <strong>IITASpace</strong>. All rights reserved.</span>
-                </div>
-                <div class="pull-right footer-social">
-                    <a href="http://www.iita.org/" target="_blank">IITA</a> |
-                    <a href="http://data.iita.org/" target="_blank">Open Access Repository</a>
+                <div class="container">
+                    <div class="pull-left footer-copyright">
+                        <span>copyright&#160;&#169;&#160;2019&#160; <strong>IITASpace</strong>. All rights reserved.</span>
+                    </div>
+                    <div class="pull-right footer-social">
+                        <a href="http://www.iita.org/" target="_blank">IITA</a> |
+                        <a href="http://data.iita.org/" target="_blank">Open Access Repository</a>
+                    </div>
                 </div>
             </div>
             <!--Invisible link to HTML sitemap (for search engines) -->
@@ -851,9 +862,57 @@
         </script>
         <!--TODO concat & minify!-->
 
+        <script type="text/javascript">
+            if(window.location.pathname == '/xmlui/'){
+            var body = document.body;
+            body.classList.add("homepage");
+            }
+
+            if(window.location.pathname == '/xmlui/password-login'){
+            var body = document.body;
+            body.classList.add("loginpage");
+            }
+        </script>
         <script>
             <xsl:text>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='</xsl:text><xsl:value-of select="$context-path"/><xsl:text>';window.DSpace.theme_path='</xsl:text><xsl:value-of select="$theme-path"/><xsl:text>';</xsl:text>
         </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script>
+                    function get_citation(selected_style, doi){  
+                        var datacite_doi_citation_url = 'https://data.datacite.org/text/x-bibliography;style=' + selected_style + '\/' + doi;
+                        $.ajax({     
+                            headers: {          
+                               "Content-Type": "text/plain; charset=utf-8"        
+                            },
+                            type: "GET",
+                            url: datacite_doi_citation_url,    
+                            success: function(response) { 
+                                $('#citation').html(response);                            
+                            }, 
+                            error: function(response){
+                                $('#citation').html("Error citing this publication. Please check if publication doi is correct.");                            
+                            }
+                        });
+                    }
+
+                    $(document).ready(function(){
+                        var citation_style = 'apa';
+                        var doi = $('#publication-doi').html();
+                        if ((doi == NaN) || (doi == " ")) {
+                            $('#publication_citation').html("Multi standard citaion not available. Please confirm that DOI metadata is filled.");
+                        }
+                        else{
+                            get_citation(citation_style, doi);
+                        }
+
+                        $('#citation-style').change(function(){
+                            var citation_style = $('#citation-style').find(':selected').attr('data-citation-style');
+                            var doi = $('#publication-doi').html();
+                            get_citation(citation_style, doi);
+                        });
+                    });
+                </script>
 
         <!--inject scripts.html containing all the theme specific javascript references
         that can be minified and concatinated in to a single file or separate and untouched

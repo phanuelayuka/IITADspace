@@ -124,6 +124,8 @@
                 </div>
                 <div class="col-sm-10">
                     <xsl:call-template name="itemSummaryView-DIM-abstract"/>
+                    <xsl:call-template name="mutli-standard-citation"/>
+                    <xsl:call-template name="itemSummaryView-DIM-citation-test"/>
                     <xsl:call-template name="itemSummaryView-DIM-URI"/>
                     <xsl:call-template name="itemSummaryView-collections"/>
                 </div>
@@ -746,5 +748,46 @@
         <i18n:text i18n:key="{$mimetype-key}"><xsl:value-of select="$mimetype"/></i18n:text>
     </xsl:template>
 
+    <!-- Multi-standard citation -->
+    <xsl:template name="mutli-standard-citation">
+        <h5>Multi standard citation</h5>
+        <p id="publication_citation">
+            <select id="citation-style">
+              <option data-citation-style="apa">APA</option>
+              <option data-citation-style="harvard-cite-them-right">Harvard</option>
+              <option data-citation-style="modern-language-association">MLA</option>
+              <option data-citation-style="vancouver">Vancouver</option>
+              <option data-citation-style="chicago-fullnote-bibliography">Chicago</option>
+              <option data-citation-style="ieee">IEEE</option>
+            </select>
+            <div id="citation"></div>
+        </p>
+    </xsl:template>
+<!-- End of multi-standard citation -->
+
+<xsl:template name="itemSummaryView-DIM-citation-test">
+        <xsl:if test="dim:field[@element='doi']">
+            <div class="simple-item-view-description item-page-field-wrapper table">
+                <div id="publication-doi" style="display:none;" >
+                    <xsl:for-each select="dim:field[@element='doi']">
+                        <xsl:choose>
+                            <xsl:when test="node()">
+                                <xsl:copy-of select="node()"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>&#160;</xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:if test="count(following-sibling::dim:field[@element='doi']) != 0">
+                            <div class="spacer">&#160;</div>
+                        </xsl:if>
+                    </xsl:for-each>
+                    <xsl:if test="count(dim:field[@element='doi']) &gt; 1">
+                        <div class="spacer">&#160;</div>
+                    </xsl:if>
+                </div>
+            </div>
+        </xsl:if>
+</xsl:template>
 
 </xsl:stylesheet>
