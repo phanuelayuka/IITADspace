@@ -122,7 +122,7 @@
                         <xsl:call-template name="itemSummaryView-show-full"/>
                     </xsl:if>
                 </div>
-                <div class="col-sm-9">
+                <div class="col-sm-10">
                     <xsl:call-template name="itemSummaryView-DIM-abstract"/>
                     <xsl:call-template name="itemSummaryView-DIM-URI"/>
                     <xsl:call-template name="itemSummaryView-collections"/>
