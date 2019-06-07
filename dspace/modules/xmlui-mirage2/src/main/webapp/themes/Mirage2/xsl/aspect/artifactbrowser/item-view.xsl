@@ -750,8 +750,9 @@
 
     <!-- Multi-standard citation -->
     <xsl:template name="mutli-standard-citation">
-        <h5>Multi standard citation</h5>
-        <p id="publication_citation">
+    <div id="publication-citation">
+        <p>
+            <h5 id="citation-header">Multi standard citation</h5>
             <select id="citation-style">
               <option data-citation-style="apa">APA</option>
               <option data-citation-style="harvard-cite-them-right">Harvard</option>
@@ -762,6 +763,7 @@
             </select>
             <div id="citation"></div>
         </p>
+    </div>
     </xsl:template>
 <!-- End of multi-standard citation -->
 
