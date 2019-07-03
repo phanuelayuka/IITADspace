@@ -493,7 +493,6 @@ footer .site-footer .container{
 .loginpage header .navbar-default{
   border-bottom:none;
   position: relative;
-  padding: 60px 0 30px 565px;
 }
 .loginpage header .navbar-default img{
   width: auto;
@@ -545,6 +544,7 @@ footer .site-footer .container{
   color:#fff;
 }
 
+/* Laptops and Desktops */
 @media (min-width: 769px) {
   .container{
     width: 91%;
@@ -573,5 +573,12 @@ footer .site-footer .container{
   .homepage #main-container #sidebar .sidebar-container{
     width: 21.5%;
     position: fixed;
+  }
+}
+
+/* Phones and Laptops */
+@media (max-width: 768px) {
+  .loginpage header .navbar-default{
+    padding: 10px;
   }
 }
