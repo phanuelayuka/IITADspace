@@ -329,7 +329,7 @@ footer .site-footer .container{
   padding-bottom: 5px;
 }
 /* Image thumbnails */
-.thumbnail > img, .thumbnail a > img{
+/*.thumbnail > img, .thumbnail a > img{
   width:100%;
   height:150px;
 }
@@ -352,6 +352,15 @@ footer .site-footer .container{
   border: 10px solid;
   border-color: white white #eee #eee;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), -1px 1px 1px rgba(0, 0, 0, 0.2);
+}*/
+
+.thumbnail>img, .thumbnail a>img{
+  width: 140px;
+  border:1px solid #ffeee6;
+  margin-left: 0;
+}
+.thumbnail a {
+  display: inline-block;
 }
 
 #aspect_submission_StepTransformer_field_search {

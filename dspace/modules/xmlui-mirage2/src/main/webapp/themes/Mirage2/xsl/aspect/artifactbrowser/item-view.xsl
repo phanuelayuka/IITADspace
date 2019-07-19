@@ -196,13 +196,8 @@
                     </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
-                    <img class="img-thumbnail" alt="Thumbnail">
-                        <xsl:attribute name="data-src">
-                            <xsl:text>holder.js/100%x</xsl:text>
-                            <xsl:value-of select="$thumbnail.maxheight"/>
-                            <xsl:text>/text:No Thumbnail</xsl:text>
-                        </xsl:attribute>
-                    </img>
+                    <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                        src="{concat($theme-path, 'images/fallback-mimetypes/x-office-document.svg')}" />
                 </xsl:otherwise>
             </xsl:choose>
         </div>
