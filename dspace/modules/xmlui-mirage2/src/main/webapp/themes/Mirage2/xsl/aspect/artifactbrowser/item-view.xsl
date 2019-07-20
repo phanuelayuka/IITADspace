@@ -37,6 +37,7 @@
     xmlns:confman="org.dspace.core.ConfigurationManager"
     exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util jstring rights confman">
 
+    <xsl:import href="item-view-DM-helper.xsl" />
     <xsl:output indent="yes"/>
 
     <xsl:template name="itemSummaryView-DIM">
@@ -106,7 +107,7 @@
     <xsl:template match="dim:dim" mode="itemSummaryView-DIM">
         <div class="item-summary-view-metadata">
             <xsl:call-template name="itemSummaryView-DIM-title"/>
-            <div class="row">
+            <div class="row item-view-row">
                 <div class="col-sm-3">
                     <div class="row">
                         <div class="col-xs-6 col-sm-12">
@@ -124,9 +125,17 @@
                 </div>
                 <div class="col-sm-9">
                     <xsl:call-template name="itemSummaryView-DIM-abstract"/>
-                    <xsl:call-template name="mutli-standard-citation"/>
                     <xsl:call-template name="itemSummaryView-DIM-citation-test"/>
-                    <xsl:call-template name="itemSummaryView-DIM-URI"/>
+                    <xsl:call-template name="mutli-standard-citation"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-URI"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-theme"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-iita-subject"/> 
+                    <xsl:call-template name="itemSummaryView-DIM-alt-agrovoc"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-region"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-country"/> 
+                    <xsl:call-template name="itemSummaryView-DIM-alt-hub"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-affiliations"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-journal"/>
                     <xsl:call-template name="itemSummaryView-collections"/>
                 </div>
             </div>
@@ -264,27 +273,6 @@
             </xsl:if>
             <xsl:copy-of select="node()"/>
         </div>
-    </xsl:template>
-
-    <xsl:template name="itemSummaryView-DIM-URI">
-        <xsl:if test="dim:field[@element='identifier' and @qualifier='uri' and descendant::text()]">
-            <div class="simple-item-view-uri item-page-field-wrapper table">
-                <h5><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text></h5>
-                <span>
-                    <xsl:for-each select="dim:field[@element='identifier' and @qualifier='uri']">
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:copy-of select="./node()"/>
-                            </xsl:attribute>
-                            <xsl:copy-of select="./node()"/>
-                        </a>
-                        <xsl:if test="count(following-sibling::dim:field[@element='identifier' and @qualifier='uri']) != 0">
-                            <br/>
-                        </xsl:if>
-                    </xsl:for-each>
-                </span>
-            </div>
-        </xsl:if>
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-date">
