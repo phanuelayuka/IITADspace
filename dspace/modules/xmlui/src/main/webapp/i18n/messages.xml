@@ -2247,10 +2247,20 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-author">Author</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-description">Description</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-uri">Permanent link to this item</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-date">Date</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Publisher</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-subject">Subject</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-region">Regions</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-country">Countries</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-hub">IITA Hubs</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-affiliation">Affiliations</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-agrovoc">Agrovoc Terms</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-iita-subjects">IITA Subjects</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-theme">Research Themes</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-citation">Standard Citation</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-doi">Digital Object Identifier (DOI)</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-journal">Journals</message>
 
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-head">Files in this item</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-file">Files</message>
@@ -2556,4 +2566,7 @@
     <message key="xmlui.metadata.dc.relation.ispartofseries">Is part of series</message>
     <message key="xmlui.metadata.dc.subject">Subject</message>
     <message key="xmlui.metadata.dc.title">Title</message>
+    
+    
+    
 </catalogue>
