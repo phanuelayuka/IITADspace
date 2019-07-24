@@ -863,14 +863,13 @@
         <!--TODO concat & minify!-->
 
         <script type="text/javascript">
-            if(window.location.pathname == '/xmlui/'){
-            var body = document.body;
-            body.classList.add("homepage");
+            if(window.location.pathname == '/xmlui/' || window.location.pathname == '/'){
+                var body = document.body;
+                body.classList.add("homepage");
             }
-
-            if(window.location.pathname == '/xmlui/password-login'){
-            var body = document.body;
-            body.classList.add("loginpage");
+            else if(window.location.pathname == '/xmlui/password-login' || window.location.pathname == '/password-login'){
+                var body = document.body;
+                body.classList.add("loginpage");
             }
         </script>
         <script>

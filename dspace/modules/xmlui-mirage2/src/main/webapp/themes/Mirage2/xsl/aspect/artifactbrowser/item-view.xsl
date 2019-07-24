@@ -119,6 +119,9 @@
                     </div>
                     <xsl:call-template name="itemSummaryView-DIM-date"/>
                     <xsl:call-template name="itemSummaryView-DIM-authors"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-type" />
+                    <xsl:call-template name="itemSummaryView-DIM-alt-review" />
+                    <xsl:call-template name="itemSummaryView-DIM-alt-audience" />
                     <xsl:if test="$ds_item_view_toggle_url != ''">
                         <xsl:call-template name="itemSummaryView-show-full"/>
                     </xsl:if>
@@ -241,7 +244,7 @@
     <xsl:template name="itemSummaryView-DIM-authors">
         <xsl:if test="dim:field[@element='contributor'][@qualifier='author' and descendant::text()] or dim:field[@element='creator' and descendant::text()] or dim:field[@element='contributor' and descendant::text()]">
             <div class="simple-item-view-authors item-page-field-wrapper table">
-                <h5><i18n:text>xmlui.dri2xhtml.METS-1.0.item-author</i18n:text></h5>
+                <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-author</i18n:text></h5>
                 <xsl:choose>
                     <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
                         <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
@@ -278,7 +281,7 @@
     <xsl:template name="itemSummaryView-DIM-date">
         <xsl:if test="dim:field[@element='date' and @qualifier='issued' and descendant::text()]">
             <div class="simple-item-view-date word-break item-page-field-wrapper table">
-                <h5>
+                <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-date</i18n:text>
                 </h5>
                 <xsl:for-each select="dim:field[@element='date' and @qualifier='issued']">
@@ -293,7 +296,7 @@
 
     <xsl:template name="itemSummaryView-show-full">
         <div class="simple-item-view-show-full item-page-field-wrapper table">
-            <h5>
+            <h5 class="bold">
                 <i18n:text>xmlui.mirage2.itemSummaryView.MetaData</i18n:text>
             </h5>
             <a>
@@ -306,7 +309,7 @@
     <xsl:template name="itemSummaryView-collections">
         <xsl:if test="$document//dri:referenceSet[@id='aspect.artifactbrowser.ItemViewer.referenceSet.collection-viewer']">
             <div class="simple-item-view-collections item-page-field-wrapper table">
-                <h5>
+                <h5 class="bold">
                     <i18n:text>xmlui.mirage2.itemSummaryView.Collections</i18n:text>
                 </h5>
                 <xsl:apply-templates select="$document//dri:referenceSet[@id='aspect.artifactbrowser.ItemViewer.referenceSet.collection-viewer']/dri:reference"/>
@@ -535,13 +538,8 @@
                                 </img>
                             </xsl:when>
                             <xsl:otherwise>
-                                <img class="img-thumbnail" alt="Thumbnail">
-                                    <xsl:attribute name="data-src">
-                                        <xsl:text>holder.js/100%x</xsl:text>
-                                        <xsl:value-of select="$thumbnail.maxheight"/>
-                                        <xsl:text>/text:No Thumbnail</xsl:text>
-                                    </xsl:attribute>
-                                </img>
+                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                                    src="{concat($theme-path, 'images/fallback-mimetypes/x-office-document.svg')}" />
                             </xsl:otherwise>
                         </xsl:choose>
                     </a>

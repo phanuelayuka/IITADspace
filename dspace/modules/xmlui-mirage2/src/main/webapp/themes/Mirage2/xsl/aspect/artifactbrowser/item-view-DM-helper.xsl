@@ -238,6 +238,87 @@
         </xsl:if>
     </xsl:template>
     
+    
+    <!-- item type display -->
+    <xsl:template name="itemSummaryView-DIM-alt-type">
+        <xsl:if test="dim:field[@element='type' and descendant::text()]">
+            <div class="simple-item-view-date word-break item-page-field-wrapper table">
+                <h5 class="bold">
+                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-type</i18n:text>
+                </h5>
+                <xsl:for-each select="dim:field[@element='type']">
+                    <xsl:choose>
+                        <xsl:when test="node()">
+                            <xsl:call-template name="discovery-link">
+                                <xsl:with-param name="filter-type" select="'type'"/>
+                            </xsl:call-template>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text>&#160;</xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:if test="count(following-sibling::dim:field[@element='type']) != 0">
+                        <xsl:text>;</xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    
+        
+    <!-- item review status display -->
+    <xsl:template name="itemSummaryView-DIM-alt-review">
+        <xsl:if test="dim:field[@mdschema='local' and @element='reviewstatus']">
+            <div class="simple-item-view-date word-break item-page-field-wrapper table">
+                <h5 class="bold">
+                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-review</i18n:text>
+                </h5>
+                <xsl:for-each select="dim:field[@mdschema='local' and @element='reviewstatus']">
+                    <xsl:choose>
+                        <xsl:when test="node()">
+                            <xsl:call-template name="discovery-link">
+                                <xsl:with-param name="filter-type" select="'reviewstatus'"/>
+                            </xsl:call-template>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text>&#160;</xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='reviewstatus']) != 0">
+                        <xsl:text>;</xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    
+        
+    <!-- item target audience display -->
+    <xsl:template name="itemSummaryView-DIM-alt-audience">
+        <xsl:if test="dim:field[@mdschema='local' and @element='targetaudience']">
+            <div class="simple-item-view-date word-break item-page-field-wrapper table">
+                <h5 class="bold">
+                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-audience</i18n:text>
+                </h5>
+                <xsl:for-each select="dim:field[@mdschema='local' and @element='targetaudience']">
+                    <xsl:choose>
+                        <xsl:when test="node()">
+                            <xsl:call-template name="discovery-link">
+                                <xsl:with-param name="filter-type" select="'targetaudience'"/>
+                            </xsl:call-template>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text>&#160;</xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='targetaudience']) != 0">
+                        <xsl:text>;</xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="discovery-link">
         <xsl:param name="filtertype"/>
         <xsl:variable name="filterlink">
