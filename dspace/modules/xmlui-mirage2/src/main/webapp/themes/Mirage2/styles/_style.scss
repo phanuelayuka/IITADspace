@@ -383,9 +383,13 @@ footer .site-footer .container{
   width: 140px;
   border:1px solid #ffeee6;
   margin-left: 0;
+  padding: 0px;
 }
 .thumbnail a {
   display: inline-block;
+}
+.badge{
+    margin-left: 5px;
 }
 
 #aspect_submission_StepTransformer_field_search {
