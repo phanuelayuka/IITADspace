@@ -393,7 +393,8 @@
                     }
                     });
                 </script>
-                <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">&#160;</script>
+                
+
             </xsl:if>
 
         </head>
@@ -874,6 +875,43 @@
         <script>
             <xsl:text>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='</xsl:text><xsl:value-of select="$context-path"/><xsl:text>';window.DSpace.theme_path='</xsl:text><xsl:value-of select="$theme-path"/><xsl:text>';</xsl:text>
         </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script>
+                    function get_citation(selected_style, doi){ 
+                        var datacite_doi_citation_url = 'https://data.datacite.org/text/x-bibliography;style=' + selected_style + '\/' + doi;
+                        $.ajax({     
+                            headers: {          
+                               "Content-Type": "text/plain; charset=utf-8"        
+                            },
+                            type: "GET",
+                            url: datacite_doi_citation_url,    
+                            success: function(response) { 
+                                $('#citation').html(response);                            
+                            }, 
+                            error: function(response){
+                                $('#publication-citation').remove();                    
+                            }
+                        });
+                    }
+
+                    $(document).ready(function(){
+                        var citation_style = 'apa';
+                        var doi = $('#publication-doi').html();
+                        if (doi.search('10.') == -1) {
+                            $('#publication-citation').remove();
+                        }
+                        else{
+                            get_citation(citation_style, doi);
+                        }
+
+                        $('#citation-style').change(function(){
+                            var citation_style = $('#citation-style').find(':selected').attr('data-citation-style');
+                            var doi = $('#publication-doi').html();
+                            get_citation(citation_style, doi);
+                        });
+                    });
+                </script>
 
         <!--inject scripts.html containing all the theme specific javascript references
         that can be minified and concatinated in to a single file or separate and untouched

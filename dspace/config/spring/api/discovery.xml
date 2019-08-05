@@ -103,16 +103,16 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAuthor" />
-                <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterAuthorHub"/>
-                <ref bean="searchFilterCountry"/>
                 <ref bean="searchFilterRegionOfResearch"/>
-                <ref bean="searchFilterAffiliation"/>
+                <ref bean="searchFilterCountry"/>
+                <ref bean="searchFilterAuthorHub"/>
                 <ref bean="searchFilterAuthorCrp"/>
+                <ref bean="searchFilterSubject" />
+                <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterAffiliation"/>
                 <ref bean="searchFilterReviewStatus"/>
-                <ref bean="searchFilterContentInOriginalBundle"/>
+                <!--<ref bean="searchFilterContentInOriginalBundle"/>-->
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -120,19 +120,19 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
+                <ref bean="searchFilterRegionOfResearch"/>
+                <ref bean="searchFilterCountry"/>
+                <ref bean="searchFilterAuthorHub"/>
+                <ref bean="searchFilterAuthorCrp"/>
                 <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterAuthorHub"/>
-                <ref bean="searchFilterCountry"/>
-                <ref bean="searchFilterRegionOfResearch"/>
                 <ref bean="searchFilterAffiliation"/>
-                <ref bean="searchFilterAuthorCrp"/>
                 <ref bean="searchFilterReviewStatus"/>
-                <ref bean="searchFilterContentInOriginalBundle"/>
+<!--                <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterFileNameInOriginalBundle" />
-                <ref bean="searchFilterFileDescriptionInOriginalBundle" />
+                <ref bean="searchFilterFileDescriptionInOriginalBundle" />-->
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -227,16 +227,16 @@
         <!--Which sidebar facets are to be displayed (same as defaultConfiguration above)-->
         <property name="sidebarFacets">
             <list>
+                <ref bean="searchFilterRegionOfResearch"/>
+                <ref bean="searchFilterCountry"/>
+                <ref bean="searchFilterAuthorHub"/>
+                <ref bean="searchFilterAuthorCrp"/>
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterAuthorHub"/>
-                <ref bean="searchFilterCountry"/>
-                <ref bean="searchFilterRegionOfResearch"/>
                 <ref bean="searchFilterAffiliation"/>
-                <ref bean="searchFilterAuthorCrp"/>
                 <ref bean="searchFilterReviewStatus"/>
-                <ref bean="searchFilterContentInOriginalBundle"/>
+<!--                <ref bean="searchFilterContentInOriginalBundle"/>-->
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -244,19 +244,19 @@
         <!--The search filters which can be used on the discovery search page (same as defaultConfiguration above)-->
         <property name="searchFilters">
             <list>
+                <ref bean="searchFilterRegionOfResearch"/>
+                <ref bean="searchFilterCountry"/>
+                <ref bean="searchFilterAuthorHub"/>
+                <ref bean="searchFilterAuthorCrp"/>
                 <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterIssued" />
-                <ref bean="searchFilterAuthorHub"/>
-                <ref bean="searchFilterCountry"/>
-                <ref bean="searchFilterRegionOfResearch"/>
                 <ref bean="searchFilterAffiliation"/>
-                <ref bean="searchFilterAuthorCrp"/>
                 <ref bean="searchFilterReviewStatus"/>
-                <ref bean="searchFilterContentInOriginalBundle"/>
+<!--                <ref bean="searchFilterContentInOriginalBundle"/>
                 <ref bean="searchFilterFileNameInOriginalBundle" />
-                <ref bean="searchFilterFileDescriptionInOriginalBundle" />
+                <ref bean="searchFilterFileDescriptionInOriginalBundle" />-->
             </list>
         </property>
         <!--The sort filters for the discovery search (same as defaultConfiguration above)-->

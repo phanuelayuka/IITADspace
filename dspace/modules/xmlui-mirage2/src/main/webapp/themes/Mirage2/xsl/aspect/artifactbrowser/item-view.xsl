@@ -37,6 +37,7 @@
     xmlns:confman="org.dspace.core.ConfigurationManager"
     exclude-result-prefixes="xalan encoder i18n dri mets dim xlink xsl util jstring rights confman">
 
+    <xsl:import href="item-view-DM-helper.xsl" />
     <xsl:output indent="yes"/>
 
     <xsl:template name="itemSummaryView-DIM">
@@ -106,7 +107,7 @@
     <xsl:template match="dim:dim" mode="itemSummaryView-DIM">
         <div class="item-summary-view-metadata">
             <xsl:call-template name="itemSummaryView-DIM-title"/>
-            <div class="row">
+            <div class="row item-view-row">
                 <div class="col-sm-3">
                     <div class="row">
                         <div class="col-xs-6 col-sm-12">
@@ -118,13 +119,26 @@
                     </div>
                     <xsl:call-template name="itemSummaryView-DIM-date"/>
                     <xsl:call-template name="itemSummaryView-DIM-authors"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-type" />
+                    <xsl:call-template name="itemSummaryView-DIM-alt-review" />
+                    <xsl:call-template name="itemSummaryView-DIM-alt-audience" />
                     <xsl:if test="$ds_item_view_toggle_url != ''">
                         <xsl:call-template name="itemSummaryView-show-full"/>
                     </xsl:if>
                 </div>
                 <div class="col-sm-9">
                     <xsl:call-template name="itemSummaryView-DIM-abstract"/>
-                    <xsl:call-template name="itemSummaryView-DIM-URI"/>
+                    <xsl:call-template name="itemSummaryView-DIM-citation-test"/>
+                    <xsl:call-template name="mutli-standard-citation"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-URI"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-theme"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-iita-subject"/> 
+                    <xsl:call-template name="itemSummaryView-DIM-alt-agrovoc"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-region"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-country"/> 
+                    <xsl:call-template name="itemSummaryView-DIM-alt-hub"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-affiliations"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-journal"/>
                     <xsl:call-template name="itemSummaryView-collections"/>
                 </div>
             </div>
@@ -194,13 +208,8 @@
                     </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
-                    <img class="img-thumbnail" alt="Thumbnail">
-                        <xsl:attribute name="data-src">
-                            <xsl:text>holder.js/100%x</xsl:text>
-                            <xsl:value-of select="$thumbnail.maxheight"/>
-                            <xsl:text>/text:No Thumbnail</xsl:text>
-                        </xsl:attribute>
-                    </img>
+                    <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                        src="{concat($theme-path, 'images/fallback-mimetypes/x-office-document.svg')}" />
                 </xsl:otherwise>
             </xsl:choose>
         </div>
@@ -235,7 +244,7 @@
     <xsl:template name="itemSummaryView-DIM-authors">
         <xsl:if test="dim:field[@element='contributor'][@qualifier='author' and descendant::text()] or dim:field[@element='creator' and descendant::text()] or dim:field[@element='contributor' and descendant::text()]">
             <div class="simple-item-view-authors item-page-field-wrapper table">
-                <h5><i18n:text>xmlui.dri2xhtml.METS-1.0.item-author</i18n:text></h5>
+                <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-author</i18n:text></h5>
                 <xsl:choose>
                     <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
                         <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
@@ -269,31 +278,10 @@
         </div>
     </xsl:template>
 
-    <xsl:template name="itemSummaryView-DIM-URI">
-        <xsl:if test="dim:field[@element='identifier' and @qualifier='uri' and descendant::text()]">
-            <div class="simple-item-view-uri item-page-field-wrapper table">
-                <h5><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text></h5>
-                <span>
-                    <xsl:for-each select="dim:field[@element='identifier' and @qualifier='uri']">
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:copy-of select="./node()"/>
-                            </xsl:attribute>
-                            <xsl:copy-of select="./node()"/>
-                        </a>
-                        <xsl:if test="count(following-sibling::dim:field[@element='identifier' and @qualifier='uri']) != 0">
-                            <br/>
-                        </xsl:if>
-                    </xsl:for-each>
-                </span>
-            </div>
-        </xsl:if>
-    </xsl:template>
-
     <xsl:template name="itemSummaryView-DIM-date">
         <xsl:if test="dim:field[@element='date' and @qualifier='issued' and descendant::text()]">
             <div class="simple-item-view-date word-break item-page-field-wrapper table">
-                <h5>
+                <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-date</i18n:text>
                 </h5>
                 <xsl:for-each select="dim:field[@element='date' and @qualifier='issued']">
@@ -308,7 +296,7 @@
 
     <xsl:template name="itemSummaryView-show-full">
         <div class="simple-item-view-show-full item-page-field-wrapper table">
-            <h5>
+            <h5 class="bold">
                 <i18n:text>xmlui.mirage2.itemSummaryView.MetaData</i18n:text>
             </h5>
             <a>
@@ -321,7 +309,7 @@
     <xsl:template name="itemSummaryView-collections">
         <xsl:if test="$document//dri:referenceSet[@id='aspect.artifactbrowser.ItemViewer.referenceSet.collection-viewer']">
             <div class="simple-item-view-collections item-page-field-wrapper table">
-                <h5>
+                <h5 class="bold">
                     <i18n:text>xmlui.mirage2.itemSummaryView.Collections</i18n:text>
                 </h5>
                 <xsl:apply-templates select="$document//dri:referenceSet[@id='aspect.artifactbrowser.ItemViewer.referenceSet.collection-viewer']/dri:reference"/>
@@ -550,13 +538,8 @@
                                 </img>
                             </xsl:when>
                             <xsl:otherwise>
-                                <img class="img-thumbnail" alt="Thumbnail">
-                                    <xsl:attribute name="data-src">
-                                        <xsl:text>holder.js/100%x</xsl:text>
-                                        <xsl:value-of select="$thumbnail.maxheight"/>
-                                        <xsl:text>/text:No Thumbnail</xsl:text>
-                                    </xsl:attribute>
-                                </img>
+                                <img alt="xmlui.mirage2.item-list.thumbnail" i18n:attr="alt"
+                                    src="{concat($theme-path, 'images/fallback-mimetypes/x-office-document.svg')}" />
                             </xsl:otherwise>
                         </xsl:choose>
                     </a>
@@ -746,5 +729,48 @@
         <i18n:text i18n:key="{$mimetype-key}"><xsl:value-of select="$mimetype"/></i18n:text>
     </xsl:template>
 
+    <!-- Multi-standard citation -->
+    <xsl:template name="mutli-standard-citation">
+    <div id="publication-citation">
+        <p>
+            <h5 id="citation-header">Multi standard citation</h5>
+            <select id="citation-style">
+              <option data-citation-style="apa">APA</option>
+              <option data-citation-style="harvard-cite-them-right">Harvard</option>
+              <option data-citation-style="modern-language-association">MLA</option>
+              <option data-citation-style="vancouver">Vancouver</option>
+              <option data-citation-style="chicago-fullnote-bibliography">Chicago</option>
+              <option data-citation-style="ieee">IEEE</option>
+            </select>
+            <div id="citation"></div>
+        </p>
+    </div>
+    </xsl:template>
+<!-- End of multi-standard citation -->
+
+<xsl:template name="itemSummaryView-DIM-citation-test">
+        <xsl:if test="dim:field[@element='doi']">
+            <div class="simple-item-view-description item-page-field-wrapper table">
+                <div id="publication-doi" style="display:none;" >
+                    <xsl:for-each select="dim:field[@element='doi']">
+                        <xsl:choose>
+                            <xsl:when test="node()">
+                                <xsl:copy-of select="node()"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>&#160;</xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:if test="count(following-sibling::dim:field[@element='doi']) != 0">
+                            <div class="spacer">&#160;</div>
+                        </xsl:if>
+                    </xsl:for-each>
+                    <xsl:if test="count(dim:field[@element='doi']) &gt; 1">
+                        <div class="spacer">&#160;</div>
+                    </xsl:if>
+                </div>
+            </div>
+        </xsl:if>
+</xsl:template>
 
 </xsl:stylesheet>

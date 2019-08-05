@@ -9,13 +9,14 @@
 }
 /* Entire body */
 body {
-  font-size: 14px;
+  font-size: 13px;
   background: #f6f6f6;
 }
 
 h3{
   font-size: 18px;
 }
+
 .bold {
   font-weight: bold;
 }
@@ -166,10 +167,20 @@ body .list-group-item.active
   border: none;
   color: #1a1f27;
 }
+
+.item-view-row{
+    padding-top: 20px;
+}
+
+.item-view-row a.active{
+    color: #f26522;
+}
+
 a.list-group-item.active:hover{
   background: none !important;
   color: inherit;
 }
+
 .list-group-item.active .list-group-item-heading{
   color: #333333;
   font-weight: bold;
@@ -245,6 +256,11 @@ a.list-group-item:hover, a.list-group-item:focus{
   padding: 0px;
 }
 
+#aspect_discovery_SimpleSearch_div_search-results .ds-artifact-item{
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
 /* Search */
 #ds-search-form{
   padding: 10px 0px 20px 0px;
@@ -252,9 +268,18 @@ a.list-group-item:hover, a.list-group-item:focus{
 .advanced-filter-row .btn-group{
   padding: 0px;
 }
-.artifact-description a{
-  color: #333;
+
+.artifact-title,
+.artifact-description a,
+.artifact-description a *{
+    color: #333;
+    font-weight: 600 ;
+    font-size: 13px;
 }
+.artifact-abstract, .artifact-description {
+    font-size: 13px;
+}
+
 .artifact-description a:hover{
   color: #f26522;
   text-decoration: none;
@@ -329,7 +354,7 @@ footer .site-footer .container{
   padding-bottom: 5px;
 }
 /* Image thumbnails */
-.thumbnail > img, .thumbnail a > img{
+/*.thumbnail > img, .thumbnail a > img{
   width:100%;
   height:150px;
 }
@@ -342,6 +367,7 @@ footer .site-footer .container{
   position: relative;
   overflow: hidden;
   padding:0px;
+  width: 120px;
 }
 .thumbnail:before {
   content: "";
@@ -351,6 +377,19 @@ footer .site-footer .container{
   border: 10px solid;
   border-color: white white #eee #eee;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), -1px 1px 1px rgba(0, 0, 0, 0.2);
+}*/
+
+.thumbnail>img, .thumbnail a>img{
+  width: 140px;
+  border:1px solid #ffeee6;
+  margin-left: 0;
+  padding: 0px;
+}
+.thumbnail a {
+  display: inline-block;
+}
+.badge{
+    margin-left: 5px;
 }
 
 #aspect_submission_StepTransformer_field_search {
@@ -388,9 +427,6 @@ footer .site-footer .container{
 }
 .community-browser-row p{
   color:#333;
-}
-.artifact-title {
-  font-size: 14px;
 }
 
 /* Administrative */
