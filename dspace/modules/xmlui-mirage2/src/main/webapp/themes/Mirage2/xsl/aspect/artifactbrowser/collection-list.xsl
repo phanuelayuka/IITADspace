@@ -64,14 +64,14 @@
                     <xsl:text></xsl:text>
                 </xsl:if>
             </h4>
-            <xsl:variable name="abstract" select="$data/dim:field[@element = 'description' and @qualifier='abstract']/node()"/>
+<!--            <xsl:variable name="abstract" select="$data/dim:field[@element = 'description' and @qualifier='abstract']/node()"/>
             <xsl:if test="$abstract and string-length($abstract[1]) &gt; 0">
                 <div class="artifact-info">
                     <span class="short-description text-muted">
                         <xsl:value-of select="util:shortenString($abstract, 220, 10)"/>
                     </span>
                 </div>
-            </xsl:if>
+            </xsl:if>-->
         </div>
     </xsl:template>
 
@@ -89,21 +89,23 @@
 	            </xsl:otherwise>
             </xsl:choose>
         </a>
-		<!--Display collection strengths (item counts) if they exist-->
-		<xsl:if test="string-length($data/dim:field[@element='format'][@qualifier='extent'][1]) &gt; 0">
-            <xsl:text> [</xsl:text>
-            <xsl:value-of select="$data/dim:field[@element='format'][@qualifier='extent'][1]"/>
-            <xsl:text>]</xsl:text>
+        <!--Display collection strengths (item counts) if they exist-->
+        <xsl:if test="string-length($data/dim:field[@element='format'][@qualifier='extent'][1]) &gt; 0">
+            <xsl:text> </xsl:text>
+                <span class="badge">
+                    <xsl:value-of select="$data/dim:field[@element='format'][@qualifier='extent'][1]"/>
+                </span>
+            <xsl:text></xsl:text>
         </xsl:if>
         <br/>
-        <xsl:choose>
+<!--        <xsl:choose>
             <xsl:when test="$data/dim:field[@element='description' and @qualifier='abstract']">
                 <xsl:copy-of select="$data/dim:field[@element='description' and @qualifier='abstract']/node()"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:copy-of select="$data/dim:field[@element='description'][1]/node()"/>
             </xsl:otherwise>
-        </xsl:choose>
+        </xsl:choose>-->
     </xsl:template>
 
     <!-- A collection rendered in the detailList pattern. Encountered on the item view page as
@@ -120,9 +122,9 @@
 	            </xsl:otherwise>
             </xsl:choose>
         </a>
-		<!--Display collection strengths (item counts) if they exist-->
-		<xsl:if test="string-length($data/dim:field[@element='format'][@qualifier='extent'][1]) &gt; 0">
-            <xsl:text> </xsl:text>
+        <!--Display collection strengths (item counts) if they exist-->
+        <xsl:if test="string-length($data/dim:field[@element='format'][@qualifier='extent'][1]) &gt; 0">
+            <xsl:text></xsl:text>
                 <span class="badge">
                     <xsl:value-of select="$data/dim:field[@element='format'][@qualifier='extent'][1]"/>
                 </span>
