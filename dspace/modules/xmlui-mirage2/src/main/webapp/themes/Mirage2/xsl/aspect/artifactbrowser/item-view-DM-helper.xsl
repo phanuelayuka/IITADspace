@@ -239,6 +239,27 @@
     </xsl:template>
     
     
+    <xsl:template name="itemSummaryView-DIM-alt-doi">
+        <xsl:if test="dim:field[@mdschema='local' and @element='doi']">
+            <div class="simple-item-view-description item-page-field-wrapper table">
+                <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-doi</i18n:text></h5>
+                <div>
+                    <xsl:for-each select="dim:field[@mdschema='local' and @element='doi']">
+                        <xsl:choose>
+                            <xsl:when test="node()">
+                                <xsl:copy-of select="node()"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>&#160;</xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
+                </div>
+            </div>
+        </xsl:if>
+    </xsl:template>
+    
+    
     <!-- item type display -->
     <xsl:template name="itemSummaryView-DIM-alt-type">
         <xsl:if test="dim:field[@element='type' and descendant::text()]">
