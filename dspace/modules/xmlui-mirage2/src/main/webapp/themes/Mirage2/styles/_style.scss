@@ -580,8 +580,12 @@ footer .site-footer .container{
   color:#fff;
 }
 
+#citation {
+    margin-top: 10px;
+}
+
 /* Laptops and Desktops */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .container{
     width: 91%;
   }
