@@ -128,9 +128,9 @@
                 </div>
                 <div class="col-sm-9">
                     <xsl:call-template name="itemSummaryView-DIM-abstract"/>
-                    <xsl:call-template name="itemSummaryView-DIM-citation-test"/>
                     <xsl:call-template name="mutli-standard-citation"/>
                     <xsl:call-template name="itemSummaryView-DIM-alt-URI"/>
+                    <xsl:call-template name="itemSummaryView-DIM-alt-doi"/>
                     <xsl:call-template name="itemSummaryView-DIM-alt-theme"/>
                     <xsl:call-template name="itemSummaryView-DIM-alt-iita-subject"/> 
                     <xsl:call-template name="itemSummaryView-DIM-alt-agrovoc"/>
@@ -474,10 +474,9 @@
                         <xsl:value-of select="./@qualifier"/>
                     </xsl:if>
                 </td>
-            <td class="word-break">
-              <xsl:copy-of select="./node()"/>
-            </td>
-                <td><xsl:value-of select="./@language"/></td>
+                <td class="word-break">
+                  <xsl:copy-of select="./node()"/>
+                </td>
             </tr>
     </xsl:template>
 
@@ -731,28 +730,11 @@
 
     <!-- Multi-standard citation -->
     <xsl:template name="mutli-standard-citation">
-    <div id="publication-citation">
-        <p>
-            <h5 id="citation-header">Multi standard citation</h5>
-            <select id="citation-style">
-              <option data-citation-style="apa">APA</option>
-              <option data-citation-style="harvard-cite-them-right">Harvard</option>
-              <option data-citation-style="modern-language-association">MLA</option>
-              <option data-citation-style="vancouver">Vancouver</option>
-              <option data-citation-style="chicago-fullnote-bibliography">Chicago</option>
-              <option data-citation-style="ieee">IEEE</option>
-            </select>
-            <div id="citation"></div>
-        </p>
-    </div>
-    </xsl:template>
-<!-- End of multi-standard citation -->
-
-<xsl:template name="itemSummaryView-DIM-citation-test">
-        <xsl:if test="dim:field[@element='doi']">
+        <xsl:if test="dim:field[@mdschema='local' and @element='doi']">
             <div class="simple-item-view-description item-page-field-wrapper table">
+                
                 <div id="publication-doi" style="display:none;" >
-                    <xsl:for-each select="dim:field[@element='doi']">
+                    <xsl:for-each select="dim:field[@mdschema='local' and @element='doi']">
                         <xsl:choose>
                             <xsl:when test="node()">
                                 <xsl:copy-of select="node()"/>
@@ -761,16 +743,27 @@
                                 <xsl:text>&#160;</xsl:text>
                             </xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="count(following-sibling::dim:field[@element='doi']) != 0">
+                        <xsl:if test="count(following-sibling::dim:field[@mdschema='local'and @element='doi']) != 0">
                             <div class="spacer">&#160;</div>
                         </xsl:if>
                     </xsl:for-each>
-                    <xsl:if test="count(dim:field[@element='doi']) &gt; 1">
-                        <div class="spacer">&#160;</div>
-                    </xsl:if>
+                </div>
+
+                <div id="publication-citation">
+                    <h5 class="bold" id="citation-header">Multi standard citation</h5>
+                     <select id="citation-style" class="form-control">
+                       <option data-citation-style="apa">APA</option>
+                       <option data-citation-style="harvard-cite-them-right">Harvard</option>
+                       <option data-citation-style="modern-language-association">MLA</option>
+                       <option data-citation-style="vancouver">Vancouver</option>
+                       <option data-citation-style="chicago-fullnote-bibliography">Chicago</option>
+                       <option data-citation-style="ieee">IEEE</option>
+                     </select>
+                     <div id="citation"></div>
                 </div>
             </div>
-        </xsl:if>
-</xsl:template>
+          </xsl:if>
+    </xsl:template>
+
 
 </xsl:stylesheet>

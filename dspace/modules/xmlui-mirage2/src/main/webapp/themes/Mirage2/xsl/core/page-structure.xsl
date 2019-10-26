@@ -896,13 +896,11 @@
                     }
 
                     $(document).ready(function(){
-                        var citation_style = 'apa';
                         var doi = $('#publication-doi').html();
                         if (doi.search('10.') == -1) {
                             $('#publication-citation').remove();
-                        }
-                        else{
-                            get_citation(citation_style, doi);
+                        }else{
+                            get_citation('apa', doi);
                         }
 
                         $('#citation-style').change(function(){
