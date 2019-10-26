@@ -140,8 +140,6 @@
                 <xsl:value-of select="$description"/>
             </p>
         </xsl:if>
-
-
     </xsl:template>
     
     <xsl:template name="get-handle-class-from-url">
