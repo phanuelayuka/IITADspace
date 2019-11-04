@@ -340,6 +340,76 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="itemSummaryView-DIM-share">
+        <div class="simple-item-view-description item-page-field-wrapper table">
+            <div class="pull-left">
+                <a class="btn-social btn-normal">
+                    <xsl:attribute name="href">
+                        <xsl:text>javascript:window.print();</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="title"><xsl:text>Print</xsl:text></xsl:attribute>
+                    <i class="fa fa-print" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn-social btn-normal">
+                    <xsl:attribute name="href">
+                        <xsl:text>mailto:?&amp;body=</xsl:text>
+                        <xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
+                        <xsl:text>&amp;media=&amp;subject=</xsl:text>
+                        <xsl:value-of select="dim:field[@element='title']"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="title"><xsl:text>Share on e-mail</xsl:text></xsl:attribute>
+                    <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
+            
+            <div class="pull-right">
+                <a class="btn-social btn-linkedin">
+                    <xsl:attribute name="href">
+                        <xsl:text>https://www.linkedin.com/shareArticle?mini=true&amp;url</xsl:text>
+                        <xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="title"><xsl:text>Share on LinkedIn</xsl:text></xsl:attribute>
+                    <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a class="btn-social btn-mendeley">
+                    <xsl:attribute name="href">
+                        <xsl:text>https://www.mendeley.com/import/?url=</xsl:text>
+                        <xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="title"><xsl:text>Add to Mendley Library</xsl:text></xsl:attribute>
+                    <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
+                    <i class="ai ai-mendeley" aria-hidden="true"></i>
+                </a>
+                <a class="btn-social btn-twitter">
+                    <xsl:attribute name="href">
+                        <xsl:text>https://twitter.com/intent/tweet?url=</xsl:text>
+                        <xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
+                        <xsl:text>&amp;text=</xsl:text>
+                        <xsl:value-of select="dim:field[@element='title']"></xsl:value-of>    
+                         <xsl:text>&amp;hashtags=IITA,IITA_CGIAR,IITA_BIBLIOGRAPHY</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="title"><xsl:text>Tweet</xsl:text></xsl:attribute>
+                    <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn-social btn-facebook">
+                    <xsl:attribute name="href">
+                        <xsl:text>https://www.facebook.com/sharer/sharer.php?u=</xsl:text>
+                        <xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="title"><xsl:text>Share on Facebook</xsl:text></xsl:attribute>
+                    <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </xsl:template>
+    
     <xsl:template name="discovery-link">
         <xsl:param name="filtertype"/>
         <xsl:variable name="filterlink">
