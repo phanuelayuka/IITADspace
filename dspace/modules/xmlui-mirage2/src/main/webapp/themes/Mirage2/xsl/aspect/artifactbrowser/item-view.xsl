@@ -127,6 +127,10 @@
                     </xsl:if>
                 </div>
                 <div class="col-sm-9">
+                    <xsl:if test="dim:field[@element='identifier' and @qualifier='uri']">
+                        <xsl:call-template name="itemSummaryView-DIM-share"/>
+                    </xsl:if>
+                    
                     <xsl:call-template name="itemSummaryView-DIM-abstract"/>
                     <xsl:call-template name="mutli-standard-citation"/>
                     <xsl:call-template name="itemSummaryView-DIM-alt-URI"/>
