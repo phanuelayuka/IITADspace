@@ -25,4 +25,4 @@ dspace/modules/additions/target/
 web/
 solr/
 .idea/
-
+dspace/config/local.cfg
