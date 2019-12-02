@@ -734,11 +734,11 @@
 
     <!-- Multi-standard citation -->
     <xsl:template name="mutli-standard-citation">
-        <xsl:if test="dim:field[@mdschema='local' and @element='doi']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='doi']">
             <div class="simple-item-view-description item-page-field-wrapper table">
                 
                 <div id="publication-doi" style="display:none;" >
-                    <xsl:for-each select="dim:field[@mdschema='local' and @element='doi']">
+                    <xsl:for-each select="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='doi']">
                         <xsl:choose>
                             <xsl:when test="node()">
                                 <xsl:copy-of select="node()"/>
@@ -747,7 +747,7 @@
                                 <xsl:text>&#160;</xsl:text>
                             </xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="count(following-sibling::dim:field[@mdschema='local'and @element='doi']) != 0">
+                        <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='identifier' and @qualifier='doi']) != 0">
                             <div class="spacer">&#160;</div>
                         </xsl:if>
                     </xsl:for-each>

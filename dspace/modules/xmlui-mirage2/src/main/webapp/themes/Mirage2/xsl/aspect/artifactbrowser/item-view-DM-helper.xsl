@@ -41,18 +41,18 @@
     <xsl:output indent="yes"/>
     
     <xsl:template name="itemSummaryView-DIM-alt-affiliations">
-        <xsl:if test="dim:field[@mdschema='local' and @element='affiliation']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='contributor' and @element='affiliation']">
             <div class="simple-item-view-description item-page-field-wrapper table">
                 <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-affiliation</i18n:text></h5>
                 <div>
-                    <xsl:for-each select="dim:field[@mdschema='local' and @element='affiliation']">
+                    <xsl:for-each select="dim:field[@mdschema='cg' and @element='contributor' and @qualifier='affiliation']">
                         <xsl:choose>
                             <xsl:when test="node()">
                                 <xsl:call-template name="discovery-link"><xsl:with-param name="filter-type" select="'affiliation'"/></xsl:call-template>
                             </xsl:when>
                             <xsl:otherwise><xsl:text>&#160;</xsl:text></xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='affiliation']) != 0">
+                        <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='contributor' and @qualifier='affiliation']) != 0">
                             <xsl:text>; </xsl:text>
                         </xsl:if>
                     </xsl:for-each>
@@ -63,18 +63,18 @@
     
     <!-- display for regions -->
     <xsl:template name="itemSummaryView-DIM-alt-region">
-        <xsl:if test="dim:field[@mdschema='local' and @element='regionofresearch']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='coverage' and @qualifier='region']">
             <div class="simple-item-view-description item-page-field-wrapper table">
                 <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-region</i18n:text></h5>
                 <div>
-                    <xsl:for-each select="dim:field[@mdschema='local' and @element='regionofresearch']">
+                    <xsl:for-each select="dim:field[@mdschema='cg' and @element='coverage' and @qualifier='region']">
                         <xsl:choose>
                             <xsl:when test="node()">
-                                <xsl:call-template name="discovery-link"><xsl:with-param name="filter-type" select="'regionofresearch'"/></xsl:call-template>
+                                <xsl:call-template name="discovery-link"><xsl:with-param name="filter-type" select="'region'"/></xsl:call-template>
                             </xsl:when>
                             <xsl:otherwise><xsl:text>&#160;</xsl:text></xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='regionofresearch']) != 0">
+                        <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='coverage' and @qualifier='region']) != 0">
                             <xsl:text>; </xsl:text>
                         </xsl:if>
                     </xsl:for-each>
@@ -85,18 +85,18 @@
     
     <!-- display for countries -->
     <xsl:template name="itemSummaryView-DIM-alt-country">
-        <xsl:if test="dim:field[@mdschema='local' and @element='country']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='coverage' and @qualifier='country']">
             <div class="simple-item-view-description item-page-field-wrapper table">
                 <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-country</i18n:text></h5>
                 <div>
-                    <xsl:for-each select="dim:field[@mdschema='local' and @element='country']">
+                    <xsl:for-each select="dim:field[@mdschema='cg' and @element='coverage' and @qualifier='country']">
                         <xsl:choose>
                             <xsl:when test="node()">
                                 <xsl:call-template name="discovery-link"><xsl:with-param name="filter-type" select="'country'"/></xsl:call-template>
                             </xsl:when>
                             <xsl:otherwise><xsl:text>&#160;</xsl:text></xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='country']) != 0">
+                        <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='coverage' and @qualifier='country']) != 0">
                             <xsl:text>; </xsl:text>
                         </xsl:if>
                     </xsl:for-each>
@@ -107,18 +107,18 @@
     
     <!-- display for hubs -->
     <xsl:template name="itemSummaryView-DIM-alt-hub">
-        <xsl:if test="dim:field[@mdschema='local' and @element='authorhub']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='coverage' and @qualifier='hub']">
             <div class="simple-item-view-description item-page-field-wrapper table">
                 <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-hub</i18n:text></h5>
                 <div>
-                    <xsl:for-each select="dim:field[@mdschema='local' and @element='authorhub']">
+                    <xsl:for-each select="dim:field[@mdschema='cg' and @element='coverage' and @qualifier='hub']">
                         <xsl:choose>
                             <xsl:when test="node()">
-                                <xsl:call-template name="discovery-link"><xsl:with-param name="filter-type" select="'authorhub'"/></xsl:call-template>
+                                <xsl:call-template name="discovery-link"><xsl:with-param name="filter-type" select="'hub'"/></xsl:call-template>
                             </xsl:when>
                             <xsl:otherwise><xsl:text>&#160;</xsl:text></xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='authorhub']) != 0">
+                        <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='coverage' and @qualifier='hub']) != 0">
                             <xsl:text>; </xsl:text>
                         </xsl:if>
                     </xsl:for-each>
@@ -151,18 +151,18 @@
     
     <!-- display for iita subjects -->
     <xsl:template name="itemSummaryView-DIM-alt-iita-subject">
-        <xsl:if test="dim:field[@mdschema='local' and @element='iitasubject']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='iitasubject']">
             <div class="simple-item-view-description item-page-field-wrapper table">
                 <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-iita-subjects</i18n:text></h5>
                 <div>
-                    <xsl:for-each select="dim:field[@mdschema='local' and @element='iitasubject']">
+                    <xsl:for-each select="dim:field[@mdschema='cg' and @element='iitasubject']">
                         <xsl:choose>
                             <xsl:when test="node()">
                                 <xsl:call-template name="discovery-link"><xsl:with-param name="filter-type" select="'iitasubject'"/></xsl:call-template>
                             </xsl:when>
                             <xsl:otherwise><xsl:text>&#160;</xsl:text></xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='iitasubject']) != 0">
+                        <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='iitasubject']) != 0">
                             <xsl:text>; </xsl:text>
                         </xsl:if>
                     </xsl:for-each>
@@ -173,18 +173,18 @@
     
     <!-- display for research themes -->
     <xsl:template name="itemSummaryView-DIM-alt-theme">
-        <xsl:if test="dim:field[@mdschema='local' and @element='researchtheme']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='researchtheme']">
             <div class="simple-item-view-description item-page-field-wrapper table">
                 <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-theme</i18n:text></h5>
                 <div>
-                    <xsl:for-each select="dim:field[@mdschema='local' and @element='researchtheme']">
+                    <xsl:for-each select="dim:field[@mdschema='cg' and @element='researchtheme']">
                         <xsl:choose>
                             <xsl:when test="node()">
                                 <xsl:call-template name="discovery-link"><xsl:with-param name="filter-type" select="'researchtheme'"/></xsl:call-template>
                             </xsl:when>
                             <xsl:otherwise><xsl:text>&#160;</xsl:text></xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='researchtheme']) != 0">
+                        <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='researchtheme']) != 0">
                             <xsl:text>; </xsl:text>
                         </xsl:if>
                     </xsl:for-each>
@@ -196,18 +196,18 @@
     
     <!-- display for journals -->
     <xsl:template name="itemSummaryView-DIM-alt-journal">
-        <xsl:if test="dim:field[@mdschema='local' and @element='journal']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='journal']">
             <div class="simple-item-view-description item-page-field-wrapper table">
                 <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-journal</i18n:text></h5>
                 <div>
-                    <xsl:for-each select="dim:field[@mdschema='local' and @element='journal']">
+                    <xsl:for-each select="dim:field[@mdschema='cg' and @element='journal']">
                         <xsl:choose>
                             <xsl:when test="node()">
                                 <xsl:call-template name="discovery-link"><xsl:with-param name="filter-type" select="'journal'"/></xsl:call-template>
                             </xsl:when>
                             <xsl:otherwise><xsl:text>&#160;</xsl:text></xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='journal']) != 0">
+                        <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='journal']) != 0">
                             <xsl:text>; </xsl:text>
                         </xsl:if>
                     </xsl:for-each>
@@ -240,11 +240,11 @@
     
     
     <xsl:template name="itemSummaryView-DIM-alt-doi">
-        <xsl:if test="dim:field[@mdschema='local' and @element='doi']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='doi']">
             <div class="simple-item-view-description item-page-field-wrapper table">
                 <h5 class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-doi</i18n:text></h5>
                 <div>
-                    <xsl:for-each select="dim:field[@mdschema='local' and @element='doi']">
+                    <xsl:for-each select="dim:field[@mdschema='cg' and @element='identifier' and @qualifier='doi']">
                         <xsl:choose>
                             <xsl:when test="node()">
                                 <xsl:copy-of select="node()"/>
@@ -289,12 +289,12 @@
         
     <!-- item review status display -->
     <xsl:template name="itemSummaryView-DIM-alt-review">
-        <xsl:if test="dim:field[@mdschema='local' and @element='reviewstatus']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='reviewstatus']">
             <div class="simple-item-view-date word-break item-page-field-wrapper table">
                 <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-review</i18n:text>
                 </h5>
-                <xsl:for-each select="dim:field[@mdschema='local' and @element='reviewstatus']">
+                <xsl:for-each select="dim:field[@mdschema='cg' and @element='reviewstatus']">
                     <xsl:choose>
                         <xsl:when test="node()">
                             <xsl:call-template name="discovery-link">
@@ -305,7 +305,7 @@
                             <xsl:text>&#160;</xsl:text>
                         </xsl:otherwise>
                     </xsl:choose>
-                    <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='reviewstatus']) != 0">
+                    <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='reviewstatus']) != 0">
                         <xsl:text>;</xsl:text>
                     </xsl:if>
                 </xsl:for-each>
@@ -316,12 +316,12 @@
         
     <!-- item target audience display -->
     <xsl:template name="itemSummaryView-DIM-alt-audience">
-        <xsl:if test="dim:field[@mdschema='local' and @element='targetaudience']">
+        <xsl:if test="dim:field[@mdschema='cg' and @element='targetaudience']">
             <div class="simple-item-view-date word-break item-page-field-wrapper table">
                 <h5 class="bold">
                     <i18n:text>xmlui.dri2xhtml.METS-1.0.item-audience</i18n:text>
                 </h5>
-                <xsl:for-each select="dim:field[@mdschema='local' and @element='targetaudience']">
+                <xsl:for-each select="dim:field[@mdschema='cg' and @element='targetaudience']">
                     <xsl:choose>
                         <xsl:when test="node()">
                             <xsl:call-template name="discovery-link">
@@ -332,7 +332,7 @@
                             <xsl:text>&#160;</xsl:text>
                         </xsl:otherwise>
                     </xsl:choose>
-                    <xsl:if test="count(following-sibling::dim:field[@mdschema='local' and @element='targetaudience']) != 0">
+                    <xsl:if test="count(following-sibling::dim:field[@mdschema='cg' and @element='targetaudience']) != 0">
                         <xsl:text>;</xsl:text>
                     </xsl:if>
                 </xsl:for-each>
@@ -367,7 +367,7 @@
             <div class="pull-right">
                 <a class="btn-social btn-linkedin">
                     <xsl:attribute name="href">
-                        <xsl:text>https://www.linkedin.com/shareArticle?mini=true&amp;url</xsl:text>
+                        <xsl:text>https://www.linkedin.com/shareArticle?mini=true&amp;url=</xsl:text>
                         <xsl:value-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
                     </xsl:attribute>
                     <xsl:attribute name="title"><xsl:text>Share on LinkedIn</xsl:text></xsl:attribute>
@@ -390,6 +390,7 @@
                         <xsl:text>&amp;text=</xsl:text>
                         <xsl:value-of select="dim:field[@element='title']"></xsl:value-of>    
                          <xsl:text>&amp;hashtags=IITA,IITA_CGIAR,IITA_BIBLIOGRAPHY</xsl:text>
+                         <xsl:text>&amp;via=IITA_CGIAR</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="title"><xsl:text>Tweet</xsl:text></xsl:attribute>
                     <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
